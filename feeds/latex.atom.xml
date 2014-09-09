@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Scriptorum</title><link href="http://marcyves.github.io/" rel="alternate"></link><link href="http://marcyves.github.io/feeds/latex.atom.xml" rel="self"></link><id>http://marcyves.github.io/</id><updated>2010-12-03T10:20:00+01:00</updated><entry><title>Ma configuration LaTeX dans le Cloud</title><link href="http://marcyves.github.io/LaTeX-Cloud.html" rel="alternate"></link><updated>2010-12-03T10:20:00+01:00</updated><author><name>Marc Augier</name></author><id>tag:marcyves.github.io,2010-12-03:LaTeX-Cloud.html</id><summary type="html">&lt;p&gt;Pour partager la configuration LaTeX entre plusieurs ordinateurs j'ai placé mon dossier texmf avec mes personalisations dans le "Cloud", en fait dans un dossier synchronisé avec &lt;a href="https://www.copy.com" title="Service Cloud"&gt;"Copy"&lt;/a&gt; mais ça marche aussi bien avec &lt;a href="http://www.dropbox.com" title="Service Cloud"&gt;"DropBox"&lt;/a&gt; que j'utilise aussi mais pour d'autres choses.&lt;/p&gt;
+&lt;p&gt;Le chemin de ce dossier est :
+&lt;code&gt;/Users/marc/Cloud/Copy/latex/texmf/tex/&lt;/code&gt; et il doit être organisé avec un arbre TeX pour être reconnu à la compilation (Dossiers tex, latex, bibtex/bst et bibtex/bib ).&lt;/p&gt;
+&lt;p&gt;et pour qu'il soit reconnu par LaTeX j'ai édité le fichier: &lt;code&gt;/usr/local/texlive/2013/texmf.cnf&lt;/code&gt; pour le désigner à la variable &lt;code&gt;TEXMFHOME&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Cela donne:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;% (Public domain.)&lt;/span&gt;
+&lt;span class="c"&gt;% This texmf.cnf file should contain only your personal changes from the&lt;/span&gt;
+&lt;span class="c"&gt;% original texmf.cnf (for example, as chosen in the installer).&lt;/span&gt;
+&lt;span class="c"&gt;%&lt;/span&gt;
+&lt;span class="c"&gt;% That is, if you need to make changes to texmf.cnf, put your custom&lt;/span&gt;
+&lt;span class="c"&gt;% settings in this file, which is .../texlive/YYYY/texmf.cnf, rather than&lt;/span&gt;
+&lt;span class="c"&gt;% the distributed file (which is .../texlive/YYYY/texmf-dist/web2c/texmf.cnf).&lt;/span&gt;
+&lt;span class="c"&gt;% And include *only* your changed values, not a copy of the whole thing!&lt;/span&gt;
+&lt;span class="c"&gt;%&lt;/span&gt;
+&lt;span class="n"&gt;TEXMFHOME&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="o"&gt;~/&lt;/span&gt;&lt;span class="n"&gt;Cloud&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;Copy&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;latex&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;texmf&lt;/span&gt;
+&lt;span class="n"&gt;TEXMFVAR&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="o"&gt;~/&lt;/span&gt;&lt;span class="n"&gt;Library&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;texlive&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="mi"&gt;2013&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;texmf&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;var&lt;/span&gt;
+&lt;span class="n"&gt;TEXMFCONFIG&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="o"&gt;~/&lt;/span&gt;&lt;span class="n"&gt;Library&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;texlive&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="mi"&gt;2013&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;texmf&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;config&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Vous pouvez vérifier que la variable est bien prise en compte avec la commande:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;kpsewhich&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;var&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;value&lt;/span&gt; &lt;span class="n"&gt;TEXMFHOME&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;ou encore plus généralement:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;texconfig&lt;/span&gt; &lt;span class="n"&gt;conf&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="LaTeX"></category><category term="configuration"></category><category term="Cloud"></category></entry></feed>

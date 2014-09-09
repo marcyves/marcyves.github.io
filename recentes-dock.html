@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
         <meta charset="utf-8" />
-        <title>Scriptorum</title>
+        <title>Les applications récentes dans le Dock</title>
         <link rel="stylesheet" href="http://marcyves.github.io/theme/css/main.css" />
         <link href="http://marcyves.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Scriptorum Atom Feed" />
 
@@ -18,34 +18,37 @@
                     <li><a href="http://marcyves.github.io/pages/about-me.html">About me</a></li>
                     <li><a href="http://marcyves.github.io/category/humour.html">Humour</a></li>
                     <li><a href="http://marcyves.github.io/category/latex.html">LaTeX</a></li>
-                    <li><a href="http://marcyves.github.io/category/mac-os-x.html">Mac OS X</a></li>
+                    <li class="active"><a href="http://marcyves.github.io/category/mac-os-x.html">Mac OS X</a></li>
                     <li><a href="http://marcyves.github.io/category/recettes.html">Recettes</a></li>
                     <li><a href="http://marcyves.github.io/category/recherche.html">Recherche</a></li>
                 </ul></nav>
         </header><!-- /#banner -->
 <section id="content" class="body">
-<h1>Archives for Scriptorum</h1>
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="http://marcyves.github.io/recentes-dock.html" rel="bookmark"
+           title="Permalink to Les applications récentes dans le Dock">Les applications récentes dans le Dock</a></h1>
+    </header>
 
-<dl>
-    <dt>Sam 09 novembre 2013</dt>
-    <dd><a href="http://marcyves.github.io/arachides-aigre-douce.html">Arachides en sauce aigre-douce</a></dd>
-    <dt>Mer 23 octobre 2013</dt>
-    <dd><a href="http://marcyves.github.io/theme-recherche.html">Résumé de mes thèmes de recherche</a></dd>
-    <dt>Dim 20 octobre 2013</dt>
-    <dd><a href="http://marcyves.github.io/installer-apache.html">Installer Apache sur Mac OS X Mountain Lion</a></dd>
-    <dt>Dim 20 octobre 2013</dt>
-    <dd><a href="http://marcyves.github.io/recentes-dock.html">Les applications récentes dans le Dock</a></dd>
-    <dt>Dim 20 octobre 2013</dt>
-    <dd><a href="http://marcyves.github.io/repair-zip.html">Récuperer un ZIP corrompu</a></dd>
-    <dt>Mer 09 octobre 2013</dt>
-    <dd><a href="http://marcyves.github.io/pains-porc.html">Petits pains de porc</a></dd>
-    <dt>Lun 09 septembre 2013</dt>
-    <dd><a href="http://marcyves.github.io/roti-porc.html">Roti de porc Niébé</a></dd>
-    <dt>Ven 03 décembre 2010</dt>
-    <dd><a href="http://marcyves.github.io/.html"></a></dd>
-    <dt>Ven 03 décembre 2010</dt>
-    <dd><a href="http://marcyves.github.io/LaTeX-Cloud.html">Ma configuration LaTeX dans le Cloud</a></dd>
-</dl>
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2013-10-20T10:00:00">
+                Published: Dim 20 octobre 2013
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="http://marcyves.github.io/author/marc-augier.html">Marc Augier</a>
+        </address>
+<p>In <a href="http://marcyves.github.io/category/mac-os-x.html">Mac OS X</a>. </p>
+<p>tags: <a href="http://marcyves.github.io/tag/macosx.html">macosx</a> </p>
+</footer><!-- /.post-info -->      <p>Certes avec un Macbook on peut retrouver une application en 2 secondes grâce au spotlight. On peut aussi mettre ses applications favorites dans le Dock, mais il est toujours utile d’avoir un listing des dernières applications utilisées ou encore des documents récemment ouverts. Pour se faire, c’est simple :</p>
+<p>defaults write com.apple.dock persistent-others -array-add '{ "tile-data" = { "list-type" = 1; }; "tile-type" = "recents-tile"; }'</p>
+<p>Relancez le Dock en tapant : killall Dock</p>
+<p>Si vous souhaitez ajouter un effet au hover des icones, tapez ceci : defaults write com.apple.dock mouse-over-hilte-stack -boolean YES</p>
+    </div><!-- /.entry-content -->
+
+  </article>
 </section>
         <section id="extras" class="body">
                 <div class="blogroll">
