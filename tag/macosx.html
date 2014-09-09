@@ -1,199 +1,220 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr"
+>
 <head>
-        <meta charset="utf-8" />
-        <title>Scriptorum - macosx</title>
-        <link rel="stylesheet" href="http://marcyves.github.io/theme/css/main.css" />
+    <title>macosx - Scriptorum</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--[if IE]>
-            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+
+
+
+    <meta name="author" content="Marc Augier" />
+    <meta name="keywords" content="macosx" />
+
+    <!-- Open Graph tags -->
+        <meta property="og:site_name" content="Scriptorum" />
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="Scriptorum"/>
+        <meta property="og:url" content="http://marcyves.github.io"/>
+        <meta property="og:description" content="Scriptorum"/>
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="http://marcyves.github.io/theme/css/bootstrap.min.css" type="text/css"/>
+    <link href="http://marcyves.github.io/theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="http://marcyves.github.io/theme/css/pygments/native.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://marcyves.github.io/theme/css/style.css" type="text/css"/>
+
+
 </head>
+<body>
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="http://marcyves.github.io/">Scriptorum </a></h1>
-                <nav><ul>
-                    <li><a href="http://marcyves.github.io/pages/about-me.html">About me</a></li>
-                    <li><a href="http://marcyves.github.io/category/humour.html">Humour</a></li>
-                    <li><a href="http://marcyves.github.io/category/latex.html">LaTeX</a></li>
-                    <li><a href="http://marcyves.github.io/category/mac-os-x.html">Mac OS X</a></li>
-                    <li><a href="http://marcyves.github.io/category/recettes.html">Recettes</a></li>
-                    <li><a href="http://marcyves.github.io/category/recherche.html">Recherche</a></li>
-                </ul></nav>
-        </header><!-- /#banner -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="http://marcyves.github.io/" class="navbar-brand">
+Scriptorum            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                         <li><a href="http://marcyves.github.io/pages/about-me.html">
+                             About me
+                          </a></li>
+                        <li >
+                            <a href="http://marcyves.github.io/category/humour.html">Humour</a>
+                        </li>
+                        <li >
+                            <a href="http://marcyves.github.io/category/latex.html">Latex</a>
+                        </li>
+                        <li >
+                            <a href="http://marcyves.github.io/category/mac-os-x.html">Mac os x</a>
+                        </li>
+                        <li >
+                            <a href="http://marcyves.github.io/category/recettes.html">Recettes</a>
+                        </li>
+                        <li >
+                            <a href="http://marcyves.github.io/category/recherche.html">Recherche</a>
+                        </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="http://marcyves.github.io/archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
 
-            <aside id="featured" class="body">
-                <article>
-                    <h1 class="entry-title"><a href="http://marcyves.github.io/installer-apache.html">Installer Apache sur Mac OS X Mountain Lion</a></h1>
-<footer class="post-info">
-        <abbr class="published" title="2013-10-20T10:00:00">
-                Published: Dim 20 octobre 2013
-        </abbr>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
 
-        <address class="vcard author">
-                By                         <a class="url fn" href="http://marcyves.github.io/author/marc-augier.html">Marc Augier</a>
-        </address>
-<p>In <a href="http://marcyves.github.io/category/mac-os-x.html">Mac OS X</a>. </p>
-<p>tags: <a href="http://marcyves.github.io/tag/macosx.html">macosx</a> </p>
-</footer><!-- /.post-info --><h1>Setting Up and Starting the Apache Web Server in OS X</h1>
-<p>Versions of OS X prior to Mountain Lion can simply turn on “Web Sharing”, but from 10.8 onward you’ll need to do the following to use a local web server:</p>
-<p>Launch Terminal, located in /Applications/Utilities/</p>
-<p>Type the following command, replacing USERNAME with the user account short name:</p>
-<div class="highlight"><pre><span class="n">nano</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">apache2</span><span class="o">/</span><span class="n">users</span><span class="o">/</span><span class="n">USERNAME</span><span class="p">.</span><span class="n">conf</span>
-</pre></div>
+            <article>
+                <h2><a href="http://marcyves.github.io/installer-apache.html">Installer Apache sur Mac OS X Mountain Lion</a></h2>
+                <div class="summary"><p>Installer et paramétrer Apache sur Mac OS X Mountain Lion</p>
+                    <a class="btn btn-default btn-xs" href="http://marcyves.github.io/installer-apache.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="http://marcyves.github.io/recentes-dock.html">Les applications récentes dans le Dock</a></h2>
+                <div class="summary"><p>Il est toujours utile d’avoir un listing des dernières applications utilisées ou encore des documents récemment ouverts.</p>
+                    <a class="btn btn-default btn-xs" href="http://marcyves.github.io/recentes-dock.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="http://marcyves.github.io/repair-zip.html">Récuperer un ZIP corrompu</a></h2>
+                <div class="summary"><p>Une commande dans le terminal pour retrouver un ZIP corrompu</p>
+                    <a class="btn btn-default btn-xs" href="http://marcyves.github.io/repair-zip.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
 
+        </div>
+        <div class="col-sm-3 well well-sm" id="sidebar">
 
-<p>Enter the admin password when requested, then paste the following into the nano text editor:</p>
-<div class="highlight"><pre><span class="nt">&lt;Directory</span> <span class="err">&quot;/Users/USERNAME/Sites/&quot;</span><span class="nt">&gt;</span>
-Options Indexes Multiviews
-AllowOverride AuthConfig Limit
-Order allow,deny
-Allow from all
-<span class="nt">&lt;/Directory&gt;</span>
-</pre></div>
-
-
-<p>• Edit the Directory path USERNAME to the appropriate username
-• Now hit Control+O to save the changes to USERNAME.conf, then hit Control+X to quit out of nano
-• Next, you will start the web server with the following command:</p>
-<div class="highlight"><pre><span class="n">sudo</span> <span class="n">apachectl</span> <span class="n">start</span>
-</pre></div>
-
-
-<p>• Launch Safari, Chrome, or Firefox and navigate to “http://127.0.0.1″ to verify the server is running, you will see an “It Works!” message</p>
-<p>You can now also visit http://127.0.0.1/~USERNAME/ to see the contents of whatever is stored in the user ~/Sites/ directory, and you can add an index.html file or whatever else you’d like to the directory to serve it to the outside world or even just your LAN.</p>
-<p>Using http://localhost/ is also fine, and by editing the hosts file you can set a local domain to whatever you want to create a local test environment with an otherwise live domain.</p>
-<p>OS X Mountain Lion ships with PHP 5.3.13 preinstalled, though if you start the built-in Apache server, you will find PHP isn’t enabled by default. Changing this is easy, and if you’re a web developer and want PHP running on your local Mac with OS X 10.8 or later, follow along to have it working in no time.
-Launch Terminal and enter the following command, using the administrator password when requested:</p>
-<div class="highlight"><pre><span class="n">sudo</span> <span class="n">nano</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">apache2</span><span class="o">/</span><span class="n">httpd</span><span class="p">.</span><span class="n">conf</span>
-</pre></div>
-
-
-<p>Now hit Control+W to use the search feature of nano, and type in “php”
-Locate the following line and remove the comment (#) from the beginning:</p>
-<div class="highlight"><pre><span class="n">LoadModule</span> <span class="n">php5_module</span> <span class="n">libexec</span><span class="o">/</span><span class="n">apache2</span><span class="o">/</span><span class="n">libphp5</span><span class="p">.</span><span class="n">so</span>
-</pre></div>
-
-
-<p>Now hit Control+O to save the changes, followed by Control+X to quit out of nano.</p>
-<p>Back at the command prompt, you’ll want to restart the Apache server for the php module to load. This is done with the following command, or you can toggle the on/off switch in the 3rd party WebSharing panel:</p>
-<div class="highlight"><pre><span class="n">sudo</span> <span class="n">apachectl</span> <span class="n">restart</span>
-</pre></div>
-
-
-<p>Apache quickly restarts and PHP will be enabled.</p>
-<p>You can verify this by throwing any php file into the ~/Sites/ directory and loading localhost/~user/file.php into a web browser, or you use phpinfo() to check the existing php configuration by placing the following into any file with a php extension:</p>
-<div class="highlight"><pre><span class="cp">&lt;?php</span> <span class="nb">phpinfo</span><span class="p">();</span> <span class="cp">?&gt;</span>
-</pre></div>
-
-
-<p>Save that file into the user ~/Sites/ directory and load it into a web browser.
-If you want to make any changes to PHP configuration, use the following command to make a copy of the default php.ini file:</p>
-<div class="highlight"><pre><span class="n">cp</span> <span class="o">/</span><span class="n">private</span><span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">php</span><span class="p">.</span><span class="n">ini</span><span class="p">.</span><span class="k">default</span> <span class="o">/</span><span class="n">private</span><span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">php</span><span class="p">.</span><span class="n">ini</span>
-</pre></div>
+<aside>
+    <section>
+        <ul class="list-group list-group-flush">
+                <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
+                  <ul class="list-group" id="social">
+                    <li class="list-group-item"><a href="http://twitter.com/marcyves"><i class="fa fa-twitter-square fa-lg"></i> twitter</a></li>
+                    <li class="list-group-item"><a href="http://www.facebook.com/marcaugier"><i class="fa fa-facebook-square fa-lg"></i> facebook</a></li>
+                    <li class="list-group-item"><a href="http://github.com/marcyves"><i class="fa fa-github-square fa-lg"></i> github</a></li>
+                  </ul>
+                </li>
 
 
-<p>Make adjustments to the copied php.ini file in /etc/ or /private/etc/ as necessary, leaving the original .default file intact. As usual, any major changes to php.ini will need to be followed by another Apache restart to take affect.</p>
-<p><a href="http://dev.mysql.com/doc/refman/5.1/en/macosx-installation.html">http://dev.mysql.com/doc/refman/5.1/en/macosx-installation.html</a></p>
-<p>télécharger le DMG
-installer par double clic </p>
-<p>SEQUEL Pro
-se connecter avec root pas de mot de passe
-créer les users, mettre un mot de passe à root </p>
-<p>Warning: date(): It is not safe to rely on the system's timezone settings. You are <em>required</em> to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. 
-You probably need to put the timezone in a config line in your php.ini
-You should have a block like this in your php.ini :
-[Date];Defines the default timezone used by the date functions; http://php.net/date.timezonedate.timezone =America/New_York
-If not, add it ( replacing the timezone by yours ). After configuring, make sure to restart httpd (service httpd restart).
-Here is the List of supported timezones</p>
-<p>mod_rewrite should already be enabled. PHP isn't mind you. To check, look in /etc/apache2/httpd.conf and ensure that these lines:
-LoadModule rewrite_module libexec/apache2/mod_rewrite.soLoadModule php5_module        libexec/apache2/libphp5.so
-are uncommented.
-Also ensure that AllowOverride is set to All within the <Directory "/Library/WebServer/Documents"> section.
-If you put your project within the /Library/WebServer/Documents folder, then it should work.</p>                </article>
-            </aside><!-- /#featured -->
-                <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
 
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="http://marcyves.github.io/recentes-dock.html" rel="bookmark"
-                           title="Permalink to Les applications récentes dans le Dock">Les applications récentes dans le Dock</a></h1>
-                </header>
+                <li class="list-group-item"><a href="http://marcyves.github.io/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
+                    <ul class="list-group " id="tags">
+                        <li class="list-group-item tag-1">
+                            <a href="http://marcyves.github.io/tag/macosx.html">
+                                macosx
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-1">
+                            <a href="http://marcyves.github.io/tag/chine.html">
+                                Chine
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-1">
+                            <a href="http://marcyves.github.io/tag/recettes.html">
+                                Recettes
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="http://marcyves.github.io/tag/configuration.html">
+                                configuration
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="http://marcyves.github.io/tag/numerique.html">
+                                numérique
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="http://marcyves.github.io/tag/recherche.html">
+                                recherche
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="http://marcyves.github.io/tag/.html">
+                                
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="http://marcyves.github.io/tag/cloud.html">
+                                Cloud
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="http://marcyves.github.io/tag/latex.html">
+                                LaTeX
+                            </a>
+                        </li>
+                    </ul>
+                </li>    
+    <li class="list-group-item"><h4><i class="fa fa-external-link-square fa-lg"></i><span class="icon-label">Links</span></h4>
+      <ul class="list-group" id="links">
+        <li class="list-group-item">
+            <a href="http://getpelican.com/" target="_blank">
+                Pelican
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="http://colisciences.in2p3.fr/" target="_blank">
+                CoLisciences
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="http://claudebernard.in2p3.fr/" target="_blank">
+                Claude Bernard
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="http://about.me/marc.augier" target="_blank">
+                À propos
+            </a>
+        </li>
+      </ul>
+    </li>
 
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2013-10-20T10:00:00">
-                Published: Dim 20 octobre 2013
-        </abbr>
+        </ul>
+    </section>
 
-        <address class="vcard author">
-                By                         <a class="url fn" href="http://marcyves.github.io/author/marc-augier.html">Marc Augier</a>
-        </address>
-<p>In <a href="http://marcyves.github.io/category/mac-os-x.html">Mac OS X</a>. </p>
-<p>tags: <a href="http://marcyves.github.io/tag/macosx.html">macosx</a> </p>
-</footer><!-- /.post-info -->                <p>Il est toujours utile d’avoir un listing des dernières applications utilisées ou encore des documents récemment ouverts.</p>
-                <a class="readmore" href="http://marcyves.github.io/recentes-dock.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
+</aside>        </div>
+    </div>
+</div>
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2013 Marc Augier
+            &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="http://marcyves.github.io/theme/js/jquery.min.js"></script>
 
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="http://marcyves.github.io/repair-zip.html" rel="bookmark"
-                           title="Permalink to Récuperer un ZIP corrompu">Récuperer un ZIP corrompu</a></h1>
-                </header>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="http://marcyves.github.io/theme/js/bootstrap.min.js"></script>
 
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2013-10-20T10:00:00">
-                Published: Dim 20 octobre 2013
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="http://marcyves.github.io/author/marc-augier.html">Marc Augier</a>
-        </address>
-<p>In <a href="http://marcyves.github.io/category/mac-os-x.html">Mac OS X</a>. </p>
-<p>tags: <a href="http://marcyves.github.io/tag/macosx.html">macosx</a> </p>
-</footer><!-- /.post-info -->                <p>Une commande dans le terminal pour retrouver un ZIP corrompu</p>
-                <a class="readmore" href="http://marcyves.github.io/repair-zip.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-                </ol><!-- /#posts-list -->
-<p class="paginator">
-    Page 1 / 1
-</p>
-                </section><!-- /#content -->
-        <section id="extras" class="body">
-                <div class="blogroll">
-                        <h2>blogroll</h2>
-                        <ul>
-                            <li><a href="http://getpelican.com/">Pelican</a></li>
-                            <li><a href="http://colisciences.in2p3.fr/">CoLisciences</a></li>
-                            <li><a href="http://claudebernard.in2p3.fr/">Claude Bernard</a></li>
-                            <li><a href="http://about.me/marc.augier">À propos</a></li>
-                        </ul>
-                </div><!-- /.blogroll -->
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
-
-                            <li><a href="http://twitter.com/marcyves">twitter</a></li>
-                            <li><a href="http://www.facebook.com/marcaugier">facebook</a></li>
-                            <li><a href="http://github.com/marcyves">github</a></li>
-                        </ul>
-                </div><!-- /.social -->
-        </section><!-- /#extras -->
-
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
-
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="http://marcyves.github.io/theme/js/respond.min.js"></script>
 
 </body>
 </html>
