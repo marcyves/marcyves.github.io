@@ -1,230 +1,110 @@
-<!DOCTYPE html>
-<html lang="fr"
->
+<!doctype html>
+<html lang="fr">
 <head>
-    <title>Les applications récentes dans le Dock - Scriptorum</title>
-    <!-- Using the latest rendering mode for IE -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <!-- Site Meta Data -->
+  <title>Les applications récentes dans le Dock</title>
+  <meta name="description" content="">
+  <meta name="author" content="Marc Augier">
 
+  <!-- Style Meta Data -->
+  <link rel="stylesheet" href="http://marcyves.github.io/theme/css/notebook.css" type="text/css" />
+  <link rel="shortcut icon" href="http://marcyves.github.io/">
 
+  <!-- Feed Meta Data -->
+  <link href="http://marcyves.github.io/" type="application/atom+xml" rel="alternate" title="Scriptorum ATOM Feed" />
 
-<link rel="canonical" href="http://marcyves.github.io/recentes-dock.html">
+  <!-- Twitter Feed -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:image" content="http://marcyves.github.io/">
 
-        <meta name="author" content="Marc Augier" />
-        <meta name="keywords" content="macosx" />
-        <meta name="description" content="Il est toujours utile d’avoir un listing des dernières applications utilisées ou encore des documents récemment ouverts." />
+<meta name="twitter:creator" content="">
+<meta name="twitter:url" content="http://marcyves.github.io/recentes-dock.html">
+<meta name="twitter:title" content="Scriptorum ~ Les applications récentes dans le Dock">
+<meta name="twitter:description" content="<p>Il est toujours utile d’avoir un listing des dernières applications utilisées ou encore des documents récemment ouverts.</p>">
 
-
-
-    <!-- Bootstrap -->
-        <link rel="stylesheet" href="http://marcyves.github.io/theme/css/bootstrap.min.css" type="text/css"/>
-    <link href="http://marcyves.github.io/theme/css/font-awesome.min.css" rel="stylesheet">
-
-    <link href="http://marcyves.github.io/theme/css/pygments/native.css" rel="stylesheet">
-    <link rel="stylesheet" href="http://marcyves.github.io/theme/css/style.css" type="text/css"/>
-
-
+<!-- Facebook Meta Data -->
+<meta property="og:title" content="Scriptorum ~ Les applications récentes dans le Dock" />
+<meta property="og:description" content="<p>Il est toujours utile d’avoir un listing des dernières applications utilisées ou encore des documents récemment ouverts.</p>" />
+<meta property="og:image" content="" />
 </head>
+
 <body>
+  <!-- Sidebar -->
+  <aside>
+    <p><a href="http://marcyves.github.io"><img id="avatar" src="http://marcyves.github.io/"></a></p>
+    <h1>Scriptorum</h1>
+    <p></p>
+    <hr>
+    <h2>Social</h2>
+    <ul class="social">
+      <li style="list-style-image : url(http://marcyves.github.io/theme/images/icons/twitter.png);"><a href="http://twitter.com/marcyves">twitter</a></li>
+      <li style="list-style-image : url(http://marcyves.github.io/theme/images/icons/facebook.png);"><a href="http://www.facebook.com/marcaugier">facebook</a></li>
+      <li style="list-style-image : url(http://marcyves.github.io/theme/images/icons/github.png);"><a href="http://github.com/marcyves">github</a></li>
+      <li style="list-style-image : url(http://marcyves.github.io/theme/images/icons/rss.png);"><a href="http://marcyves.github.io/" rel="alternate"><i class="icon-bookmark icon-large"></i>Atom feed</a></li>
+    </ul>
+    <h2>Pages</h2>
+    <ul class="navbar">
+      <li><a href="http://marcyves.github.io/pages/about-me.html">About me</a></li>
+    </ul>
+    <h2>Categories</h2>
+    <ul class="navbar">
+      <li><a href="http://marcyves.github.io/category/humour.html">Humour</a></li>
+      <li><a href="http://marcyves.github.io/category/latex.html">LaTeX</a></li>
+      <li class="active"><a href="http://marcyves.github.io/category/mac-os-x.html">Mac OS X</a></li>
+      <li><a href="http://marcyves.github.io/category/recettes.html">Recettes</a></li>
+      <li><a href="http://marcyves.github.io/category/recherche.html">Recherche</a></li>
+    </ul> 
+  </aside>
 
-<div class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a href="http://marcyves.github.io/" class="navbar-brand">
-Scriptorum            </a>
-        </div>
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-            <ul class="nav navbar-nav">
-                         <li><a href="http://marcyves.github.io/pages/about-me.html">
-                             About me
-                          </a></li>
-                        <li >
-                            <a href="http://marcyves.github.io/category/humour.html">Humour</a>
-                        </li>
-                        <li >
-                            <a href="http://marcyves.github.io/category/latex.html">Latex</a>
-                        </li>
-                        <li class="active">
-                            <a href="http://marcyves.github.io/category/mac-os-x.html">Mac os x</a>
-                        </li>
-                        <li >
-                            <a href="http://marcyves.github.io/category/recettes.html">Recettes</a>
-                        </li>
-                        <li >
-                            <a href="http://marcyves.github.io/category/recherche.html">Recherche</a>
-                        </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="http://marcyves.github.io/archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
-            </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-    </div>
-</div> <!-- /.navbar -->
+  <!-- Content -->
+  <article>
+<section id="content">
+    <article>
+        <header class="post_list">
+            <h2 class="post_title"><a href="http://marcyves.github.io/recentes-dock.html" rel="bookmark" title="Permalink to Les applications récentes dans le Dock">Les applications récentes dans le Dock</a></h2>
+            <span>Par </span>
+            <a href="http://marcyves.github.io/author/marc-augier.html">@Marc Augier</a>
+            <span> dans </span>
+            <span class="post_category"><a href="http://marcyves.github.io/category/mac-os-x.html" rel="bookmark" title="Permalink to Mac OS X">[ Mac OS X ]</a></span>
+            <span> le </span>
+            <span class="post_date">Dim 20 octobre 2013</span>
+            <div><span>Tags : </span>
+                <span><a href="http://marcyves.github.io/tag/macosx.html">#macosx, </a></span>
+            </div>
 
-<div class="container">
-    <div class="row">
-        <div class="col-sm-9">
+            <div class="entry-social">
+                <span class="twitter"><a target="_blank" rel="nofollow" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=700');return false;" title="Twitter" href="https://twitter.com/share?url=http://marcyves.github.io/recentes-dock.html&text=Les applications récentes dans le Dock&via=">Twitter</a></span>
 
-    <section id="content">
-        <article>
-            <header class="page-header">
-                <h1>
-                    <a href="http://marcyves.github.io/recentes-dock.html"
-                       rel="bookmark"
-                       title="Permalink to Les applications récentes dans le Dock">
-                        Les applications récentes dans le Dock
-                    </a>
-                </h1>
-            </header>
-            <div class="entry-content">
-                <div class="panel">
-                    <div class="panel-body">
-<footer class="post-info">
-    <span class="label label-default">Date</span>
-    <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2013-10-20T10:00:00"> Dim 20 octobre 2013</time>
-    </span>
+                <span class="gplus"><a target="_blank" title="Google +" href="https://plus.google.com/share?url=http://marcyves.github.io/recentes-dock.html&hl=fr" rel="nofollow" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=650');return false;">Google+</a></span>
 
+                <span class="facebook"><a target="_blank" title="Facebook" rel="nofollow" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=700');return false;" href="https://www.facebook.com/sharer.php?u=http://marcyves.github.io/recentes-dock.html&t=Les applications récentes dans le Dock">Facebook</a></span>
 
+                <a  target="_blank" title="Linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=<http://marcyves.github.io/recentes-dock.html&title=Les applications récentes dans le Dock" rel="nofollow" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=650');return false;">Linkedin</a>
 
-<span class="label label-default">Tags</span>
-	<a href="http://marcyves.github.io/tag/macosx.html">macosx</a>
-    
-</footer><!-- /.post-info -->                    </div>
-                </div>
-                <p>Certes avec un Macbook on peut retrouver une application en 2 secondes grâce au spotlight. On peut aussi mettre ses applications favorites dans le Dock, mais il est toujours utile d’avoir un listing des dernières applications utilisées ou encore des documents récemment ouverts. Pour se faire, c’est simple :</p>
+                <span class="mail"><a href="mailto:?subject=Les applications récentes dans le Dock&amp;body=Viens découvrir un article à propos de [Les applications récentes dans le Dock] sur le site de Marc Augier. http://marcyves.github.io/recentes-dock.html" title="Share by Email" target="_blank">Mail</a></span>
+            </div>
+        </header>
+        <div class="entry-content">
+            <p>Certes avec un Macbook on peut retrouver une application en 2 secondes grâce au spotlight. On peut aussi mettre ses applications favorites dans le Dock, mais il est toujours utile d’avoir un listing des dernières applications utilisées ou encore des documents récemment ouverts. Pour se faire, c’est simple :</p>
 <p>defaults write com.apple.dock persistent-others -array-add '{ "tile-data" = { "list-type" = 1; }; "tile-type" = "recents-tile"; }'</p>
 <p>Relancez le Dock en tapant : killall Dock</p>
 <p>Si vous souhaitez ajouter un effet au hover des icones, tapez ceci : defaults write com.apple.dock mouse-over-hilte-stack -boolean YES</p>
-            </div>
-            <!-- /.entry-content -->
-        </article>
-    </section>
-
         </div>
-        <div class="col-sm-3 well well-sm" id="sidebar">
+    </article>
+</section>
+  </article>
 
-<aside>
-    <section>
-        <ul class="list-group list-group-flush">
-                <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
-                  <ul class="list-group" id="social">
-                    <li class="list-group-item"><a href="http://twitter.com/marcyves"><i class="fa fa-twitter-square fa-lg"></i> twitter</a></li>
-                    <li class="list-group-item"><a href="http://www.facebook.com/marcaugier"><i class="fa fa-facebook-square fa-lg"></i> facebook</a></li>
-                    <li class="list-group-item"><a href="http://github.com/marcyves"><i class="fa fa-github-square fa-lg"></i> github</a></li>
-                  </ul>
-                </li>
+  <!-- Footer -->
+  <footer>
+    <address id="about" class="vcard body">
+      Blog powered by <a href="http://getpelican.com/">Pelican</a>, 
+      which takes great advantage of <a href="http://python.org">Python</a>.
+      Theme <a href="https://github.com/quack1/notebook/">Notebook</a> by <a href="https://twitter.com/_Quack1">@Quack1</a>.
+    </address>
+  </footer>
 
-
-
-                <li class="list-group-item"><a href="http://marcyves.github.io/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
-                    <ul class="list-group " id="tags">
-                        <li class="list-group-item tag-1">
-                            <a href="http://marcyves.github.io/tag/macosx.html">
-                                macosx
-                            </a>
-                        </li>
-                        <li class="list-group-item tag-1">
-                            <a href="http://marcyves.github.io/tag/chine.html">
-                                Chine
-                            </a>
-                        </li>
-                        <li class="list-group-item tag-1">
-                            <a href="http://marcyves.github.io/tag/recettes.html">
-                                Recettes
-                            </a>
-                        </li>
-                        <li class="list-group-item tag-4">
-                            <a href="http://marcyves.github.io/tag/configuration.html">
-                                configuration
-                            </a>
-                        </li>
-                        <li class="list-group-item tag-4">
-                            <a href="http://marcyves.github.io/tag/numerique.html">
-                                numérique
-                            </a>
-                        </li>
-                        <li class="list-group-item tag-4">
-                            <a href="http://marcyves.github.io/tag/recherche.html">
-                                recherche
-                            </a>
-                        </li>
-                        <li class="list-group-item tag-4">
-                            <a href="http://marcyves.github.io/tag/.html">
-                                
-                            </a>
-                        </li>
-                        <li class="list-group-item tag-4">
-                            <a href="http://marcyves.github.io/tag/cloud.html">
-                                Cloud
-                            </a>
-                        </li>
-                        <li class="list-group-item tag-4">
-                            <a href="http://marcyves.github.io/tag/latex.html">
-                                LaTeX
-                            </a>
-                        </li>
-                    </ul>
-                </li>    
-    <li class="list-group-item"><h4><i class="fa fa-external-link-square fa-lg"></i><span class="icon-label">Links</span></h4>
-      <ul class="list-group" id="links">
-        <li class="list-group-item">
-            <a href="http://getpelican.com/" target="_blank">
-                Pelican
-            </a>
-        </li>
-        <li class="list-group-item">
-            <a href="http://colisciences.in2p3.fr/" target="_blank">
-                CoLisciences
-            </a>
-        </li>
-        <li class="list-group-item">
-            <a href="http://claudebernard.in2p3.fr/" target="_blank">
-                Claude Bernard
-            </a>
-        </li>
-        <li class="list-group-item">
-            <a href="http://about.me/marc.augier" target="_blank">
-                À propos
-            </a>
-        </li>
-      </ul>
-    </li>
-
-        </ul>
-    </section>
-
-</aside>        </div>
-    </div>
-</div>
-<footer>
-   <div class="container">
-      <hr>
-      <div class="row">
-         <div class="col-xs-10">&copy; 2013 Marc Augier
-            &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
-            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
-            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
-         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
-      </div>
-   </div>
-</footer>
-<script src="http://marcyves.github.io/theme/js/jquery.min.js"></script>
-
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="http://marcyves.github.io/theme/js/bootstrap.min.js"></script>
-
-<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
-<script src="http://marcyves.github.io/theme/js/respond.min.js"></script>
 
 </body>
 </html>
