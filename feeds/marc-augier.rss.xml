@@ -1,5 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Scriptorum</title><link>http://marcyves.github.io/</link><description></description><atom:link href="http://marcyves.github.io/feeds/marc-augier.rss.xml" rel="self"></atom:link><lastBuildDate>Sat, 09 Nov 2013 00:00:00 +0100</lastBuildDate><item><title>Arachides en sauce aigre-douce</title><link>http://marcyves.github.io/arachides-aigre-douce.html</link><description>&lt;h1&gt;Ingrédients:&lt;/h1&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Scriptorum</title><link>http://marcyves.github.io/</link><description></description><atom:link href="http://marcyves.github.io/feeds/marc-augier.rss.xml" rel="self"></atom:link><lastBuildDate>Fri, 12 Sep 2014 13:50:00 +0200</lastBuildDate><item><title>Récuperer une installation interrompue</title><link>http://marcyves.github.io/repair-ubuntu-install.html</link><description>&lt;p&gt;Après avoir interrompu une mise à jour de Ubuntu, ou à cause d'une panne de courant pendant la mise à jour, on peut se retouver avec une système qui refuse de démarrer.&lt;/p&gt;
+&lt;p&gt;Généralement cela se traduit par un message du stye:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;Root&lt;/span&gt; &lt;span class="n"&gt;filesystem&lt;/span&gt; &lt;span class="n"&gt;check&lt;/span&gt; &lt;span class="n"&gt;failed&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;
+&lt;span class="n"&gt;A&lt;/span&gt; &lt;span class="n"&gt;maintenance&lt;/span&gt; &lt;span class="n"&gt;shell&lt;/span&gt; &lt;span class="n"&gt;will&lt;/span&gt; &lt;span class="n"&gt;now&lt;/span&gt; &lt;span class="n"&gt;be&lt;/span&gt; &lt;span class="n"&gt;started&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;
+&lt;span class="n"&gt;CONTROL&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;D&lt;/span&gt; &lt;span class="n"&gt;will&lt;/span&gt; &lt;span class="n"&gt;terminate&lt;/span&gt; &lt;span class="n"&gt;this&lt;/span&gt; &lt;span class="n"&gt;shell&lt;/span&gt; &lt;span class="n"&gt;and&lt;/span&gt; &lt;span class="n"&gt;reboot&lt;/span&gt; &lt;span class="n"&gt;the&lt;/span&gt; &lt;span class="n"&gt;system&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;D'après le &lt;a href="http://askubuntu.com/questions/38617/root-filesystem-check-fails-after-power-failure-during-installation"&gt;forum Ubuntu&lt;/a&gt; on peut se sauver de la situation en utilisant ces commandes: &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;mount&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;o&lt;/span&gt; &lt;span class="n"&gt;remount&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;rw&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;
+&lt;span class="n"&gt;sudo&lt;/span&gt;  &lt;span class="n"&gt;dpkg&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="n"&gt;configure&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;
+&lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;mount&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;o&lt;/span&gt; &lt;span class="n"&gt;remount&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="n"&gt;ro&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;
+&lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;sync&lt;/span&gt;
+&lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;reboot&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;mais il faudra ensuite terminer la mise à jour avec :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;dpkg&lt;/span&gt; &lt;span class="n"&gt;configure&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Cela pourrait ne pas suffire pour pouvoir redémarrer l'interface graphique, il faudra alors sans doute compléter avec :&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;apt&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;f&lt;/span&gt;
+&lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;apt&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt; &lt;span class="n"&gt;upgrade&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Jusqu'à ce que l'interface graphique fonctionne pour pouvoir reprendre la mise à jour avec l'outil Ubuntu.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Marc Augier</dc:creator><pubDate>Fri, 12 Sep 2014 13:50:00 +0200</pubDate><guid>tag:marcyves.github.io,2014-09-12:repair-ubuntu-install.html</guid><category>linux</category></item><item><title>Arachides en sauce aigre-douce</title><link>http://marcyves.github.io/arachides-aigre-douce.html</link><description>&lt;h1&gt;Ingrédients:&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;arachides 500g &lt;/li&gt;
 &lt;li&gt;poivre vert 10g&lt;/li&gt;
