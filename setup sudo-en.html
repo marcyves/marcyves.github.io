@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-	<title>Scriptorum - Recherche</title>
+	<title>Steps for Setting up and Running sudo | Scriptorum</title>
 	<meta charset="utf-8" />
     <meta name="author" content="Marc Augier">
 	<link rel="stylesheet" href="http://marcyves.github.io/theme/css/franticworld.css" type="text/css" />
@@ -14,22 +14,31 @@
 		
 		<div class="content">
 
-<div class="summarycontainer">
-	<div class="metabox">
-		<p class="metaday">296</p>
-		<p class="metayear">2013</p>
-		<p class="metacategory">Recherche</p>
+<div class="metabox">
+	<p class="metaday">255</p>
+	<p class="metayear">2014</p>
+	<p class="metacategory">Techno</p>
+</div>
+<div class="arcticlecontentbox">
+	<div class="articlecontent">
+		<a class="articletitle" href="/setup sudo-en.html " >Steps for Setting up and Running sudo</a>
+		<p>If your system does not already have sudo set up and enabled, you need to do the following steps:</p>
+<ol>
+<li>
+<p>You will need to make modifications as the administrative or super user, root. While sudo will become the preferred method of doing this, we don’t have it set up yet, so we will use su (which we will discuss later in detail) instead. At the command line prompt, type su and press Enter. You will then be prompted for the root password, so enter it and press Enter. You will notice that nothing is printed; this is so others cannot see the password on the screen. You should end up with a different looking prompt, often ending with ‘#’. For example: <code>$ su Password: #</code></p>
+</li>
+<li>
+<p>Now you need to create a configuration file to enable your user account to use sudo. Typically, this file is created in the <code>/etc/sudoers.d/</code> directory with the name of the file the same as your username. For example, for this demo, let’s say your username is “student”. After doing step 1, you would then create the configuration file for “student” by doing this: <code># echo "student ALL=(ALL) ALL" &gt; /etc/sudoers.d/student</code></p>
+</li>
+<li>
+<p>Finally, some Linux distributions will complain if you don’t also change permissions on the file by doing: <code># chmod 440 /etc/sudoers.d/student</code></p>
+</li>
+</ol>
 	</div>
-	<div class="summarybox">
-		<a class="summarytitle" href="/theme-recherche.html " >Résumé de mes thèmes de recherche</a>
-		<p>Mes thèmes de recherche, du statut de l'objet technique et de la connaissance à la relation entre progrès technologique et évolution de la société</p>
-		<a class="btnmore" href="/theme-recherche.html">more ...</a>
-	</div>
+	
+	       
 </div>
 
-<p class="paginator">
-    Page 1 / 1
-</p>
 		</div>
 		
 		<div class="sidebar">

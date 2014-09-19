@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-	<title>Arachides en sauce aigre-douce | Scriptorum</title>
+	<title>Steps to Increase your VirtualBox Hard Disk Size | Scriptorum</title>
 	<meta charset="utf-8" />
     <meta name="author" content="Marc Augier">
 	<link rel="stylesheet" href="http://marcyves.github.io/theme/css/franticworld.css" type="text/css" />
@@ -15,43 +15,31 @@
 		<div class="content">
 
 <div class="metabox">
-	<p class="metaday">313</p>
-	<p class="metayear">2013</p>
-	<p class="metacategory">Recettes</p>
+	<p class="metaday">258</p>
+	<p class="metayear">2014</p>
+	<p class="metacategory">Techno</p>
 </div>
 <div class="arcticlecontentbox">
 	<div class="articlecontent">
-		<a class="articletitle" href="/arachides-aigre-douce.html " >Arachides en sauce aigre-douce</a>
-		<h1>Ingrédients:</h1>
-<ul>
-<li>arachides 500g </li>
-<li>poivre vert 10g</li>
-<li>
-<p>poivrons 10g</p>
-</li>
-<li>
-<p>huile d'arachide 5g</p>
-</li>
-<li>alcool 2g</li>
-<li>vieux vinaigre 5g</li>
-<li>la sauce de soja 2g</li>
-<li>3g de sucre</li>
-<li>de sel 2g</li>
-<li>poulet 1g</li>
-</ul>
-<h1>Réalisation</h1>
-<ol>
-<li>Préparer tous les ingrédients</li>
-<li>Les poivrons et piments verts lavé, coupé légèrement plus petit que le grain d'arachide.</li>
-<li>alcools et accessoires, en plus de l'huile d'arachide, d'autres épices, en remuant avec des baguettes en baisse ensemble pour faire de l'intégration complète d'une variété d'épices.</li>
-<li>Casserole, versez un peu d'huile mélangée d'arachide (carter d'huile froids au froid).</li>
-<li>Les arachides versé dans le pot, ouvrir un petit feu maintenu sous agitation avec des baguettes.</li>
-<li>Scoop d'huile d'arachide légèrement décoloré, sentir l'odeur d'arachides et d'entendre des craquements à éteindre rapidement le feu.</li>
-<li>hors du feu, versez arachides chaudes dans le petit vin blanc et mélangez bien.</li>
-<li>après les poivrons Ding Liang Liang arachides sur le dessus.</li>
-<li>la sauce versé arachides, l'agitation peuvent être consommés.</li>
-</ol>
-<p>Source: <a href="http://www.xinshipu.com/彩椒糖醋花生-225375.htm">http://www.xinshipu.com/彩椒糖醋花生-225375.htm</a></p>
+		<a class="articletitle" href="/Increase VirtualBox Hard Disk Size-en.html " >Steps to Increase your VirtualBox Hard Disk Size</a>
+		<p>cd into the directory where your virtual drive is found (usually ~/VirtualBox VMs/{Your VirtualBox PC name})</p>
+<div class="highlight"><pre><span class="n">cd</span> <span class="o">~/</span><span class="n">VirtualBox</span> <span class="n">VMs</span><span class="o">/</span><span class="n">Win7</span>
+</pre></div>
+
+
+<p>run the modify hd function with the new size (in MB) I choose 50GB (50 * 1024mb = 51200MB)</p>
+<div class="highlight"><pre><span class="n">VBoxManage</span> <span class="n">modifyhd</span> <span class="n">Win7</span><span class="p">.</span><span class="n">vdi</span> <span class="o">--</span><span class="n">resize</span> <span class="mi">51200</span>
+</pre></div>
+
+
+<p>VirtualBox will resize your hard drive and you will see the following output from the system indicating that the process is complete</p>
+<div class="highlight"><pre><span class="mi">0</span><span class="o">%</span><span class="p">..</span><span class="mf">.10</span><span class="o">%</span><span class="p">..</span><span class="mf">.20</span><span class="o">%</span><span class="p">..</span><span class="mf">.30</span><span class="o">%</span><span class="p">..</span><span class="mf">.40</span><span class="o">%</span><span class="p">..</span><span class="mf">.50</span><span class="o">%</span><span class="p">..</span><span class="mf">.60</span><span class="o">%</span><span class="p">..</span><span class="mf">.70</span><span class="o">%</span><span class="p">..</span><span class="mf">.80</span><span class="o">%</span><span class="p">..</span><span class="mf">.90</span><span class="o">%</span><span class="p">..</span><span class="mf">.100</span><span class="o">%</span>
+</pre></div>
+
+
+<p>Now start up your Virtual Windows Machine. </p>
+<p>Start your partition manager and extend the partition.</p>
+<p>Once complete you have successfully Increased your VirtualBox Disk Size, and can now continue installing applications and software on your VirtualBox OS.</p>
 	</div>
 	
 	       
