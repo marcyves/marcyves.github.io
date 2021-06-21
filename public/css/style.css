@@ -502,6 +502,13 @@ a:hover {
   letter-spacing: -0.035em;
   line-height: 1em;
 }
+#header h2 {
+  font-size: 3.5em;
+  font-weight: 200;
+  letter-spacing: -0.035em;
+  line-height: 1em;
+  margin-bottom: 1em;
+}
 #header p {
   font-size: 1.25em;
   margin: 0.75em 0 0.25em 0;
@@ -630,6 +637,22 @@ a:hover {
 }
 #header nav a span {
   display: none;
+}
+#header .catalogue {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#header .catalogue > div {
+  width: 300px;
+  margin: 10px;
+  text-align: center;
+  font-size: 25px;
+}
+#header .catalogue > div > img {
+  width: 300px;
+  height: auto;
+  border-radius: 6px;
 }
 
 /* Footer */
