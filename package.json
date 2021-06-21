@@ -1,0 +1,19 @@
+{
+  "name": "marcyves.github.io",
+  "version": "1.0.0",
+  "description": "Landing Page Marc Augier",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./assets/sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcyves/marcyves.github.io.git"
+  },
+  "author": "Marc Augier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcyves/marcyves.github.io/issues"
+  },
+  "homepage": "https://github.com/marcyves/marcyves.github.io#readme"
+}
