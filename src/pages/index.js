@@ -4,12 +4,9 @@ import Layout from '../components/layout'
 
 const IndexPage = () => {
   return (
-    <main>
-      <title>Home Page</title>
-      <h1>Welcome to my Gatsby site!</h1>
-      <Link to="/APropos">À propos</Link>
+    <Layout pageTitle="Camp de base">
       <p>I'm making this by following the Gatsby Tutorial.</p>
-    </main>
+    </Layout>
   )
 }
 
