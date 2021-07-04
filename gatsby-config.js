@@ -3,6 +3,7 @@ module.exports = {
     title: "Altitude",
   },
   plugins: [
+    "gatsby-plugin-fontawesome-css",
     "gatsby-plugin-sass",
     "gatsby-plugin-gatsby-cloud",
     "gatsby-plugin-image",
