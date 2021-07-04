@@ -8,6 +8,14 @@ module.exports = {
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `blog`,
+        path: `./blog/`,
+      },
+      __key: "blog",
+    },
+    {
       resolve: "gatsby-plugin-manifest",
       options: {
         icon: "src/images/icon.png",
