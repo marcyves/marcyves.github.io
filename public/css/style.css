@@ -144,6 +144,14 @@ a:hover {
 .icon.brands:before {
   font-family: "Font Awesome 5 Brands";
 }
+.icon.fill {
+  border-radius: 40px;
+  -webkit-transition: box-shadow 600ms ease-in-out, color 600ms ease-in-out;
+  transition: box-shadow 600ms ease-in-out, color 600ms ease-in-out;
+}
+.icon.fill:hover {
+  box-shadow: 0 0 40px 40px #2a6bed inset;
+}
 
 /* Wrapper */
 @-moz-keyframes wrapper {
