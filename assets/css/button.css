@@ -30,6 +30,15 @@
         transition: none
     }
 }
+.btn:link,
+.btn:visited {
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+}
+
 
 .btn:hover {
     color: #212529;
