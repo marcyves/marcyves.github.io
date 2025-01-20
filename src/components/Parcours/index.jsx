@@ -12,7 +12,7 @@ function Parcours({courses_list}) {
     <h2>Les parcours de formation</h2>
     <section className='cards'>
       {courses_list.map((parcours) =>(
-          <Link key={parcours.id} to={`/altitude/parcours/${parcours.id}`} >
+          <Link key={parcours.id} to={`/parcours/${parcours.id}`} >
           <Card className="card" key={parcours.id} title={parcours.title} description={parcours.description} image={parcours.image} />
           </Link>
       )
