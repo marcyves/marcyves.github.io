@@ -17,9 +17,9 @@ import Footer from './components/Footer'
 import './index.css'
 
 const navLink = [
-  { name: 'Accueil', href: '/altitude/' },
-  { name: 'Formations', href: '/altitude/formations/' },
-  { name: 'A Propos', href: '/altitude/a-propos' },
+  { name: 'Accueil', href: '/' },
+  { name: 'Formations', href: '/formations/' },
+  { name: 'A Propos', href: '/a-propos' },
 ]
 
 createRoot(document.getElementById('root')).render(
@@ -28,14 +28,14 @@ createRoot(document.getElementById('root')).render(
       <Header navLink={navLink}/>
       <main>
         <Routes>
-          <Route exact path="/altitude/" element={<Home />} />
-          <Route path="/altitude/formations/" element={<Courses />} />
-          <Route path="/altitude/cours/:id" element={<Course />} />
-          <Route path="/altitude/parcours/:id" element={<Parcours />} />
-          <Route path="/altitude/perdu" element={<Error type="default"/>} />
+          <Route exact path="/" element={<Home />} />
+          <Route path="/formations/" element={<Courses />} />
+          <Route path="/cours/:id" element={<Course />} />
+          <Route path="/parcours/:id" element={<Parcours />} />
+          <Route path="/perdu" element={<Error type="default"/>} />
           <Route
             path="*"
-            element={<Navigate to="/altitude/perdu" replace />}
+            element={<Navigate to="/perdu" replace />}
           />
         </Routes>
       </main>
