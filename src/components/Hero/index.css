@@ -1,0 +1,11 @@
+#hero {
+    background-image: url(/assets/images/montblanc.webp);
+    background-repeat: repeat-x;
+    background-size: cover;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    margin-bottom: 6px;
+}

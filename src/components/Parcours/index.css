@@ -1,0 +1,20 @@
+.parcours{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-radius: 12px;
+    background-color: rgb(176, 215, 228);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+.parcours h2{
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
