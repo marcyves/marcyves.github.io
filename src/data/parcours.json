@@ -1,0 +1,7 @@
+[
+    {"id": "1", "title": "Développeur Web", "description": "Les technologies du Web", "image": "assets/images/web.webp"},
+    {"id": "2", "title": "Python", "description": "Le langage de la data science", "image": "assets/images/python.webp"},
+    {"id": "3", "title": "Outils du manager", "description": "Les outils de la performance managériale", "image": "assets/images/office.webp"},
+    {"id": "4", "title": "UDEMY", "description": "Les course de la plateforme UDEMY", "image": "assets/images/udemy.webp"},
+    {"id": "5", "title": "TUTO", "description": "Les cours de la plateforme TUTO", "image": "assets/images/tuto.webp"}
+]
