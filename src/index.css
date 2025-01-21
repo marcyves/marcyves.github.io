@@ -6,8 +6,9 @@
 
   --mauve: rgba(65, 65, 134, 0.729);
   --text-color: #767781;
-  --background-color: #DFD9DA;
-  --card-color: #CЗBDCO;
+  --background-color: #edf7fa;
+  --alt-background-color: #b0d7e499;
+  --card-color: rgb(244, 241, 241);
   --card-border-color: #898B97;  
 
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;

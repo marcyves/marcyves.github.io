@@ -5,7 +5,7 @@
     padding-right: 24px;
     padding-bottom: 12px;
     border-radius: 0 0 6px 6px;
-    background-color: rgba(176, 215, 228, 0.6);
+    background-color: var(--alt-background-color);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease-in-out;
 }
@@ -22,7 +22,7 @@
 
 .card-link{
     display: flex;
-    background-color: rgb(226, 226, 226);
+    background-color: var(--card-color);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease-in-out;
     border-radius: 12px;

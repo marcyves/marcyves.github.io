@@ -6,7 +6,7 @@ function About() {
     <div>
 
     <Hero text="À propos" />
-    <section className='parcours'>
+    <section className='home-text'>
       <article>
       <p>Vous êtes sur le site de Marc Augier</p>
       <p>
