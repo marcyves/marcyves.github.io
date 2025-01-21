@@ -5,9 +5,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Navigate } from 'react-router-dom'
 
 import Home from './pages/Home'
-import Course from './pages/Course'
-import Courses from './pages/Courses'
-import Parcours from './pages/Parcours'
+import Cours from './pages/Cours'
+import Formations from './pages/Formations'
+import Formation from './pages/Formation'
 import Error from './pages/Error404'
 
 import Header from './components/Header'
@@ -29,9 +29,9 @@ createRoot(document.getElementById('root')).render(
       <main>
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route path="/formations/" element={<Courses />} />
-          <Route path="/cours/:id" element={<Course />} />
-          <Route path="/parcours/:id" element={<Parcours />} />
+          <Route path="/formations/" element={<Formations />} />
+          <Route path="/formation/:id" element={<Formation />} />
+          <Route path="/cours/:id" element={<Cours />} />
           <Route path="/perdu" element={<Error type="default"/>} />
           <Route
             path="*"

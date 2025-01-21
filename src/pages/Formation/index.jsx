@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
 
 import Card from '../../components/Card';
-import NotFound  from '../NotFound/';
+import NotFound  from '../NotFound';
 
 import './index.css'
 import data from '../../data/cours.json';
@@ -16,7 +16,7 @@ function Parcours() {
   }
 
     return (
-      <section>
+      <section className='parcours'>
           <h2>Les cours du parcours</h2>
           {filtered.map((cours) => (
             <Card key={cours.id} title={cours.title} image={cours.vignette} description={cours.decription} />

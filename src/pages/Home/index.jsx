@@ -12,7 +12,7 @@ function Home() {
   return (
     <div>
       <Hero />
-      <Parcours courses_list={courses_list}/>
+      <Parcours courses_list={courses_list} />
       <Socials />
     </div>
   )

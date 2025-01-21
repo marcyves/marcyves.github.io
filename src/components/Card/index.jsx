@@ -5,9 +5,9 @@ function Card({title, description, image}) {
 
     return (
         <div className="card">
-            <h2>{title}</h2>
-            <img src={`/altitude/assets/images/${image}`} alt={title} />
-            <p>{description}</p>
+            <img src={`/assets/images/${image}`} alt={title} />
+            <h2 className='caption'>{title}</h2>
+            <p className='description'>{description}</p>
         </div>
     )
 }

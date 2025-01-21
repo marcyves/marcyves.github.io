@@ -4,7 +4,7 @@ import './index.css'
 
 function NotFound({type}) {
   return (
-    <div>
+    <div className='parcours'>
        <Error type={type}/>
     </div>
   )
