@@ -1,0 +1,66 @@
+.home-trois{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 6px;
+    padding: 6px;
+    border-radius: 6px;
+    background-color: var(--alt-background-color);
+    transition: all 0.3s ease-in-out;
+    gap: 6px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.home-trois article{
+    width: 80%;
+    background-color: var(--card-color);
+    margin: 12px auto 6px auto;
+    border-radius: 6px;    
+}
+.home-trois h2{ 
+    margin: 6px 0 12px 0;
+    font-size: 1.2rem;
+}
+
+.home-trois p {
+    font-size: 1.0rem;
+    line-height: 1.3;
+    text-align: justify;
+    width: 80%;
+    margin: 6px auto;
+}
+
+.home-trois ul {
+    list-style: circle;
+    padding-left: 18px;
+    text-align: left;
+}
+
+.home-trois li {
+    margin-bottom: 1rem;
+}
+
+.home-trois h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+.logo{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background-color: white;
+    margin: 6px;
+}
+@media  screen and (max-width: 768px) {
+    .home-trois{
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .home-trois article{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+}   
