@@ -16,6 +16,7 @@ import Footer from './components/Footer'
 
 
 import './index.css'
+import Socials from './components/Socials'
 
 const navLink = [
   { name: 'Accueil', href: '/' },
@@ -41,6 +42,7 @@ createRoot(document.getElementById('root')).render(
           />
         </Routes>
       </main>
+      <Socials />
       <Footer />
     </BrowserRouter>
   </StrictMode>,

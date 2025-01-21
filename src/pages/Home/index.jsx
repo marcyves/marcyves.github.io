@@ -1,15 +1,15 @@
 import Hero from "../../components/Hero";
 import HomeText from "../../components/HomeText";
-import Socials from "../../components/Socials";
+import HomeTroisCol from "../../components/HomeTroisCol";
 
 import "./index.css";
 
 function Home() {
   return (
     <div>
-      <Hero text="Bienvenue sur Altitude" />
+      <Hero text="Bienvenue en Altitude" />
       <HomeText />
-      <Socials />
+      <HomeTroisCol />
     </div>
   );
 }
