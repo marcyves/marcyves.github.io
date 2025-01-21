@@ -3,11 +3,11 @@ import './index.css'
 
 function Card({title, description, image}) {
 
-    return (
+return (
         <div className="card">
             <img src={`/assets/images/${image}`} alt={title} />
             <h2 className='caption'>{title}</h2>
-            <p className='description'>{description}</p>
+            <p className='description' dangerouslySetInnerHTML={{__html: description}}></p>
         </div>
     )
 }

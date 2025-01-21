@@ -1,20 +1,53 @@
-.parcours{
+.parcours {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    justify-content: space-between;
     padding-left: 24px;
     padding-right: 24px;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    border-radius: 12px;
-    background-color: rgb(176, 215, 228);
+    padding-bottom: 12px;
+    border-radius: 0 0 6px 6px;
+    background-color: rgba(176, 215, 228, 0.6);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease-in-out;
 }
-.parcours h2{
-    font-size: 24px;
-    margin-bottom: 24px;
+
+.parcours-gallery{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 12px;
 }
 
+.card-link{
+    display: flex;
+    background-color: rgb(226, 226, 226);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    border-radius: 12px;
+    width: min-content;
+    margin: 12px;
+}
+
+.card-link:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+}
+
+@media  screen and (max-width: 768px) {
+    .parcours{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+    }
+
+    
+    .parcours-gallery{
+        width: 100%;
+        margin: auto;
+        padding: 0;
+        justify-content: center;
+    }
+}

@@ -3,7 +3,7 @@ import courses_list from '../../data/parcours.json'
 
 import './index.css'
 
-function Courses() {
+function Formations() {
   return (
     <section>
         <Parcours courses_list={courses_list} />
@@ -11,4 +11,4 @@ function Courses() {
   )
 }
 
-export default Courses
+export default Formations

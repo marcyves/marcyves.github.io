@@ -1,21 +1,20 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  background-color: #aceefa;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --mauve: rgb(100, 100, 190);
+  --mauve: rgba(65, 65, 134, 0.729);
   --text-color: #767781;
   --background-color: #DFD9DA;
   --card-color: #CЗBDCO;
   --card-border-color: #898B97;  
+
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  background-color: var(--background-color);
 }
 
 * {
@@ -34,7 +33,7 @@
 
 body {
   margin: 0;
-  color: --var(--text-color);
+  color: var(--text-color);
   background-color: var(--background-color);
   display: flex;
   place-items: start;
@@ -45,6 +44,16 @@ body {
 a{
   text-decoration: none;
 }
-a:visited{
-  color: rgb(100, 100, 190);
+
+a, a:visited{
+  color: var(--text-color);
+}
+@media screen and (max-width: 768px) {
+ #root {
+  min-width:fit-content;
+  max-width: 300px;
+  }
+  body {
+    font-size: 1.2rem;
+  }
 }

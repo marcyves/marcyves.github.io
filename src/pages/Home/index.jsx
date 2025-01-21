@@ -1,21 +1,17 @@
-//Import Components
-import Hero from '../../components/Hero'
-import Socials from '../../components/Socials'
+import Hero from "../../components/Hero";
+import HomeText from "../../components/HomeText";
+import Socials from "../../components/Socials";
 
-import './index.css'
-
-import courses_list from '../../data/parcours.json'
-import Parcours from '../../components/Parcours'
+import "./index.css";
 
 function Home() {
-  
   return (
     <div>
-      <Hero />
-      <Parcours courses_list={courses_list} />
+      <Hero text="Bienvenue sur Altitude" />
+      <HomeText />
       <Socials />
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;

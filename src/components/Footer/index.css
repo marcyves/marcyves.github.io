@@ -1,0 +1,6 @@
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 2rem;
+    font-size: smaller;
+}

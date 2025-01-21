@@ -1,7 +1,7 @@
 
 import './index.css'
 
-function Course() {
+function Cours() {
   return (
     <section>
         <h2>Cours</h2>
@@ -9,4 +9,4 @@ function Course() {
   )
 }
 
-export default Course
+export default Cours
