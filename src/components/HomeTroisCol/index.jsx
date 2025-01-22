@@ -9,11 +9,11 @@ function HomeTroisCol() {
         <img className="logo" src="/assets/images/cordée.png" alt="cordée"/>
         <p>
         Une cordée symbolise la collaboration, l’entraide et la progression collective. Dans le cadre de la transformation numérique, je suis à vos côtés pour :
+        </p>
         <ul>
           <li><strong>Développer votre stratégie numérique :</strong> analyser vos besoins, définir vos objectifs et choisir les bons outils.</li>
           <li><strong>Renforcer vos compétences :</strong> des formations adaptées pour vous et votre équipe dans des domaines clés comme les systèmes d’information, le knowledge management ou le marketing digital.</li>
         </ul>
-        </p>
       </article>
 
       <article>
@@ -22,13 +22,13 @@ function HomeTroisCol() {
         <img className="logo" src="/assets/images/refuge.png" alt="refuge"/>
         <p>
            Comme un refuge, je vous offre un cadre fiable pour apprendre, expérimenter et bâtir des solutions solides.
+           </p>
            <ul>
             <li><strong>Maîtrisez les fondamentaux techniques :</strong> HTML5, CSS3, PHP, JavaScript, Python, etc.
             </li>
             <li><strong>Plongez dans les outils adaptés :</strong> bases de données (SQL, MySQL), frameworks (Laravel), et CMS (WordPress, Moodle).</li>   
             <li><strong>Explorez les logiciels libres :</strong> des solutions performantes et accessibles, pour vous équiper en toute liberté.</li>
            </ul>
-        </p>
       </article>
       <article>
         <h2>Le Sommet</h2>
@@ -38,13 +38,13 @@ function HomeTroisCol() {
         <img className="logo" src="/assets/images/sommet.png" alt="sommet"/>
         <p>
         Le sommet représente vos ambitions numériques. Grâce à un accompagnement personnalisé et une expertise approfondie, je vous aide à :
+        </p>
         <ul>
           <li>
           <strong>Optimiser vos processus :</strong> intégrer des solutions numériques qui transforment vos façons de travailler.</li>
           <li><strong>Innover :</strong>  adopter des approches digitales qui placent votre entreprise au cœur de la modernité.</li>
           <li><strong>Soutenir la performance :</strong>  garantir une mise en œuvre efficace et durable de vos projets.</li>
         </ul>
-        </p>
       </article>
     </section>
   );
