@@ -1,6 +1,17 @@
-footer {
-    background-color: var(--primary-color);
-    color: var(--white);
+
+footer section{
+    font-weight: 800;
     padding: 2rem;
-    font-size: smaller;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+footer {
+    background-color: var(--start-background-color);
+    color: white;
+    padding-bottom: 1rem;
+}
+footer hr {
+    border-top: 1px solid white;
+    margin: 2rem;
 }

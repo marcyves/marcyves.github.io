@@ -6,7 +6,7 @@ import NotFound  from '../NotFound';
 import './index.css'
 import data from '../../data/cours.json';
 import parcours_data from '../../data/parcours.json';
-import Hero from '../../components/Hero';
+import MiniHero from '../../components/MiniHero';
 
 function Formation() {
 
@@ -18,9 +18,12 @@ function Formation() {
     return <NotFound type="no_course"/>;
   }
 
+  const root_id = document.getElementById('root');
+  root_id.classList.add('gradient');
+
     return (
       <div>
-      <Hero text={`Les cours du parcours ${parcours.title}`} />
+      <MiniHero text={`Les cours du parcours ${parcours.title}`} />
       <section className='parcours'>
           {filtered.map((cours) => (
             <Card key={cours.id} title={cours.title} image={cours.vignette} description={cours.description} />

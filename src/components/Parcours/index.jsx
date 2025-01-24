@@ -2,14 +2,12 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 import Card from "../../components/Card";
-import Hero from "../../components/Hero";
 
 import "./index.css";
 
 function Parcours({ courses_list }) {
   return (
     <div>
-      <Hero text="Les parcours de formation" />
       <section className="parcours">
           <section className="parcours-gallery">
             {courses_list.map((parcours) => (

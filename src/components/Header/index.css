@@ -28,12 +28,22 @@
 }
 .header nav ul li a {
   font-size: larger;
+  font-weight: 800;
+  color: white;
 }
-.header nav ul li a:hover {
+.header nav ul li a:hover, a.header-logo:hover {
   font-weight: 600;
-  transform: translateX(-10px);
+  transform: translateY(-5px);
 }
 
+a.header-logo, a.header-logo:visited{
+  font-size: xx-large;
+  color: white;
+  font-family: Knewave;
+}
+.active-link{
+  font-weight: 100;
+}
 @media screen and (max-width: 768px) {
   .header{
     flex-direction: column;

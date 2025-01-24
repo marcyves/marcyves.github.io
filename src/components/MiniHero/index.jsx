@@ -8,17 +8,19 @@ const navLink = [
   { name: 'Contact', href: '/contact' },
 ]
 
-function Hero({text}) {
+function MiniHero({text}) {
   return (
-    <section id="hero">
+    <div>
+    <section id="mini-hero">
     <Header navLink={navLink}/>
-    <h2>{text}</h2>
-    </section>
+    </section>      
+    <h2 className='mini-hero'>{text}</h2>
+    </div>
   )
 }
 
-Hero.propTypes = {
+MiniHero.propTypes = {
   text: PropTypes.string.isRequired,
 }
 
-export default Hero
+export default MiniHero

@@ -7,10 +7,13 @@ import './index.css'
 function Header({navLink}) {
   return (
     <header className='header'>
-        <h1>Altitude</h1>
+        <h1>
+          <NavLink className='header-logo' to="/" >
+          Altitude
+          </NavLink>
+          </h1>
         <nav>
             <ul>
-
             {navLink.map((item) => (
                 <li key={item.name}>
           <NavLink

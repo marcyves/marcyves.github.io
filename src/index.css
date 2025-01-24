@@ -1,3 +1,19 @@
+@font-face {
+  font-family: "Inter";
+  src: url('/fonts/Inter-VariableFont_opsz,wght');
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Knewave";
+  src: url('/fonts/Knewave-Regular.ttf');
+  font-weight: bold;
+}
+.inter-100 {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
 :root {
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -5,13 +21,13 @@
   -moz-osx-font-smoothing: grayscale;
 
   --mauve: rgba(65, 65, 134, 0.729);
-  --text-color: #767781;
-  --background-color: #edf7fa;
-  --alt-background-color: #b0d7e499;
+  --text-color: #2F394D;
+  --start-background-color: rgb(108,161,205);
+  --end-background-color: #edf7fa;
   --card-color: rgb(244, 241, 241);
   --card-border-color: #898B97;  
 
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Poppin, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -25,7 +41,6 @@
 }
 
 #root {
-  max-width: 1000px;
   min-width: 700px;
   text-align: center;
   margin-left: auto;
@@ -35,12 +50,18 @@
 body {
   margin: 0;
   color: var(--text-color);
-  background-color: var(--background-color);
   display: flex;
   place-items: start;
+  justify-content: space-between;
   min-width: 320px;
   min-height: 100vh;
 }
+
+.gradient{
+  background: var(--start-background-color);
+  background: linear-gradient(180deg, var(--start-background-color) 35%, var(--end-background-color) 100%);  
+}
+
 
 a{
   text-decoration: none;
@@ -56,5 +77,19 @@ a, a:visited{
   }
   body {
     font-size: 1.2rem;
+  }
+}
+h2{
+  font-size: 2rem;
+  margin: 6px 0 12px 0;
+}
+section{
+  margin: 0 auto 4rem auto
+}
+
+@media  screen and (max-width: 768px) {
+  body{
+    background: var(--start-background-color);
+    background: linear-gradient(180deg, var(--start-background-color) 35%, var(--end-background-color) 100%);  
   }
 }

@@ -1,49 +1,37 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
 
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { Navigate } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 
-import Home from './pages/Home'
-import Cours from './pages/Cours'
-import About from './pages/About'
-import Formations from './pages/Formations'
-import Formation from './pages/Formation'
-import Error from './pages/Error404'
+import Home from "./pages/Home";
+import Cours from "./pages/Cours";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Formations from "./pages/Formations";
+import Formation from "./pages/Formation";
+import Error from "./pages/Error404";
 
-import Header from './components/Header'
-import Footer from './components/Footer'
+import Footer from "./components/Footer";
 
+import "./index.css";
 
-import './index.css'
-import Socials from './components/Socials'
-
-const navLink = [
-  { name: 'Accueil', href: '/' },
-  { name: 'Formations', href: '/formations/' },
-  { name: 'A Propos', href: '/a-propos' },
-]
-
-createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById("root")).render(
   <StrictMode>
-  <BrowserRouter>
-      <Header navLink={navLink}/>
+    <BrowserRouter>
       <main>
         <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/formations/" element={<Formations />} />
+          <Route exact path="/" element={<Home />} />
+          <Route path="/formations/" element={<Formations />} />
           <Route path="/formation/:id" element={<Formation />} />
           <Route path="/cours/:id" element={<Cours />} />
-          <Route path="/perdu" element={<Error type="default"/>} />
+          <Route path="/perdu" element={<Error type="default" />} />
           <Route path="/a-propos" element={<About />} />
-          <Route
-            path="*"
-            element={<Navigate to="/perdu" replace />}
-          />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<Navigate to="/perdu" replace />} />
         </Routes>
       </main>
-      <Socials />
       <Footer />
     </BrowserRouter>
-  </StrictMode>,
-)
+  </StrictMode>
+);

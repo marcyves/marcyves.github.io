@@ -1,11 +1,13 @@
-import Hero from '../../components/Hero'
+import MiniHero from '../../components/MiniHero'
 import './index.css'
 
 function About() {
+    const root_id = document.getElementById('root');
+    root_id.classList.add('gradient');
+
   return (
     <div>
-
-    <Hero text="À propos" />
+    <MiniHero text="À propos" />
     <section className='home-text'>
       <article>
       <p>Vous êtes sur le site de Marc Augier</p>
