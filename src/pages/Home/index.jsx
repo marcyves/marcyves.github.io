@@ -2,6 +2,7 @@ import Hero from "../../components/Hero";
 import HomeText from "../../components/HomeText";
 import HomeDeuxCol from "../../components/HomeDeuxCol";
 import HomeTroisCol from "../../components/HomeTroisCol";
+import CallToAction from "../../components/CallToAction";
 
 function Home() {
   const root_id = document.getElementById('root');
@@ -24,13 +25,10 @@ function Home() {
           vos projets professionnels et personnels."
     />
       <HomeTroisCol />
-      <article className="call-to-action">
-        <p>
-          <strong>Prêt.e.s à entamer votre ascension numérique ?</strong>
-          <br />
-          <button>Commencez maintenant</button>
-        </p>
-      </article>
+      <CallToAction 
+      title="Prêtes et prêts à entamer votre ascension numérique ?"
+      label="Commencez maintenant"
+      />
     </div>
   );
 }

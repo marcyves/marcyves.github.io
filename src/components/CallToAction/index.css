@@ -1,0 +1,13 @@
+
+.call-to-action{
+    margin: 6rem auto;
+  }
+  .call-to-action button{
+    padding: 12px;
+    background-color: var(--text-color);
+    margin: 1rem;
+    margin-bottom: 12rem;
+    color: white;
+    font-weight: 600;
+    font-size: large;
+  }
