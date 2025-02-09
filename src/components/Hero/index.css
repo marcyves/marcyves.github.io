@@ -2,6 +2,7 @@
     background-image: url(/assets/images/montblanc.webp);
     background-repeat: repeat-x;
     background-size: cover;
+    background-color: var(--background-color);
     min-height: 60vh;
     display: flex;
     justify-content: flex-start;

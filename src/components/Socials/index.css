@@ -13,6 +13,9 @@
   -webkit-transition: box-shadow 600ms ease-in-out, color 600ms ease-in-out;
   transition: box-shadow 600ms ease-in-out, color 600ms ease-in-out;
 }
+.icon:visited{
+  color: white;
+}
 
 .icon:before {
   -moz-osx-font-smoothing: grayscale;

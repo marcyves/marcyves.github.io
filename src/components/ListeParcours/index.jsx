@@ -1,18 +1,18 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
-import Card from "../../components/Card";
+import Card from "../Card";
 
 import "./index.css";
 
-function Parcours({ courses_list }) {
+function ListeParcours({ liste_parcours }) {
   return (
     <div>
       <section className="parcours">
           <section className="parcours-gallery">
-            {courses_list.map((parcours) => (
+            {liste_parcours.map((parcours) => (
               <Link
-                className="card-link"
+                className="parcours-card-link"
                 key={parcours.id}
                 to={`/formation/${parcours.id}`}
               >
@@ -30,8 +30,8 @@ function Parcours({ courses_list }) {
   );
 }
 
-Parcours.propTypes = {
-  courses_list: PropTypes.array.isRequired,
+ListeParcours.propTypes = {
+  liste_parcours: PropTypes.array.isRequired,
 };
 
-export default Parcours;
+export default ListeParcours;

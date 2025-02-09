@@ -1,7 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import { Navigate } from "react-router-dom";
 
 import Home from "./pages/Home";
@@ -13,12 +13,20 @@ import Formation from "./pages/Formation";
 import Error from "./pages/Error404";
 
 import Footer from "./components/Footer";
+import Header from "./components/Header";
 
 import "./index.css";
 
+const navLink = [
+  { name: "Formations", href: "/formations/" },
+  { name: "A Propos", href: "/a-propos" },
+  { name: "Contact", href: "/contact" },
+];
+
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <BrowserRouter>
+    <HashRouter>
+    <Header navLink={navLink}/>
       <main>
         <Routes>
           <Route exact path="/" element={<Home />} />
@@ -32,6 +40,6 @@ createRoot(document.getElementById("root")).render(
         </Routes>
       </main>
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   </StrictMode>
 );

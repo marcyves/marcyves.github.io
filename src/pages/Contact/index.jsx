@@ -9,7 +9,6 @@ function Contact() {
   return (
     <div>
       <MiniHero text="Contact" />
-      <About />
         <h2>
 Vous pouvez me contacter sur les différents réseaux sociaux ci-dessous.
         </h2>

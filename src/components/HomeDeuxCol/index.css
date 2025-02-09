@@ -1,22 +1,19 @@
 .home-deux{
-    background-color: white;
     margin:8rem auto;
     height: 40rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 6px;
+    padding: 6rem 8rem;
     border-radius: 6px;
     background-image: url('/assets/images/hero1.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% auto;
 }
 
 .home-deux article{
     width: 80%;
-    max-width: 450px;
-    margin: 6rem auto;
-    padding: 6px;
+    padding: 12px;
     margin: 12px auto 6px auto;
     border-radius: 6px;    
 }
