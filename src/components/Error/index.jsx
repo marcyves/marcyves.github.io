@@ -1,5 +1,7 @@
 import "./index.css";
 
+import PropTypes from 'prop-types'
+
 function Error({ type }) {
   if (type === "") {
     type = "default";
@@ -22,11 +24,15 @@ function Error({ type }) {
   const message = messages.find((data) => data.type === type);
 
   return (
-    <section className='error'>
-        <h1>{message.title}</h1>
-        <p>{message.message}</p>
-        </section>
+    <section className="error">
+      <h1>{message.title}</h1>
+      <p>{message.message}</p>
+    </section>
   );
+}
+
+Error.propTypes = {
+  type: PropTypes.string.isRequired,
 }
 
 export default Error;

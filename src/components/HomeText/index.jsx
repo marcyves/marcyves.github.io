@@ -1,4 +1,5 @@
 import "./index.css";
+import PropTypes from "prop-types";
 
 function HomeText({title, subtitle, text}) {
   return (
@@ -10,6 +11,12 @@ function HomeText({title, subtitle, text}) {
       </article>
     </section>
   );
+}
+
+HomeText.propTypes = {
+  title: PropTypes.string.isRequired,
+  subtitle: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
 }
 
 export default HomeText;
