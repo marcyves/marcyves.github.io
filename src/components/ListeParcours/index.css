@@ -1,56 +1,53 @@
 .parcours {
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 12px;
+  transition: all 0.3s ease-in-out;
+}
+
+.parcours-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.parcours-card-link {
+  display: flex;
+  background-color: var(--card-color);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  border-radius: 12px;
+  width: min-content;
+  margin: 12px;
+
+  border-radius: 42px;
+  background: linear-gradient(145deg, #cacaca, #f0f0f0);
+  box-shadow: 30px 30px 45px #a6a6a6, -30px -30px 45px #ffffff;
+}
+
+.parcours-card-link:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (max-width: 768px) {
+  .parcours {
+    width: 100%;
+    margin: 0;
+    padding: 0;
     flex-direction: column;
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-bottom: 12px;
-    transition: all 0.3s ease-in-out;
-}
+  }
 
-.parcours-gallery{
-    display: flex;
+  .parcours-gallery {
+    width: 100%;
+    margin: auto;
+    padding: 0;
     justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 12px;
-}
-
-.parcours-card-link{
-    display: flex;
-    background-color: var(--card-color);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease-in-out;
-    border-radius: 12px;
-    width: min-content;
-    margin: 12px;
-
-
-    border-radius: 42px;
-background: linear-gradient(145deg, #cacaca, #f0f0f0);
-box-shadow:  30px 30px 45px #a6a6a6,
-             -30px -30px 45px #ffffff;
-}
-
-.parcours-card-link:hover{
-    transform: translateY(-10px);
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
-}
-
-@media  screen and (max-width: 768px) {
-    .parcours{
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        flex-direction: column;
-    }
-
-    
-    .parcours-gallery{
-        width: 100%;
-        margin: auto;
-        padding: 0;
-        justify-content: center;
-    }
+  }
 }
