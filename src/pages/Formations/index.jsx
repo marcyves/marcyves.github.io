@@ -1,23 +1,15 @@
-import { useEffect } from "react";
-
 import MiniHero from "../../components/MiniHero";
-import Parcours from "../../components/Parcours";
-import courses_list from "../../data/parcours.json";
-
-import "./index.css";
-
+import ListeParcours from "../../components/ListeParcours";
+import liste_parcours from "../../data/parcours.json";
 
 function Formations() {
-
-  const root_id = document.getElementById('root');
-  root_id.classList.add('gradient');
+  const root_id = document.getElementById("root");
+  root_id.classList.add("gradient");
 
   return (
     <div>
       <MiniHero text="Les parcours de formation" />
-      <section>
-        <Parcours courses_list={courses_list} />
-      </section>
+      <ListeParcours liste_parcours={liste_parcours} />
     </div>
   );
 }

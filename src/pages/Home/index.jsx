@@ -3,8 +3,6 @@ import HomeText from "../../components/HomeText";
 import HomeDeuxCol from "../../components/HomeDeuxCol";
 import HomeTroisCol from "../../components/HomeTroisCol";
 
-import "./index.css";
-
 function Home() {
   const root_id = document.getElementById('root');
   root_id.classList.remove('gradient');

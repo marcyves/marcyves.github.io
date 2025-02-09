@@ -1,5 +1,4 @@
 
-import './index.css'
 
 function Cours() {
   const root_id = document.getElementById('root');

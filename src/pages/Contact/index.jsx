@@ -1,5 +1,6 @@
 import MiniHero from "../../components/MiniHero";
-import "./index.css";
+import Socials from "../../components/Socials";
+import About from "../../components/About";
 
 function Contact() {
   const root_id = document.getElementById('root');
@@ -8,11 +9,10 @@ function Contact() {
   return (
     <div>
       <MiniHero text="Contact" />
-      <section>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi voluptatem voluptate molestiae repudiandae culpa voluptatibus necessitatibus quod doloribus. Culpa libero ipsam laborum inventore? Quisquam iusto voluptas aspernatur laudantium vel ipsam.
-        </p>
-    </section>
+      <About />
+        <h2>
+Vous pouvez me contacter sur les différents réseaux sociaux ci-dessous.
+        </h2>
     </div>
   );
 }

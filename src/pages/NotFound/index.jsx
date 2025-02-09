@@ -1,13 +1,13 @@
-import Error from '../../components/Error'
+import Error from "../../components/Error";
+import MiniHero from "../../components/MiniHero";
 
-import './index.css'
-
-function NotFound({type}) {
+function NotFound({ type }) {
   return (
-    <div className='parcours'>
-       <Error type={type}/>
+    <div>
+      <MiniHero text={`Vous êtes perdu... et moi aussi`} />
+      <Error type={type} />
     </div>
-  )
+  );
 }
 
-export default NotFound
+export default NotFound;
