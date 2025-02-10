@@ -6,11 +6,16 @@ import liste_cours from "../../data/cours.json";
 import platform_data from "../../data/plateformes.json";
 import Title from "../../components/Title";
 import ListeCours from "../../components/ListeCours";
+import { useEffect } from "react";
 
 function Platform() {
   const { id } = useParams();
   const liste_cours_filtrée = liste_cours.filter((data) => data.platform === id);
   const platform = platform_data.find((data) => data.id === id);
+
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+  },[])
 
   if (liste_cours_filtrée.length === 0 || platform.length === 0) {
     return (

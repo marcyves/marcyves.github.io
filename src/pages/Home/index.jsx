@@ -3,10 +3,15 @@ import HomeText from "../../components/HomeText";
 import HomeDeuxCol from "../../components/HomeDeuxCol";
 import HomeTroisCol from "../../components/HomeTroisCol";
 import CallToAction from "../../components/CallToAction";
+import { useEffect } from "react";
 
 function Home() {
   const root_id = document.getElementById('root');
   root_id.classList.remove('gradient');
+
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+  },[])
 
   return (
     <div>
