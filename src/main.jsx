@@ -10,6 +10,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Formations from "./pages/Formations";
 import Formation from "./pages/Formation";
+import Platform from "./pages/Platform";
 import Error from "./pages/Error404";
 
 import Footer from "./components/Footer";
@@ -32,6 +33,7 @@ createRoot(document.getElementById("root")).render(
           <Route exact path="/" element={<Home />} />
           <Route path="/formations/" element={<Formations />} />
           <Route path="/formation/:id" element={<Formation />} />
+          <Route path="/plateforme/:id" element={<Platform />} />
           <Route path="/cours/:id" element={<Cours />} />
           <Route path="/perdu" element={<Error type="default" />} />
           <Route path="/a-propos" element={<About />} />
