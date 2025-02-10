@@ -4,6 +4,7 @@ import "./index.css";
 import CallToAction from "../CallToAction";
 
 function CourseCard({ id, title, description, image, links }) {
+  
   return (
     <div className="course-card">
       <img src={`/assets/images/${image}`} alt={title} />
