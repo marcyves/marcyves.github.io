@@ -1,11 +1,10 @@
 import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
-
 import CourseCard from "../CourseCard";
 
 import "./index.css";
 
 function ListeCours({ liste_cours }) {
+  
   return (
     <div>
       <section className="cours">
@@ -19,7 +18,6 @@ function ListeCours({ liste_cours }) {
                   image={cours.image}
                   links={cours.links}
                 />
-
               </div>
             ))}
           </section>

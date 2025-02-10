@@ -2,6 +2,7 @@ import "./index.css";
 import PropTypes from "prop-types";
 
 function HomeText({title, subtitle, text}) {
+  
   return (
     <section className="home-text">
       <article>

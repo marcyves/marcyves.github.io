@@ -6,6 +6,7 @@ import Card from "../Card";
 import "./index.css";
 
 function ListeParcours({ liste_parcours, type }) {
+
   return (
     <div>
       <section className="parcours">
