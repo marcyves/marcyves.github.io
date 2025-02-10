@@ -1,5 +1,20 @@
 [
-    {"id": "1", "title": "Développeur Web", "description": "Les technologies du Web", "image": "TUTO_php.webp"},
-    {"id": "2", "title": "Python et Data Science", "description": "Le langage de la data science", "image": "trinity-digital-python.png"},
-    {"id": "3", "title": "Outils du manager", "description": "Les outils de la performance managériale", "image": "trinity-outils.png"}
+  {
+    "id": "1",
+    "title": "Développeur Web",
+    "description": "Les technologies du Web",
+    "image": "TUTO_php.webp"
+  },
+  {
+    "id": "2",
+    "title": "Python et Data Science",
+    "description": "Le langage de la data science",
+    "image": "trinity-digital-python.png"
+  },
+  {
+    "id": "3",
+    "title": "Outils du manager",
+    "description": "Les outils de la performance managériale",
+    "image": "trinity-outils.png"
+  }
 ]

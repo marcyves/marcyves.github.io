@@ -1,314 +1,362 @@
 [
   {
     "id": "1",
-    "parcours": "4",
+    "platform": "4",
+    "parcours": "3",
     "title": "MS Access",
     "description": "ce cours va vous permettre de découvrir les bases de la gestion de bases de données.",
-    "image": "UDEMY_MS_Access.webp",
+    "image": "UDEMY_Access.webp",
     "tags": ["Bases de données", "Office"],
-    "liens": [
+    "links": [
       {
-        "Udemy": "https://www.udemy.com/course/"
+       "name": "Udemy",
+       "href": "https://www.udemy.com/course/"
       }
     ]
   },
   {
     "id": "2",
-    "parcours": "4",
+    "platform": "4",
+    "parcours": "3",
     "title": "Bases de données",
     "description": "ce cours va vous permettre de découvrir les bases de la gestion de bases de données.",
     "image": "UDEMY_BDD.webp",
     "tags": ["Bases de données", "Office"],
-    "liens": [
+    "links": [
       {
-        "Udemy": "https://www.udemy.com/course/"
+       "name": "Udemy",
+       "href": "https://www.udemy.com/course/"
       }
     ]
   },
   {
     "id": "3",
-    "parcours": "4",
+    "platform": "4",
+    "parcours": "3",
     "title": "Excel Solver",
     "description": "Ce cours va vous permettre d'utiliser Excel pour résoudre des problèmes.",
     "image": "UDEMY_Excel_solver.webp",
     "tags": ["Excel", "Office"],
-    "liens": [
+    "links": [
       {
-        "Udemy": "https://www.udemy.com/course/"
+       "name": "Udemy",
+       "href": "https://www.udemy.com/course/"
       }
     ]
   },
   {
     "id": "4",
-    "parcours": "4",
+    "platform": "4",
+    "parcours": "3",
     "title": "Excel tableau de bord",
     "description": "Ce cours va vous permettre d'utiliser Excel pour résoudre des problèmes.",
     "image": "UDEMY_Excel_tableau.webp",
     "tags": ["Excel", "Office"],
-    "liens": [
+    "links": [
       {
-        "Udemy": "https://www.udemy.com/course/"
+       "name": "Udemy",
+       "href": "https://www.udemy.com/course/"
       }
     ]
   },
   {
     "id": "5",
-    "parcours": "4",
+    "platform": "4",
+    "parcours": "3",
     "title": "Excel",
     "description": "Ce cours va vous permettre d'utiliser Excel pour résoudre des problèmes.",
     "image": "UDEMY_Excel.webp",
     "tags": ["Excel", "Office"],
-    "liens": [
+    "links": [
       {
-        "Udemy": "https://www.udemy.com/course/"
+       "name": "Udemy",
+       "href": "https://www.udemy.com/course/"
       }
     ]
   },
   {
     "id": "6",
-    "parcours": "4",
+    "platform": "4",
+    "parcours": "1",
     "title": "HTML",
     "description": "",
     "image": "UDEMY_HTML.webp",
     "tags": ["HTML", "CSS", "Web"],
-    "liens": [
+    "links": [
       {
-        "Udemy": "https://www.udemy.com/course/"
+       "name": "Udemy",
+       "href": "https://www.udemy.com/course/"
       }
     ]
   },
   {
     "id": "7",
-    "parcours": "4",
+    "platform": "4",
+    "parcours": "1",
     "title": "Site dynamique avec PHP",
     "description": "",
     "image": "UDEMY_PHP.webp",
     "tags": ["PHP", "SQL", "Web"],
-    "liens": [
+    "links": [
       {
-        "Udemy": "https://www.udemy.com/course/"
+       "name": "Udemy",
+       "href": "https://www.udemy.com/course/"
       }
     ]
   },
   {
     "id": "8",
-    "parcours": "4",
+    "platform": "4",
+    "parcours": "2",
     "title": "Petits jeux en Python",
     "description": "",
     "image": "UDEMY_Python_jeux.webp",
     "tags": ["Python", "Jeux"],
-    "liens": [
+    "links": [
       {
-        "Udemy": "https://www.udemy.com/course/"
+       "name": "Udemy",
+       "href": "https://www.udemy.com/course/"
       }
     ]
   },
   {
     "id": "9",
-    "parcours": "4",
+    "platform": "4",
+    "parcours": "2",
     "title": "Python",
     "description": "",
     "image": "UDEMY_Python.webp",
     "tags": ["Python"],
-    "liens": [
+    "links": [
       {
-        "Udemy": "https://www.udemy.com/course/"
+       "name": "Udemy",
+       "href": "https://www.udemy.com/course/"
       }
     ]
   },
   {
     "id": "10",
-    "parcours": "4",
+    "platform": "4",
+    "parcours": "2",
     "title": "Python",
     "description": "",
     "image": "UDEMY_Python.webp",
     "tags": ["Python"],
-    "liens": [
+    "links": [
       {
-        "Udemy": "https://www.udemy.com/course/"
+       "name": "Udemy",
+       "href": "https://www.udemy.com/course/"
       }
     ]
   },
   {
     "id": "11",
+    "platform": "4",
     "parcours": "1",
     "title": "Créer un site dynamique de A à Z avec PHP et MySQL",
     "description": "Vous maitrisez HTML, CSS et PHP mais vous n’avez pas encore mis tout cela en pratique dans un vrai projet ?<h3>Ce cours et l’occasion de « mettre le maçon au pied du mur ».</h3><ul><li>Comment, avec ces outils, bâtir un site Web ?</li><li>Comment faire pour que ce soit simple à maintenir, stable et robuste ?</li><li>Comment utiliser une base de données pour stocker des données ?</li><li>Vous avez entendu parler de framework (Symfony, etc.) mais c’est trop lourd et complexe pour votre projet</li><li>Vous souhaitez développer VOTRE framework, adapté à la taille de votre site. </li></ul>Ce cours s’adresse à tous ceux qui souhaitent créer un site Web dynamique, c’est à dire dont les pages sont créées à la volée suivant les requêtes de l’internaute et ceci à partir de zéro, tout le code du site sera VOTRE (notre) code.<br>Il est préférable d’avoir déjà des notions de PHP, HTML et CSS que nous utiliserons pour construire un site au fur et à mesure que nous avancerons dans les leçons. Celles-ci sont principalement constituées de vidéos, au départ pour expliquer comment notre projet de développement va être conduit. Nous discuterons aussi ergonomie et interface graphique, nous verrons ensuite comment développer votre propose framework pour développer plus vite et plus simplement.<br>Ensuite, nous construirons petit à petit le site. Plutôt qu’un cours magistral, il s’agit donc de partir d’une feuille blanche et de construire, ligne après ligne, le site que je vous propose. À partir de cet exemple, il vous sera très simple de construire votre propre site, avec votre contenu.<br>Après chaque leçon dans laquelle du code est présenté, vous aurez en téléchargement un ou plusieurs fichiers contenant le code source présenté. Je vous donnerai également quelques exercices de programmation dont la solution sera également fournie sous la forme de code source et d’une vidéo explicative pour les plus complexes.<br>Après avoir suivi ce cours vous serez capable de :<ul><li>Aborder et mettre en place un projet de développement de site Web dynamique.</li><li>Développer un site Web dynamique en PHP d’envergure.</li><li>Développer un site Web dynamique en PHP d’envergure.</li><li>Développer un site Web dynamique en PHP d’envergure.Comprendre l’utilité d’un framework, sa logique et son fonctionnement.</li><li>Développer un site Web dynamique en PHP d’envergure.</li><li>Maitriser PHP en coordination avec HTML et CSS.</li><li>Développer un site Web dynamique en PHP d’envergure.Intégrer l’utilisation d’une base de données MySQL dans un site</li></ul>Et surtout…<p><strong>VOUS SEREZ CAPABLE DE DÉVELOPPER SEUL N’IMPORTE QUEL TYPE DE SITE</strong></p><p>C’est une compétence que vous pourrez mettre en avant sur votre CV et utiliser professionnellement.</p>",
     "image": "UDEMY_PHP.webp",
     "tags": ["Bases de données", "Office"],
-    "liens": [
+    "links": [
       {
-        "Udemy": "https://www.udemy.com/course/"
+       "name": "Udemy",
+       "href": "https://www.udemy.com/course/"
       }
     ]
   },
   {
     "id": "12",
-    "parcours": "",
+    "platform": "5",
+    "parcours": "2",
     "title": "",
     "description": "",
-    "image": "",
+    "image": "TUTO_excel.webp",
     "tags": ["Bases de données", "Office"],
-    "liens": [
+    "links": [
       {
-        "Udemy": "https://www.udemy.com/course/"
+       "name": "Tuto",
+       "href": ""
       }
     ]
   },
   {
     "id": "13",
+    "platform": "5",
     "parcours": "",
     "title": "",
     "description": "",
-    "image": "",
+    "image": "TUTO_HTML.webp",
     "tags": ["Bases de données", "Office"],
-    "liens": [
+    "links": [
       {
-        "Udemy": "https://www.udemy.com/course/"
-      }
+        "name": "Tuto",
+        "href": ""
+       }
     ]
   },
   {
     "id": "14",
+    "platform": "5",
     "parcours": "",
     "title": "",
     "description": "",
-    "image": "",
+    "image": "TUTO_merise.webp",
     "tags": ["Bases de données", "Office"],
-    "liens": [
+    "links": [
       {
-        "Udemy": "https://www.udemy.com/course/"
-      }
+        "name": "Tuto",
+        "href": ""
+       }
     ]
   },
   {
     "id": "15",
+    "platform": "5",
     "parcours": "",
     "title": "",
     "description": "",
-    "image": "",
+    "image": "TUTO_mind_mapping.webp",
     "tags": ["Bases de données", "Office"],
-    "liens": [
+    "links": [
       {
-        "Udemy": "https://www.udemy.com/course/"
-      }
+        "name": "Tuto",
+        "href": ""
+       }
     ]
   },
   {
     "id": "16",
+    "platform": "5",
     "parcours": "",
     "title": "",
     "description": "",
-    "image": "",
+    "image": "TUTO_NodeJS.webp",
     "tags": ["Bases de données", "Office"],
-    "liens": [
+    "links": [
       {
-        "Udemy": "https://www.udemy.com/course/"
-      }
+        "name": "Tuto",
+        "href": ""
+       }
     ]
   },
   {
     "id": "17",
+    "platform": "5",
     "parcours": "",
     "title": "",
     "description": "",
-    "image": "",
+    "image": "TUTO_php.webp",
     "tags": ["Bases de données", "Office"],
-    "liens": [
+    "links": [
       {
-        "Udemy": "https://www.udemy.com/course/"
-      }
+        "name": "Tuto",
+        "href": ""
+       }
     ]
   },
   {
     "id": "18",
+    "platform": "5",
     "parcours": "",
     "title": "",
     "description": "",
-    "image": "",
+    "image": "TUTO_solver_excel.webp",
     "tags": ["Bases de données", "Office"],
-    "liens": [
+    "links": [
       {
-        "Udemy": "https://www.udemy.com/course/"
-      }
+        "name": "Tuto",
+        "href": ""
+       }
     ]
   },
   {
     "id": "19",
+    "platform": "5",
     "parcours": "",
     "title": "",
     "description": "",
     "image": "",
     "tags": ["Bases de données", "Office"],
-    "liens": [
+    "links": [
       {
-        "Udemy": "https://www.udemy.com/course/"
-      }
+        "name": "Tuto",
+        "href": ""
+       }
     ]
   },
   {
     "id": "20",
-    "parcours": "",
-    "title": "",
+    "platform": "5",
+    "parcours": "3",
+    "title": "ACCESS",
     "description": "",
-    "image": "",
+    "image": "TUTO_access.webp",
     "tags": ["Bases de données", "Office"],
-    "liens": [
+    "links": [
       {
-        "Udemy": "https://www.udemy.com/course/"
-      }
+        "name": "Tuto",
+        "href": ""
+       }
     ]
   },
   {
     "id": "21",
+    "platform": "5",
     "parcours": "",
-    "title": "",
+    "title": "Excel Solver",
     "description": "",
-    "image": "",
+    "image": "TUTO_Excel_Solver",
     "tags": ["Bases de données", "Office"],
-    "liens": [
+    "links": [
       {
-        "Udemy": "https://www.udemy.com/course/"
-      }
+        "name": "Tuto",
+        "href": ""
+       }
     ]
   },
   {
     "id": "22",
+    "platform": "5",
     "parcours": "",
     "title": "",
     "description": "",
     "image": "",
     "tags": ["Bases de données", "Office"],
-    "liens": [
+    "links": [
       {
-        "Udemy": "https://www.udemy.com/course/"
-      }
+        "name": "Tuto",
+        "href": ""
+       }
     ]
   },
   {
     "id": "23",
+    "platform": "5",
     "parcours": "",
     "title": "",
     "description": "",
     "image": "",
     "tags": ["Bases de données", "Office"],
-    "liens": [
+    "links": [
       {
-        "Udemy": "https://www.udemy.com/course/"
-      }
+        "name": "Tuto",
+        "href": ""
+       }
     ]
   },
   {
     "id": "24",
+    "platform": "5",
     "parcours": "",
     "title": "",
     "description": "",
     "image": "",
     "tags": ["Bases de données", "Office"],
-    "liens": [
+    "links": [
       {
-        "Udemy": "https://www.udemy.com/course/"
-      }
+        "name": "Tuto",
+        "href": ""
+       }
     ]
   }
 ]

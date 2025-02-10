@@ -1,4 +1,4 @@
 [
-    {"id": "4", "title": "Catalogue UDEMY", "description": "Les course de la plateforme UDEMY", "image": "trinity-think.png"},
-    {"id": "5", "title": "Catalogue TUTO", "description": "Les cours de la plateforme TUTO", "image": "trinity-think-w.png"}
+    {"id": "4", "title": "UDEMY", "description": "Le catalogue des cours de la plateforme UDEMY", "image": "trinity-think.png"},
+    {"id": "5", "title": "TUTO", "description": "Le catalogue des cours de la plateforme TUTO", "image": "trinity-think-w.png"}
 ]
