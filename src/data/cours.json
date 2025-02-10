@@ -17,15 +17,15 @@
   {
     "id": "2",
     "platform": "4",
-    "parcours": "3",
-    "title": "Bases de données",
-    "description": "ce cours va vous permettre de découvrir les bases de la gestion de bases de données.",
+    "parcours": "1",
+    "title": "Introduction au Design de Bases de Données Relationnelles",
+    "description": "Tout ce que vous vouliez savoir sur les Bases de Données Relationnelles et que votre mère ne vous a pas dit ! Depuis Access de Microsoft à DB2 d'IBM ou Oracle, en passant par MySQL et PostGres, toutes ces technologies ont un point commun. Ce sont des SGBD (Systèmes de Gestion de Bases de Données) et même SGBDR, pour Relationnelles. Ils reposent sur les mêmes fondements théoriques et chose rare dans le monde du développement, tous ces systèmes utilisent le même langage : SQL.",
     "image": "UDEMY_BDD.webp",
-    "tags": ["Bases de données", "Office"],
+    "tags": ["Bases de données", "Web"],
     "links": [
       {
        "name": "Udemy",
-       "href": "https://www.udemy.com/course/"
+       "href": "https://www.udemy.com/course/design-des-bases-de-donnees/?referralCode=110F01EFF1978B769887"
       }
     ]
   },
@@ -78,29 +78,29 @@
     "id": "6",
     "platform": "4",
     "parcours": "1",
-    "title": "HTML",
-    "description": "",
+    "title": "HTML et CSS : le développement Web par la pratique",
+    "description": "Tout ce que vous avez voulu savoir sur HTML et que votre mère ne vous a pas dit. Si vous avez décidé de vous lancer dans le développement de site Web, si vous êtes utilisateur d'outils no code comme Wix ou d'un CMS comme Wordpress et que vous avez envie d'aller plus loin, il va falloir commencer par les bases. Et les bases, quoiqu'on fasse et quoiqu'on dise, c'est HTML et CSS, ce sont les deux langages de base utilisés par tous les autres outils. Ce cours va vous accompagner pas à pas à travers tout ce qu'il est nécessaire de savoir pour coder en HTML et CSS. Pas de théorie mais de la pratique, encore et toujours beaucoup de pratique.",
     "image": "UDEMY_HTML.webp",
     "tags": ["HTML", "CSS", "Web"],
     "links": [
       {
        "name": "Udemy",
-       "href": "https://www.udemy.com/course/"
+       "href": "https://www.udemy.com/course/developpement-web-par-la-pratique/?referralCode=F83C08B0B7AFEFD400E0"
       }
     ]
   },
   {
     "id": "7",
     "platform": "4",
-    "parcours": "1",
-    "title": "Site dynamique avec PHP",
-    "description": "",
-    "image": "UDEMY_PHP.webp",
-    "tags": ["PHP", "SQL", "Web"],
+    "parcours": "3",
+    "title": "Introduction au Knowledge Management",
+    "description": "Pour un entrepreneur ou même un manager, de nombreuses questions se posent qui trouvent rarement une réponse dans les manuels. Parce que tout n'est pas écrit et que le savoir faire, les tours de main, ne sont pas uniquement l'apanage des métiers de l'artisanat. ",
+    "image": "UDEMY_KM.webp",
+    "tags": ["Management", "KM"],
     "links": [
       {
        "name": "Udemy",
-       "href": "https://www.udemy.com/course/"
+       "href": "https://www.udemy.com/course/introduction-au-km/?referralCode=271C1EC066753794F544"
       }
     ]
   },
@@ -108,14 +108,14 @@
     "id": "8",
     "platform": "4",
     "parcours": "2",
-    "title": "Petits jeux en Python",
-    "description": "",
+    "title": "Créer des jeux avec Python",
+    "description": "Cette série de vidéos n'est pas un cours mais plutôt un projet de développement. Cela s'adresse à tous ceux qui ont déjà fait un cours Python, ou qui connaissent un peu le langage mais qui manquent d'idée pour se lancer. On va construire ensemble quelques petits jeux tout simples, mais sympa. Pas à pas, je vous présente le problème à résoudre, je vous laisse coder et ensuite vous comparez votre solution avec la mienne.", 
     "image": "UDEMY_Python_jeux.webp",
     "tags": ["Python", "Jeux"],
     "links": [
       {
        "name": "Udemy",
-       "href": "https://www.udemy.com/course/"
+       "href": "https://www.udemy.com/course/creer-un-jeu-simple-avec-python/?referralCode=B1FA8B7AD8E473DDFCA5"
       }
     ]
   },
@@ -160,7 +160,7 @@
     "links": [
       {
        "name": "Udemy",
-       "href": "https://www.udemy.com/course/"
+       "href": "https://www.udemy.com/course/votre-site-web-en-php/?referralCode=6052B85326FD5DDC78EC"
       }
     ]
   },
@@ -271,16 +271,16 @@
   },
   {
     "id": "19",
-    "platform": "5",
-    "parcours": "",
-    "title": "",
-    "description": "",
-    "image": "",
+    "platform": "4",
+    "parcours": "1",
+    "title": "Docker pour le développement BackEnd",
+    "description": "Ce cours s’adresse aux développeurs BackEnd souhaitant tirer parti de Docker pour simplifier leurs workflows, améliorer la portabilité des applications et garantir des déploiements fiables.",
+    "image": "UDEMY_docker.webp",
     "tags": ["Bases de données", "Office"],
     "links": [
       {
-        "name": "Tuto",
-        "href": ""
+        "name": "Udemy",
+        "href": "https://www.udemy.com/course/docker-pour-le-developpement-backend/?referralCode=4D729C5068EB5F8ED21E"
        }
     ]
   },
@@ -316,16 +316,16 @@
   },
   {
     "id": "22",
-    "platform": "5",
-    "parcours": "",
-    "title": "",
-    "description": "",
-    "image": "",
-    "tags": ["Bases de données", "Office"],
+    "platform": "4",
+    "parcours": "3",
+    "title": "Ecrire un papier de recherche",
+    "description": "Ce cours s'adresse à des étudiants désireux de s'engager dans un parcours académique de recherche, quel qu'il soit. Par exemple si vous avez décidé de devenir doctorants. Mais le cours peut aussi être très utile à des étudiants en Master et qui doivent rédigier un mémoire de recherche pour valider leur parcours. Il s'adresse plus largement à toute personne qui décide de faire ses premiers pas avec la recherche académique de manière générale, quelle que soit la discipline.",
+    "image": "UDEMY_recherche.webp",
+    "tags": ["Académique", "Recherche"],
     "links": [
       {
-        "name": "Tuto",
-        "href": ""
+        "name": "Udemy",
+        "href": "https://www.udemy.com/course/ecrire-un-papier-de-recherche/?referralCode=7A4699A0DAD1DB65BAAD"
        }
     ]
   },
