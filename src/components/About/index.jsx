@@ -22,7 +22,7 @@ function About() {
 
       <article>
         <figure>
-          <img src="/assets/images/marcvatar.webp" alt="Marc Augier" />
+          <img src="/assets/images/hello.png" alt="Marc Augier" />
         </figure>
       </article>
     </section>
