@@ -5,7 +5,7 @@ import Card from "../Card";
 
 import "./index.css";
 
-function ListeParcours({ liste_parcours }) {
+function ListeParcours({ liste_parcours, type }) {
   return (
     <div>
       <section className="parcours">
@@ -14,7 +14,7 @@ function ListeParcours({ liste_parcours }) {
               <Link
                 className="parcours-card-link"
                 key={parcours.id}
-                to={`/formation/${parcours.id}`}
+                to={`/${type}/${parcours.id}`}
               >
                 <Card
                   key={parcours.id}
@@ -32,6 +32,7 @@ function ListeParcours({ liste_parcours }) {
 
 ListeParcours.propTypes = {
   liste_parcours: PropTypes.array.isRequired,
+  type: PropTypes.string.isRequired,
 };
 
 export default ListeParcours;

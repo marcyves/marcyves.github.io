@@ -1,67 +1,69 @@
-.home-trois{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 1rem;
-    padding: 8rem 4rem;
-    background-image: url('/assets/images/hero2.png');
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    gap: 48px;
+.home-trois {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1rem;
+  padding: 8rem 4rem;
+  background-image: url("/assets/images/hero2.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  gap: 48px;
 }
-.home-trois article{
-    width: 80%;
-    max-width: 450px;
-    padding: 6px;
-    background-color: var(--card-color);    
-    margin: 12px auto 6px auto;
-    
-    border-radius: 12px;
-    background: linear-gradient(145deg, #dadada, #f5f5f0);
-    box-shadow:  33px 33px 65px #b8b8b8,
-                 -33px -33px 65px #ffffff;
+.home-trois article {
+  width: 80%;
+  max-width: 450px;
+  padding: 6px;
+  background-color: var(--card-color);
+  margin: 12px auto 6px auto;
+
+  border-radius: 12px;
+  background: linear-gradient(
+    145deg,
+    var(--end-background-color),
+    var(--start-background-color)
+  );
+  box-shadow: 12px 12px 48px #ffffff, -12px -12px 48px #6761bd25;
 }
 
 .home-trois p {
-    font-size: 1.0rem;
-    line-height: 1.3;
-    text-align: justify;
-    width: 80%;
-    margin: 6px auto;
+  font-size: 1rem;
+  line-height: 1.3;
+  text-align: justify;
+  width: 80%;
+  margin: 6px auto;
 }
 
 .home-trois ul {
-    list-style: circle;
-    padding-left: 18px;
-    text-align: left;
+  list-style: circle;
+  padding-left: 18px;
+  text-align: left;
 }
 
 .home-trois li {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .home-trois h3 {
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
 }
-.logo{
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
-    background-color: white;
-    margin: 6px;
+.logo {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background-color: white;
+  margin: 6px;
 }
-@media  screen and (max-width: 768px) {
-    .home-trois{
-        flex-direction: column;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-    .home-trois article{
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-    
-}   
+@media screen and (max-width: 768px) {
+  .home-trois {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .home-trois article {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}

@@ -16,8 +16,8 @@ function Error({ type }) {
     },
     {
       type: "no_course",
-      title: "Il n'y a pas de cours dans ce parcours",
-      message: "Revenez bientôt pour voir apparaitre des nouveautés.",
+      title: "Il n'y a pas encore de cours dans ce parcours",
+      message: "Nous sommes en travaux, revenez bientôt pour voir apparaitre des nouveautés.",
     },
   ];
 

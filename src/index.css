@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Inter";
-  src: url("/fonts/Inter-VariableFont_opsz,wght");
+  src: url("/fonts/Inter-VariableFont_opsz,wght.ttf");
   font-weight: normal;
 }
 @font-face {
@@ -20,8 +20,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --mauve: rgba(65, 65, 134, 0.729);
-  --text-color: #2f394d;
+  --text-color: rgb(15, 65, 105);
   --background-color: rgb(108, 161, 205);
   --start-background-color: rgb(108, 161, 205);
   --end-background-color: #edf7fa;

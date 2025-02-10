@@ -1,15 +1,18 @@
 import PropTypes from "prop-types";
 
 import "./index.css";
+import { Link } from "react-router-dom";
 
-function CallToAction({ title, label }) {
+function CallToAction({ title, label, link }) {
 
   return (
-<article className="call-to-action">
+        
+        <article 
+        className={`${title != ""  ? "call-to-action" : "cta-no-title"}`}
+        >
         <p>
-          <strong>{title}</strong>
-          <br />
-          <button>{label}</button>
+          {title ? <><strong>{title}</strong><br /></> : <></>}
+          <Link to={link}><button className="button-action">{label}</button></Link>
         </p>
       </article>);
 
@@ -18,6 +21,7 @@ function CallToAction({ title, label }) {
     CallToAction.propTypes = {
       title: PropTypes.string.isRequired,
       label: PropTypes.string.isRequired,
+      link: PropTypes.string.isRequired,
     }
     
 export default CallToAction;

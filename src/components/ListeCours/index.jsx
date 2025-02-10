@@ -11,18 +11,16 @@ function ListeCours({ liste_cours }) {
       <section className="cours">
           <section className="cours-gallery">
             {liste_cours.map((cours) => (
-              <Link
-                className="card-link"
-                key={cours.id}
-                to={`/formation/${cours.id}`}
-              >
+              <div className="card-link" key={cours.id}>
                 <CourseCard
-                  key={cours.id}
+                  id={cours.id}
                   title={cours.title}
                   description={cours.description}
                   image={cours.image}
+                  links={cours.links}
                 />
-              </Link>
+
+              </div>
             ))}
           </section>
       </section>

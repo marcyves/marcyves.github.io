@@ -24,6 +24,7 @@
     font-optical-sizing: auto;
     font-weight: 800;
     font-style: normal;
+    text-shadow: 1px 1px 4px var(--text-color);
 }
 @media  screen and (max-width: 768px) {
     #hero {
