@@ -1,10 +1,10 @@
 import Error from "../../components/Error";
-import MiniHero from "../../components/MiniHero";
+import Title from "../../components/Title";
 
 function NotFound({ type }) {
   return (
     <div>
-      <MiniHero text={`Vous êtes perdu... et moi aussi`} />
+      <Title text={`Vous êtes perdu... et moi aussi`} />
       <Error type={type} />
     </div>
   );

@@ -28,6 +28,7 @@ function Home() {
       <CallToAction 
       title="Prêtes et prêts à entamer votre ascension numérique ?"
       label="Commencez maintenant"
+      link="/formations"
       />
     </div>
   );

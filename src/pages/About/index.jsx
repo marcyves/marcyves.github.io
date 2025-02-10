@@ -1,4 +1,4 @@
-import MiniHero from '../../components/MiniHero'
+import Title from '../../components/Title'
 import AboutText from '../../components/About'
 
 function About() {
@@ -7,7 +7,7 @@ function About() {
 
   return (
     <div>
-    <MiniHero text="À propos" />
+    <Title text="À propos" />
     <AboutText />
     </div>
   )

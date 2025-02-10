@@ -1,4 +1,4 @@
-import MiniHero from "../../components/MiniHero";
+import Title from "../../components/Title";
 import Socials from "../../components/Socials";
 import About from "../../components/About";
 
@@ -8,7 +8,7 @@ function Contact() {
 
   return (
     <div>
-      <MiniHero text="Contact" />
+      <Title text="Contact" />
         <h2>
 Vous pouvez me contacter sur les différents réseaux sociaux ci-dessous.
         </h2>

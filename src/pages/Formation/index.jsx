@@ -4,7 +4,7 @@ import NotFound from "../NotFound";
 
 import liste_cours from "../../data/cours.json";
 import parcours_data from "../../data/parcours.json";
-import MiniHero from "../../components/MiniHero";
+import Title from "../../components/Title";
 import ListeCours from "../../components/ListeCours";
 
 function Formation() {
@@ -12,7 +12,7 @@ function Formation() {
   const liste_cours_filtrée = liste_cours.filter((data) => data.parcours === id);
   const parcours = parcours_data.find((data) => data.id === id);
 
-  if (liste_cours_filtrée.length === 0) {
+  if (liste_cours_filtrée.length === 0 || parcours.length === 0) {
     return (
       <NotFound type="no_course" />
     )
@@ -23,7 +23,7 @@ function Formation() {
 
   return (
     <div>
-      <MiniHero text={`Les cours du parcours ${parcours.title}`} />
+      <Title text={`Les cours du parcours ${parcours.title}`} />
       <ListeCours liste_cours={liste_cours_filtrée} />
     </div>
   );
