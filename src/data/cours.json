@@ -132,7 +132,7 @@
 		"parcours": "3",
 		"title": "Le Mind Mapping avec Xmind Zen",
 		"description": "",
-		"image": "UDEMY_KM.webp",
+		"image": "UDEMY_Xmind.webp",
 		"tags": [
 			"Management",
 			"KM"
@@ -150,7 +150,7 @@
 		"parcours": "3",
 		"title": "Le numérique une (r)évolution programmée",
 		"description": "",
-		"image": "UDEMY_KM.webp",
+		"image": "UDEMY_numerique.webp",
 		"tags": [
 			"Management",
 			"KM"
@@ -265,7 +265,7 @@
 		"links": [
 			{
 				"name": "Udemy",
-				"href": "https://www.udemy.com/course/"
+				"href": "https://www.udemy.com/course/systemes-information-organisationnels/?referralCode=142C6F5F5E17FDBE3D44"
 			}
 		]
 	},
