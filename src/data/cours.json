@@ -1,362 +1,474 @@
 [
-  {
-    "id": "1",
-    "platform": "4",
-    "parcours": "3",
-    "title": "MS Access",
-    "description": "ce cours va vous permettre de découvrir les bases de la gestion de bases de données.",
-    "image": "UDEMY_Access.webp",
-    "tags": ["Bases de données", "Office"],
-    "links": [
-      {
-       "name": "Udemy",
-       "href": "https://www.udemy.com/course/"
-      }
-    ]
-  },
-  {
-    "id": "2",
-    "platform": "4",
-    "parcours": "1",
-    "title": "Introduction au Design de Bases de Données Relationnelles",
-    "description": "Tout ce que vous vouliez savoir sur les Bases de Données Relationnelles et que votre mère ne vous a pas dit ! Depuis Access de Microsoft à DB2 d'IBM ou Oracle, en passant par MySQL et PostGres, toutes ces technologies ont un point commun. Ce sont des SGBD (Systèmes de Gestion de Bases de Données) et même SGBDR, pour Relationnelles. Ils reposent sur les mêmes fondements théoriques et chose rare dans le monde du développement, tous ces systèmes utilisent le même langage : SQL.",
-    "image": "UDEMY_BDD.webp",
-    "tags": ["Bases de données", "Web"],
-    "links": [
-      {
-       "name": "Udemy",
-       "href": "https://www.udemy.com/course/design-des-bases-de-donnees/?referralCode=110F01EFF1978B769887"
-      }
-    ]
-  },
-  {
-    "id": "3",
-    "platform": "4",
-    "parcours": "3",
-    "title": "Excel Solver",
-    "description": "Ce cours va vous permettre d'utiliser Excel pour résoudre des problèmes.",
-    "image": "UDEMY_Excel_solver.webp",
-    "tags": ["Excel", "Office"],
-    "links": [
-      {
-       "name": "Udemy",
-       "href": "https://www.udemy.com/course/"
-      }
-    ]
-  },
-  {
-    "id": "4",
-    "platform": "4",
-    "parcours": "3",
-    "title": "Excel tableau de bord",
-    "description": "Ce cours va vous permettre d'utiliser Excel pour résoudre des problèmes.",
-    "image": "UDEMY_Excel_tableau.webp",
-    "tags": ["Excel", "Office"],
-    "links": [
-      {
-       "name": "Udemy",
-       "href": "https://www.udemy.com/course/"
-      }
-    ]
-  },
-  {
-    "id": "5",
-    "platform": "4",
-    "parcours": "3",
-    "title": "Excel",
-    "description": "Ce cours va vous permettre d'utiliser Excel pour résoudre des problèmes.",
-    "image": "UDEMY_Excel.webp",
-    "tags": ["Excel", "Office"],
-    "links": [
-      {
-       "name": "Udemy",
-       "href": "https://www.udemy.com/course/"
-      }
-    ]
-  },
-  {
-    "id": "6",
-    "platform": "4",
-    "parcours": "1",
-    "title": "HTML et CSS : le développement Web par la pratique",
-    "description": "Tout ce que vous avez voulu savoir sur HTML et que votre mère ne vous a pas dit. Si vous avez décidé de vous lancer dans le développement de site Web, si vous êtes utilisateur d'outils no code comme Wix ou d'un CMS comme Wordpress et que vous avez envie d'aller plus loin, il va falloir commencer par les bases. Et les bases, quoiqu'on fasse et quoiqu'on dise, c'est HTML et CSS, ce sont les deux langages de base utilisés par tous les autres outils. Ce cours va vous accompagner pas à pas à travers tout ce qu'il est nécessaire de savoir pour coder en HTML et CSS. Pas de théorie mais de la pratique, encore et toujours beaucoup de pratique.",
-    "image": "UDEMY_HTML.webp",
-    "tags": ["HTML", "CSS", "Web"],
-    "links": [
-      {
-       "name": "Udemy",
-       "href": "https://www.udemy.com/course/developpement-web-par-la-pratique/?referralCode=F83C08B0B7AFEFD400E0"
-      }
-    ]
-  },
-  {
-    "id": "7",
-    "platform": "4",
-    "parcours": "3",
-    "title": "Introduction au Knowledge Management",
-    "description": "Pour un entrepreneur ou même un manager, de nombreuses questions se posent qui trouvent rarement une réponse dans les manuels. Parce que tout n'est pas écrit et que le savoir faire, les tours de main, ne sont pas uniquement l'apanage des métiers de l'artisanat. ",
-    "image": "UDEMY_KM.webp",
-    "tags": ["Management", "KM"],
-    "links": [
-      {
-       "name": "Udemy",
-       "href": "https://www.udemy.com/course/introduction-au-km/?referralCode=271C1EC066753794F544"
-      }
-    ]
-  },
-  {
-    "id": "8",
-    "platform": "4",
-    "parcours": "2",
-    "title": "Créer des jeux avec Python",
-    "description": "Cette série de vidéos n'est pas un cours mais plutôt un projet de développement. Cela s'adresse à tous ceux qui ont déjà fait un cours Python, ou qui connaissent un peu le langage mais qui manquent d'idée pour se lancer. On va construire ensemble quelques petits jeux tout simples, mais sympa. Pas à pas, je vous présente le problème à résoudre, je vous laisse coder et ensuite vous comparez votre solution avec la mienne.", 
-    "image": "UDEMY_Python_jeux.webp",
-    "tags": ["Python", "Jeux"],
-    "links": [
-      {
-       "name": "Udemy",
-       "href": "https://www.udemy.com/course/creer-un-jeu-simple-avec-python/?referralCode=B1FA8B7AD8E473DDFCA5"
-      }
-    ]
-  },
-  {
-    "id": "9",
-    "platform": "4",
-    "parcours": "2",
-    "title": "Python",
-    "description": "",
-    "image": "UDEMY_Python.webp",
-    "tags": ["Python"],
-    "links": [
-      {
-       "name": "Udemy",
-       "href": "https://www.udemy.com/course/"
-      }
-    ]
-  },
-  {
-    "id": "10",
-    "platform": "4",
-    "parcours": "2",
-    "title": "Python",
-    "description": "",
-    "image": "UDEMY_Python.webp",
-    "tags": ["Python"],
-    "links": [
-      {
-       "name": "Udemy",
-       "href": "https://www.udemy.com/course/"
-      }
-    ]
-  },
-  {
-    "id": "11",
-    "platform": "4",
-    "parcours": "1",
-    "title": "Créer un site dynamique de A à Z avec PHP et MySQL",
-    "description": "Vous maitrisez HTML, CSS et PHP mais vous n’avez pas encore mis tout cela en pratique dans un vrai projet ?<h3>Ce cours et l’occasion de « mettre le maçon au pied du mur ».</h3><ul><li>Comment, avec ces outils, bâtir un site Web ?</li><li>Comment faire pour que ce soit simple à maintenir, stable et robuste ?</li><li>Comment utiliser une base de données pour stocker des données ?</li><li>Vous avez entendu parler de framework (Symfony, etc.) mais c’est trop lourd et complexe pour votre projet</li><li>Vous souhaitez développer VOTRE framework, adapté à la taille de votre site. </li></ul>Ce cours s’adresse à tous ceux qui souhaitent créer un site Web dynamique, c’est à dire dont les pages sont créées à la volée suivant les requêtes de l’internaute et ceci à partir de zéro, tout le code du site sera VOTRE (notre) code.<br>Il est préférable d’avoir déjà des notions de PHP, HTML et CSS que nous utiliserons pour construire un site au fur et à mesure que nous avancerons dans les leçons. Celles-ci sont principalement constituées de vidéos, au départ pour expliquer comment notre projet de développement va être conduit. Nous discuterons aussi ergonomie et interface graphique, nous verrons ensuite comment développer votre propose framework pour développer plus vite et plus simplement.<br>Ensuite, nous construirons petit à petit le site. Plutôt qu’un cours magistral, il s’agit donc de partir d’une feuille blanche et de construire, ligne après ligne, le site que je vous propose. À partir de cet exemple, il vous sera très simple de construire votre propre site, avec votre contenu.<br>Après chaque leçon dans laquelle du code est présenté, vous aurez en téléchargement un ou plusieurs fichiers contenant le code source présenté. Je vous donnerai également quelques exercices de programmation dont la solution sera également fournie sous la forme de code source et d’une vidéo explicative pour les plus complexes.<br>Après avoir suivi ce cours vous serez capable de :<ul><li>Aborder et mettre en place un projet de développement de site Web dynamique.</li><li>Développer un site Web dynamique en PHP d’envergure.</li><li>Développer un site Web dynamique en PHP d’envergure.</li><li>Développer un site Web dynamique en PHP d’envergure.Comprendre l’utilité d’un framework, sa logique et son fonctionnement.</li><li>Développer un site Web dynamique en PHP d’envergure.</li><li>Maitriser PHP en coordination avec HTML et CSS.</li><li>Développer un site Web dynamique en PHP d’envergure.Intégrer l’utilisation d’une base de données MySQL dans un site</li></ul>Et surtout…<p><strong>VOUS SEREZ CAPABLE DE DÉVELOPPER SEUL N’IMPORTE QUEL TYPE DE SITE</strong></p><p>C’est une compétence que vous pourrez mettre en avant sur votre CV et utiliser professionnellement.</p>",
-    "image": "UDEMY_PHP.webp",
-    "tags": ["Bases de données", "Office"],
-    "links": [
-      {
-       "name": "Udemy",
-       "href": "https://www.udemy.com/course/votre-site-web-en-php/?referralCode=6052B85326FD5DDC78EC"
-      }
-    ]
-  },
-  {
-    "id": "12",
-    "platform": "5",
-    "parcours": "2",
-    "title": "",
-    "description": "",
-    "image": "TUTO_excel.webp",
-    "tags": ["Bases de données", "Office"],
-    "links": [
-      {
-       "name": "Tuto",
-       "href": ""
-      }
-    ]
-  },
-  {
-    "id": "13",
-    "platform": "5",
-    "parcours": "",
-    "title": "",
-    "description": "",
-    "image": "TUTO_HTML.webp",
-    "tags": ["Bases de données", "Office"],
-    "links": [
-      {
-        "name": "Tuto",
-        "href": ""
-       }
-    ]
-  },
-  {
-    "id": "14",
-    "platform": "5",
-    "parcours": "",
-    "title": "",
-    "description": "",
-    "image": "TUTO_merise.webp",
-    "tags": ["Bases de données", "Office"],
-    "links": [
-      {
-        "name": "Tuto",
-        "href": ""
-       }
-    ]
-  },
-  {
-    "id": "15",
-    "platform": "5",
-    "parcours": "",
-    "title": "",
-    "description": "",
-    "image": "TUTO_mind_mapping.webp",
-    "tags": ["Bases de données", "Office"],
-    "links": [
-      {
-        "name": "Tuto",
-        "href": ""
-       }
-    ]
-  },
-  {
-    "id": "16",
-    "platform": "5",
-    "parcours": "",
-    "title": "",
-    "description": "",
-    "image": "TUTO_NodeJS.webp",
-    "tags": ["Bases de données", "Office"],
-    "links": [
-      {
-        "name": "Tuto",
-        "href": ""
-       }
-    ]
-  },
-  {
-    "id": "17",
-    "platform": "5",
-    "parcours": "",
-    "title": "",
-    "description": "",
-    "image": "TUTO_php.webp",
-    "tags": ["Bases de données", "Office"],
-    "links": [
-      {
-        "name": "Tuto",
-        "href": ""
-       }
-    ]
-  },
-  {
-    "id": "18",
-    "platform": "5",
-    "parcours": "",
-    "title": "",
-    "description": "",
-    "image": "TUTO_solver_excel.webp",
-    "tags": ["Bases de données", "Office"],
-    "links": [
-      {
-        "name": "Tuto",
-        "href": ""
-       }
-    ]
-  },
-  {
-    "id": "19",
-    "platform": "4",
-    "parcours": "1",
-    "title": "Docker pour le développement BackEnd",
-    "description": "Ce cours s’adresse aux développeurs BackEnd souhaitant tirer parti de Docker pour simplifier leurs workflows, améliorer la portabilité des applications et garantir des déploiements fiables.",
-    "image": "UDEMY_docker.webp",
-    "tags": ["Bases de données", "Office"],
-    "links": [
-      {
-        "name": "Udemy",
-        "href": "https://www.udemy.com/course/docker-pour-le-developpement-backend/?referralCode=4D729C5068EB5F8ED21E"
-       }
-    ]
-  },
-  {
-    "id": "20",
-    "platform": "5",
-    "parcours": "3",
-    "title": "ACCESS",
-    "description": "",
-    "image": "TUTO_access.webp",
-    "tags": ["Bases de données", "Office"],
-    "links": [
-      {
-        "name": "Tuto",
-        "href": ""
-       }
-    ]
-  },
-  {
-    "id": "21",
-    "platform": "5",
-    "parcours": "",
-    "title": "Excel Solver",
-    "description": "",
-    "image": "TUTO_Excel_Solver",
-    "tags": ["Bases de données", "Office"],
-    "links": [
-      {
-        "name": "Tuto",
-        "href": ""
-       }
-    ]
-  },
-  {
-    "id": "22",
-    "platform": "4",
-    "parcours": "3",
-    "title": "Ecrire un papier de recherche",
-    "description": "Ce cours s'adresse à des étudiants désireux de s'engager dans un parcours académique de recherche, quel qu'il soit. Par exemple si vous avez décidé de devenir doctorants. Mais le cours peut aussi être très utile à des étudiants en Master et qui doivent rédigier un mémoire de recherche pour valider leur parcours. Il s'adresse plus largement à toute personne qui décide de faire ses premiers pas avec la recherche académique de manière générale, quelle que soit la discipline.",
-    "image": "UDEMY_recherche.webp",
-    "tags": ["Académique", "Recherche"],
-    "links": [
-      {
-        "name": "Udemy",
-        "href": "https://www.udemy.com/course/ecrire-un-papier-de-recherche/?referralCode=7A4699A0DAD1DB65BAAD"
-       }
-    ]
-  },
-  {
-    "id": "23",
-    "platform": "5",
-    "parcours": "",
-    "title": "",
-    "description": "",
-    "image": "",
-    "tags": ["Bases de données", "Office"],
-    "links": [
-      {
-        "name": "Tuto",
-        "href": ""
-       }
-    ]
-  },
-  {
-    "id": "24",
-    "platform": "5",
-    "parcours": "",
-    "title": "",
-    "description": "",
-    "image": "",
-    "tags": ["Bases de données", "Office"],
-    "links": [
-      {
-        "name": "Tuto",
-        "href": ""
-       }
-    ]
-  }
+	{
+		"id": "1",
+		"platform": "4",
+		"parcours": "2",
+		"title": "Créer des jeux avec Python",
+		"description": "Cette série de vidéos n'est pas un cours mais plutôt un projet de développement. Cela s'adresse à tous ceux qui ont déjà fait un cours Python, ou qui connaissent un peu le langage mais qui manquent d'idée pour se lancer. On va construire ensemble quelques petits jeux tout simples, mais sympa. Pas à pas, je vous présente le problème à résoudre, je vous laisse coder et ensuite vous comparez votre solution avec la mienne.",
+		"image": "UDEMY_Python_jeux.webp",
+		"tags": [
+			"Python",
+			"Jeux"
+		],
+		"links": [
+			{
+				"name": "Udemy",
+				"href": "https://www.udemy.com/course/creer-un-jeu-simple-avec-python/?referralCode=B1FA8B7AD8E473DDFCA5"
+			}
+		]
+	},
+	{
+		"id": "2",
+		"platform": "4",
+		"parcours": "1",
+		"title": "Créer un site dynamique de A à Z avec PHP et MySQL",
+		"description": "Vous maitrisez HTML, CSS et PHP mais vous n’avez pas encore mis tout cela en pratique dans un vrai projet ?<h3>Ce cours et l’occasion de « mettre le maçon au pied du mur ».</h3><ul><li>Comment, avec ces outils, bâtir un site Web ?</li><li>Comment faire pour que ce soit simple à maintenir, stable et robuste ?</li><li>Comment utiliser une base de données pour stocker des données ?</li><li>Vous avez entendu parler de framework (Symfony, etc.) mais c’est trop lourd et complexe pour votre projet</li><li>Vous souhaitez développer VOTRE framework, adapté à la taille de votre site. </li></ul>Ce cours s’adresse à tous ceux qui souhaitent créer un site Web dynamique, c’est à dire dont les pages sont créées à la volée suivant les requêtes de l’internaute et ceci à partir de zéro, tout le code du site sera VOTRE (notre) code.<br>Il est préférable d’avoir déjà des notions de PHP, HTML et CSS que nous utiliserons pour construire un site au fur et à mesure que nous avancerons dans les leçons. Celles-ci sont principalement constituées de vidéos, au départ pour expliquer comment notre projet de développement va être conduit. Nous discuterons aussi ergonomie et interface graphique, nous verrons ensuite comment développer votre propose framework pour développer plus vite et plus simplement.<br>Ensuite, nous construirons petit à petit le site. Plutôt qu’un cours magistral, il s’agit donc de partir d’une feuille blanche et de construire, ligne après ligne, le site que je vous propose. À partir de cet exemple, il vous sera très simple de construire votre propre site, avec votre contenu.<br>Après chaque leçon dans laquelle du code est présenté, vous aurez en téléchargement un ou plusieurs fichiers contenant le code source présenté. Je vous donnerai également quelques exercices de programmation dont la solution sera également fournie sous la forme de code source et d’une vidéo explicative pour les plus complexes.<br>Après avoir suivi ce cours vous serez capable de :<ul><li>Aborder et mettre en place un projet de développement de site Web dynamique.</li><li>Développer un site Web dynamique en PHP d’envergure.</li><li>Développer un site Web dynamique en PHP d’envergure.</li><li>Développer un site Web dynamique en PHP d’envergure.Comprendre l’utilité d’un framework, sa logique et son fonctionnement.</li><li>Développer un site Web dynamique en PHP d’envergure.</li><li>Maitriser PHP en coordination avec HTML et CSS.</li><li>Développer un site Web dynamique en PHP d’envergure.Intégrer l’utilisation d’une base de données MySQL dans un site</li></ul>Et surtout…<p><strong>VOUS SEREZ CAPABLE DE DÉVELOPPER SEUL N’IMPORTE QUEL TYPE DE SITE</strong></p><p>C’est une compétence que vous pourrez mettre en avant sur votre CV et utiliser professionnellement.</p>",
+		"image": "UDEMY_PHP.webp",
+		"tags": [
+			"Bases de données",
+			"Office"
+		],
+		"links": [
+			{
+				"name": "Udemy",
+				"href": "https://www.udemy.com/course/votre-site-web-en-php/?referralCode=6052B85326FD5DDC78EC"
+			}
+		]
+	},
+	{
+		"id": "3",
+		"platform": "4",
+		"parcours": "1",
+		"title": "Docker pour le développement BackEnd",
+		"description": "Ce cours s’adresse aux développeurs BackEnd souhaitant tirer parti de Docker pour simplifier leurs workflows, améliorer la portabilité des applications et garantir des déploiements fiables.",
+		"image": "UDEMY_docker.webp",
+		"tags": [
+			"Bases de données",
+			"Office"
+		],
+		"links": [
+			{
+				"name": "Udemy",
+				"href": "https://www.udemy.com/course/docker-pour-le-developpement-backend/?referralCode=4D729C5068EB5F8ED21E"
+			}
+		]
+	},
+	{
+		"id": "4",
+		"platform": "4",
+		"parcours": "3",
+		"title": "Ecrire un papier de recherche",
+		"description": "Ce cours s'adresse à des étudiants désireux de s'engager dans un parcours académique de recherche, quel qu'il soit. Par exemple si vous avez décidé de devenir doctorants. Mais le cours peut aussi être très utile à des étudiants en Master et qui doivent rédigier un mémoire de recherche pour valider leur parcours. Il s'adresse plus largement à toute personne qui décide de faire ses premiers pas avec la recherche académique de manière générale, quelle que soit la discipline.",
+		"image": "UDEMY_recherche.webp",
+		"tags": [
+			"Académique",
+			"Recherche"
+		],
+		"links": [
+			{
+				"name": "Udemy",
+				"href": "https://www.udemy.com/course/ecrire-un-papier-de-recherche/?referralCode=7A4699A0DAD1DB65BAAD"
+			}
+		]
+	},
+	{
+		"id": "5",
+		"platform": "4",
+		"parcours": "1",
+		"title": "HTML et CSS : le développement Web par la pratique",
+		"description": "Tout ce que vous avez voulu savoir sur HTML et que votre mère ne vous a pas dit. Si vous avez décidé de vous lancer dans le développement de site Web, si vous êtes utilisateur d'outils no code comme Wix ou d'un CMS comme Wordpress et que vous avez envie d'aller plus loin, il va falloir commencer par les bases. Et les bases, quoiqu'on fasse et quoiqu'on dise, c'est HTML et CSS, ce sont les deux langages de base utilisés par tous les autres outils. Ce cours va vous accompagner pas à pas à travers tout ce qu'il est nécessaire de savoir pour coder en HTML et CSS. Pas de théorie mais de la pratique, encore et toujours beaucoup de pratique.",
+		"image": "UDEMY_HTML.webp",
+		"tags": [
+			"HTML",
+			"CSS",
+			"Web"
+		],
+		"links": [
+			{
+				"name": "Udemy",
+				"href": "https://www.udemy.com/course/developpement-web-par-la-pratique/?referralCode=F83C08B0B7AFEFD400E0"
+			}
+		]
+	},
+	{
+		"id": "6",
+		"platform": "4",
+		"parcours": "1",
+		"title": "Introduction au Design de Bases de Données Relationnelles",
+		"description": "Tout ce que vous vouliez savoir sur les Bases de Données Relationnelles et que votre mère ne vous a pas dit ! Depuis Access de Microsoft à DB2 d'IBM ou Oracle, en passant par MySQL et PostGres, toutes ces technologies ont un point commun. Ce sont des SGBD (Systèmes de Gestion de Bases de Données) et même SGBDR, pour Relationnelles. Ils reposent sur les mêmes fondements théoriques et chose rare dans le monde du développement, tous ces systèmes utilisent le même langage : SQL.",
+		"image": "UDEMY_BDD.webp",
+		"tags": [
+			"Bases de données",
+			"Web"
+		],
+		"links": [
+			{
+				"name": "Udemy",
+				"href": "https://www.udemy.com/course/design-des-bases-de-donnees/?referralCode=110F01EFF1978B769887"
+			}
+		]
+	},
+	{
+		"id": "7",
+		"platform": "4",
+		"parcours": "3",
+		"title": "Introduction au Knowledge Management",
+		"description": "Pour un entrepreneur ou même un manager, de nombreuses questions se posent qui trouvent rarement une réponse dans les manuels. Parce que tout n'est pas écrit et que le savoir faire, les tours de main, ne sont pas uniquement l'apanage des métiers de l'artisanat. ",
+		"image": "UDEMY_KM.webp",
+		"tags": [
+			"Management",
+			"KM"
+		],
+		"links": [
+			{
+				"name": "Udemy",
+				"href": "https://www.udemy.com/course/introduction-au-km/?referralCode=271C1EC066753794F544"
+			}
+		]
+	},
+	{
+		"id": "8",
+		"platform": "4",
+		"parcours": "3",
+		"title": "Le Mind Mapping avec Xmind Zen",
+		"description": "",
+		"image": "UDEMY_KM.webp",
+		"tags": [
+			"Management",
+			"KM"
+		],
+		"links": [
+			{
+				"name": "Udemy",
+				"href": ""
+			}
+		]
+	},
+	{
+		"id": "9",
+		"platform": "4",
+		"parcours": "3",
+		"title": "Le numérique une (r)évolution programmée",
+		"description": "",
+		"image": "UDEMY_KM.webp",
+		"tags": [
+			"Management",
+			"KM"
+		],
+		"links": [
+			{
+				"name": "Udemy",
+				"href": ""
+			}
+		]
+	},
+	{
+		"id": "10",
+		"platform": "4",
+		"parcours": "3",
+		"title": "Le solver Excel pour gérer la productivité d'une entreprise",
+		"description": "Ce cours va vous permettre d'utiliser Excel pour résoudre des problèmes.",
+		"image": "UDEMY_Excel_solver.webp",
+		"tags": [
+			"Excel",
+			"Office"
+		],
+		"links": [
+			{
+				"name": "Udemy",
+				"href": "https://www.udemy.com/course/"
+			}
+		]
+	},
+	{
+		"id": "11",
+		"platform": "4",
+		"parcours": "3",
+		"title": "Microsoft Access et les Bases de Données Relationnelles",
+		"description": "ce cours va vous permettre de découvrir les bases de la gestion de bases de données.",
+		"image": "UDEMY_Access.webp",
+		"tags": [
+			"Bases de données",
+			"Office"
+		],
+		"links": [
+			{
+				"name": "Udemy",
+				"href": "https://www.udemy.com/course/"
+			}
+		]
+	},
+	{
+		"id": "12",
+		"platform": "4",
+		"parcours": "3",
+		"title": "Excel tableau de bord",
+		"description": "Ce cours va vous permettre d'utiliser Excel pour résoudre des problèmes.",
+		"image": "UDEMY_Excel_tableau.webp",
+		"tags": [
+			"Excel",
+			"Office"
+		],
+		"links": [
+			{
+				"name": "Udemy",
+				"href": "https://www.udemy.com/course/"
+			}
+		]
+	},
+	{
+		"id": "13",
+		"platform": "4",
+		"parcours": "2",
+		"title": "Python 3 : Formation complète à la programmation",
+		"description": "",
+		"image": "UDEMY_Python.webp",
+		"tags": [
+			"Python"
+		],
+		"links": [
+			{
+				"name": "Udemy",
+				"href": "https://www.udemy.com/course/"
+			}
+		]
+	},
+	{
+		"id": "14",
+		"platform": "4",
+		"parcours": "2",
+		"title": "Python pour débuter en programmation et devenir expert",
+		"description": "",
+		"image": "UDEMY_Python.webp",
+		"tags": [
+			"Python"
+		],
+		"links": [
+			{
+				"name": "Udemy",
+				"href": "https://www.udemy.com/course/"
+			}
+		]
+	},
+	{
+		"id": "15",
+		"platform": "4",
+		"parcours": "3",
+		"title": "Systèmes d'Information Organisationnels",
+		"description": "",
+		"image": "UDEMY_SIO.webp",
+		"tags": [
+			"Management",
+			"Académique",
+			"Stratégie"
+		],
+		"links": [
+			{
+				"name": "Udemy",
+				"href": "https://www.udemy.com/course/"
+			}
+		]
+	},
+	{
+		"id": "16",
+		"platform": "5",
+		"parcours": "3",
+		"title": "Gérez vos événements avec Excel",
+		"description": "",
+		"image": "TUTO_Excel_réception.webp",
+		"tags": [
+			"Bases de données",
+			"Office"
+		],
+		"links": [
+			{
+				"name": "Tuto",
+				"href": "https://fr.tuto.com/206871"
+			}
+		]
+	},
+	{
+		"id": "17",
+		"platform": "5",
+		"parcours": "3",
+		"title": "Excel : Tableau de bord et optimisation avec le Solver",
+		"description": "",
+		"image": "TUTO_EXCEL_Solver.jpg",
+		"tags": [
+			"Bases de données",
+			"Office"
+		],
+		"links": [
+			{
+				"name": "Tuto",
+				"href": "https://fr.tuto.com/excel/tuto-tableau-bord-solver,206741.html"
+			}
+		]
+	},
+	{
+		"id": "18",
+		"platform": "5",
+		"parcours": "1",
+		"title": "Développement Web avec Node.js et Express",
+		"description": "",
+		"image": "TUTO_NodeJS.webp",
+		"tags": [
+			"Web",
+			"Javascript"
+		],
+		"links": [
+			{
+				"name": "Tuto",
+				"href": "https://fr.tuto.com/203871"
+			}
+		]
+	},
+	{
+		"id": "19",
+		"platform": "5",
+		"parcours": "1",
+		"title": "Laravel précis et concis",
+		"description": "",
+		"image": "TUTO_Laravel.webp",
+		"tags": [
+			"Web",
+			"Php",
+			"Framework",
+			"Backend"
+		],
+		"links": [
+			{
+				"name": "Tuto",
+				"href": "https://fr.tuto.com/202631"
+			}
+		]
+	},
+	{
+		"id": "20",
+		"platform": "5",
+		"parcours": "3",
+		"title": "Le solver Excel par la pratique",
+		"description": "",
+		"image": "TUTO_solver_excel.webp",
+		"tags": [
+			"Management",
+			"Office"
+		],
+		"links": [
+			{
+				"name": "Tuto",
+				"href": "https://fr.tuto.com/172791"
+			}
+		]
+	},
+	{
+		"id": "21",
+		"platform": "5",
+		"parcours": "1",
+		"title": "Développer un site Dynamique avec PHP et MySQL",
+		"description": "",
+		"image": "TUTO_php.webp",
+		"tags": [
+			"Bases de données",
+			"Office"
+		],
+		"links": [
+			{
+				"name": "Tuto",
+				"href": "https://fr.tuto.com/153511"
+			}
+		]
+	},
+	{
+		"id": "22",
+		"platform": "5",
+		"parcours": "1",
+		"title": "HTML et CSS par la Pratique",
+		"description": "",
+		"image": "TUTO_html.webp",
+		"tags": [
+			"Web",
+			"HTML",
+			"CSS"
+		],
+		"links": [
+			{
+				"name": "Tuto",
+				"href": "https://fr.tuto.com/129101"
+			}
+		]
+	},
+	{
+		"id": "23",
+		"platform": "5",
+		"parcours": "3",
+		"title": "Gestion et analyse de ventes avec Excel",
+		"description": "",
+		"image": "TUTO_excel.webp",
+		"tags": [
+			"Management",
+			"Office"
+		],
+		"links": [
+			{
+				"name": "Tuto",
+				"href": "https://fr.tuto.com/122901"
+			}
+		]
+	},
+	{
+		"id": "24",
+		"platform": "5",
+		"parcours": "3",
+		"title": "Microsoft Access en Pratique",
+		"description": "Cette formation est utile aussi bien à un entrepreneur, commerçant pour gérer ses affaires comme à un particulier pour gérer son quotidien (révision de la voiture, dossier médical, recettes, collection, etc.). Grâce à ce tuto en ligne, vous serez autonome dans la conceptualisation d'une base de données ainsi qu'à utiliser Microsoft Access.",
+		"image": "TUTO_access.webp",
+		"tags": [
+			"Bases de données",
+			"Office",
+			"Management"
+		],
+		"links": [
+			{
+				"name": "Tuto",
+				"href": "https://fr.tuto.com/access/microsoft-access-en-pratique,113021.html"
+			}
+		]
+	},
+	{
+		"id": "25",
+		"platform": "5",
+		"parcours": "3",
+		"title": "MERISE pour la conception de Bases de Données",
+		"description": "",
+		"image": "TUTO_merise.webp",
+		"tags": [
+			"Bases de données",
+			"Office"
+		],
+		"links": [
+			{
+				"name": "Tuto",
+				"href": "https://fr.tuto.com/98771"
+			}
+		]
+	},
+	{
+		"id": "26",
+		"platform": "5",
+		"parcours": "3",
+		"title": "Le Mind Mapping facile",
+		"description": "",
+		"image": "TUTO_mind_mapping.webp",
+		"tags": [
+			"Bases de données",
+			"Office"
+		],
+		"links": [
+			{
+				"name": "Tuto",
+				"href": "https://fr.tuto.com/98521"
+			}
+		]
+	}
 ]
