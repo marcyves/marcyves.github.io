@@ -1,6 +1,6 @@
 .home-deux{
     margin:8rem auto;
-    height: 40rem;
+    height:fit-content;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

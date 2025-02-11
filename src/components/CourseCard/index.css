@@ -25,10 +25,13 @@
   border-radius: 10px 10px 0px 0px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.course-card:active {
-  display: block;
+.course-text {
+  display: flex;
+  height: 12em;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
-
 @keyframes scaleUp {
   0% {
     transform: scale(0.5);
@@ -40,4 +43,26 @@
 
 .caption {
     padding: 6px;
+}
+
+.links-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 6px;
+  width: 100%;
+  margin-bottom: 12px;
+}
+.button-link {
+  padding: 8px;
+  border-radius: 6px;
+  color: var(--background-color);
+  background-color: white;
+  border: 1px solid var(--background-color);
+  transition: all 0.25s ease;
+}
+
+.button-link:hover {
+  background-color: var(--background-color);
+  color: white;
 }
