@@ -9,7 +9,7 @@ function CourseCard({ id, title, description, image, links }) {
       <div className="course-text">
         <h2 className="caption">{title}</h2>
         <div className="links-bar">
-          <Link to={`/cours/${id}`} target="_blank">
+          <Link to={`/cours/${id}`}>
             <button className="button-link">Détails</button>
           </Link>
           {links.map((link) => (

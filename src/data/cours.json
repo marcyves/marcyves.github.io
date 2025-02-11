@@ -140,7 +140,7 @@
 		"links": [
 			{
 				"name": "Udemy",
-				"href": ""
+				"href": "https://www.udemy.com/course/mind-mapping-avec-xmind-zen/?referralCode=1EC06B3F3A0D6CAC4506"
 			}
 		]
 	},
@@ -158,7 +158,7 @@
 		"links": [
 			{
 				"name": "Udemy",
-				"href": ""
+				"href": "https://www.udemy.com/course/numerique/?referralCode=00EA02767B3B4AE54CEF"
 			}
 		]
 	},
@@ -176,7 +176,7 @@
 		"links": [
 			{
 				"name": "Udemy",
-				"href": "https://www.udemy.com/course/"
+				"href": "https://www.udemy.com/course/solver-excel-pour-gerer-productivite/?referralCode=F328B1CC5163B94055A0"
 			}
 		]
 	},
@@ -194,7 +194,7 @@
 		"links": [
 			{
 				"name": "Udemy",
-				"href": "https://www.udemy.com/course/"
+				"href": "https://www.udemy.com/course/bases-de-donnees/?referralCode=40F43E301224AD003490"
 			}
 		]
 	},
@@ -202,7 +202,7 @@
 		"id": "12",
 		"platform": "4",
 		"parcours": "3",
-		"title": "Excel tableau de bord",
+		"title": "Présenter des données avec Excel, formation par la pratique",
 		"description": "Ce cours va vous permettre d'utiliser Excel pour résoudre des problèmes.",
 		"image": "UDEMY_Excel_tableau.webp",
 		"tags": [
@@ -212,7 +212,7 @@
 		"links": [
 			{
 				"name": "Udemy",
-				"href": "https://www.udemy.com/course/"
+				"href": "https://www.udemy.com/course/excel-par-la-pratique/?referralCode=1FBA9E9166692F74912F"
 			}
 		]
 	},
@@ -229,7 +229,7 @@
 		"links": [
 			{
 				"name": "Udemy",
-				"href": "https://www.udemy.com/course/"
+				"href": "https://www.udemy.com/course/python-formation-intensive-a-la-programmation/?referralCode=B0B80849C6B1A202A0FF"
 			}
 		]
 	},
@@ -246,7 +246,7 @@
 		"links": [
 			{
 				"name": "Udemy",
-				"href": "https://www.udemy.com/course/"
+				"href": "https://www.udemy.com/course/programmer-en-python/?referralCode=7E7B021E5D5746AC7670"
 			}
 		]
 	},
