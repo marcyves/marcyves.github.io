@@ -30,6 +30,7 @@
     #hero {
         height: auto;
         padding: 1rem;
+        background-image: url(/assets/images/montblanc-sp.webp);
         background-position: center;
         background-repeat: no-repeat;
     }
