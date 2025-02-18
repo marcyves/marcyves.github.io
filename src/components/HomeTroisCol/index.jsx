@@ -3,7 +3,11 @@ import "./index.css";
 function HomeTroisCol() {
   return (
     <section className="home-trois">
-      <article>
+      <article
+              data-aos="flip-up"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out">
         <h2>La cordée</h2>
         <h3>Ensemble, vers de nouveaux sommets.</h3>
         <img className="logo" src="/assets/images/cordée.png" alt="cordée"/>
@@ -16,7 +20,11 @@ function HomeTroisCol() {
         </ul>
       </article>
 
-      <article>
+      <article
+              data-aos="flip-up"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out">
         <h2>Le Refuge</h2>
         <h3>Un espace sûr pour se former et se ressourcer.</h3>
         <img className="logo" src="/assets/images/refuge.png" alt="refuge"/>
@@ -30,7 +38,11 @@ function HomeTroisCol() {
             <li><strong>Explorez les logiciels libres :</strong> des solutions performantes et accessibles, pour vous équiper en toute liberté.</li>
            </ul>
       </article>
-      <article>
+      <article
+              data-aos="flip-up"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out">
         <h2>Le Sommet</h2>
         <h3>
         Votre objectif : atteindre de nouveaux horizons.

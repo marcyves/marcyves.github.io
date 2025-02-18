@@ -20,7 +20,7 @@ function ListeParcours({ liste_parcours, type }) {
                 <Card
                   key={parcours.id}
                   title={parcours.title}
-                  description={parcours.description}
+                  description={parcours.short_description}
                   image={parcours.image}
                 />
               </Link>
