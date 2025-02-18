@@ -4,7 +4,7 @@
 		"platform": "4",
 		"parcours": "2",
 		"title": "Créer des jeux avec Python",
-		"description": "Cette série de vidéos n'est pas un cours mais plutôt un projet de développement. Cela s'adresse à tous ceux qui ont déjà fait un cours Python, ou qui connaissent un peu le langage mais qui manquent d'idée pour se lancer. On va construire ensemble quelques petits jeux tout simples, mais sympa. Pas à pas, je vous présente le problème à résoudre, je vous laisse coder et ensuite vous comparez votre solution avec la mienne.",
+		"description": "Cette série de vidéos n'est pas un cours mais plutôt un projet de développement. Cela s'adresse à tous ceux qui ont déjà fait un cours Python, ou qui connaissent un peu le langage mais qui manquent d'idée pour se lancer.<br/>On va construire ensemble quelques petits jeux tout simples, mais sympa. Pas à pas, je vous présente le problème à résoudre, je vous laisse coder et ensuite vous comparez votre solution avec la mienne.<br/>On commencera dans le terminal avec du procédural, puis programmation orientée objet et enfin interface graphique avec PyGame.<br/>Il y a une rapide introduction pour installer Python, trouver les sources des programmes sur GitHub et nous attaquerons ensuite rapidement. Pas de bla bla, des résultats !<br/>Vous pouvez voir la liste des jeux plus détaillée dans le programme du cours.",
 		"image": "UDEMY_Python_jeux.webp",
 		"tags": [
 			"Python",
@@ -40,7 +40,7 @@
 		"platform": "4",
 		"parcours": "1",
 		"title": "Docker pour le développement BackEnd",
-		"description": "Ce cours s’adresse aux développeurs BackEnd souhaitant tirer parti de Docker pour simplifier leurs workflows, améliorer la portabilité des applications et garantir des déploiements fiables.",
+		"description": "Ce cours s’adresse aux développeurs BackEnd souhaitant tirer parti de Docker pour simplifier leurs workflows, améliorer la portabilité des applications et garantir des déploiements fiables.<br/>Nous ferons une rapide présentation théorique avant d'entrer dans le vif du sujet, pour que vous soyez en mesure de comprendre les enjeux et ce qui se passe réellement derrière les commandes. Mais rassurez-vous, ce cours est essentiellement pratique.<br/>Vous apprendrez à maîtriser la conteneurisation, une technologie essentielle pour les applications modernes.<br./>Nous débuterons avec les concepts fondamentaux de Docker : conteneurs, images et registres. Vous découvrirez comment créer des environnements de développement reproductibles, configurer des conteneurs adaptés à vos projets BackEnd et résoudre les problèmes courants liés aux dépendances.",
 		"image": "UDEMY_docker.webp",
 		"tags": [
 			"Bases de données",
