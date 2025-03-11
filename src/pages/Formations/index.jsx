@@ -1,7 +1,7 @@
 import Title from "../../components/Title";
 import ListeParcours from "../../components/ListeParcours";
-import liste_parcours from "../../data/parcours.json";
-import { useEffect } from "react";
+import { supabase } from '../../utils/supabase.jsx'
+import { useEffect, useState } from "react";
 
 function Formations() {
   const root_id = document.getElementById("root");
@@ -10,6 +10,21 @@ function Formations() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+    const [parcours, setParcours] = useState([])
+  
+    useEffect(() => {
+      async function getParcours() {
+        const { data: parcours } = await supabase.from('parcours').select()
+
+        if (parcours.length > 1) {
+          setParcours(parcours)
+        }
+      }
+  
+      getParcours()
+    }, [])
+  
 
   return (
     <div>
@@ -27,7 +42,7 @@ function Formations() {
         </ul>
         Quel que soit votre objectif, vous trouverez un parcours structuré et progressif pour acquérir des compétences concrètes et applicables."
       />
-      <ListeParcours liste_parcours={liste_parcours} type="formation" />
+      <ListeParcours liste_parcours={parcours} type="formation" />
     </div>
   );
 }
