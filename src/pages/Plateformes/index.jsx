@@ -10,7 +10,7 @@ function Plateformes() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
+  
   return (
     <div>
       <Title

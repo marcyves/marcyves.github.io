@@ -1,6 +1,4 @@
 import Title from "../../components/Title";
-import Socials from "../../components/Socials";
-import About from "../../components/About";
 
 function Contact() {
   const root_id = document.getElementById('root');
@@ -8,7 +6,7 @@ function Contact() {
 
   return (
     <div>
-      <Title text="Contact" />
+      <Title title="Contact" text="Vous souhaitez en savoir plus sur mes formations ? Vous avez des questions sur mes parcours ? Contactez-moi !" />
         <h2>
 Vous pouvez me contacter sur les différents réseaux sociaux ci-dessous.
         </h2>
