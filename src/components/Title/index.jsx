@@ -4,11 +4,11 @@ import "./index.css";
 function Title({ title,text }) {
   return (
   <section>
-    <h2 className="mini-hero"         data-aos="flip-up"
+    <h2 className="mini-hero"         data-aos="fade-down"
         data-aos-delay="0"
         data-aos-duration="1000"
         data-aos-easing="ease-in-out">{title}</h2>
-    <p className="mini-hero"         data-aos="flip-down"
+    <p className="mini-hero"         data-aos="fade-up"
         data-aos-delay="10"
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
