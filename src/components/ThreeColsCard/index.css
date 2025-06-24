@@ -25,4 +25,12 @@
     font-size: 1.4rem;
 }
 
-
+@media screen and (max-width: 768px) {
+  .three-cols-content {
+    height: auto;
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem;
+  }  
+}

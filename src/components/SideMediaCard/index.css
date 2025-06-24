@@ -58,3 +58,17 @@
 .item:last-child {
   border-bottom: none;
 }
+
+@media screen and (max-width: 768px) {
+  .content {
+    height: auto;
+    padding: 1rem;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    padding: 1.5rem;
+  }
+  .media {
+    max-width:30vh;
+    margin: 0 auto;
+  }
+}
