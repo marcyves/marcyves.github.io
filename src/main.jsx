@@ -20,13 +20,11 @@ import "./index.css";
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Plateformes from "./pages/Plateformes";
 
 AOS.init();
 
 const navLink = [
-  { name: "Parcours", href: "/formations/" },
-  { name: "Plateformes", href: "/plateformes/" },
+  { name: "Formations", href: "/formations/" },
   { name: "A Propos", href: "/a-propos" },
   { name: "Contact", href: "/contact" },
 ];
@@ -39,7 +37,6 @@ createRoot(document.getElementById("root")).render(
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/formations/" element={<Formations />} />
-          <Route path="/plateformes/" element={<Plateformes />} />
           <Route path="/formation/:id" element={<Formation />} />
           <Route path="/plateforme/:id" element={<Platform />} />
           <Route path="/cours/:id" element={<Cours />} />
