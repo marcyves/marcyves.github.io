@@ -4,20 +4,20 @@
     "title": "Parcours Développeur Web 🚀",
     "short_description": "Devenez un expert en création de sites et applications web<br/>💻 Apprenez à coder, créez, innovez !",
     "description": "Devenez un expert en création de sites et applications web<br/>Que vous débutiez ou que vous souhaitiez perfectionner vos compétences, ce parcours vous guide à travers les technologies essentielles du développement web. De la conception d’interfaces utilisateur avec React et WordPress à la maîtrise des frameworks backend comme Laravel, vous apprendrez à créer des projets modernes, performants et optimisés.<ul><li>📌 Au programme :</li><li>✔️ Les bases du HTML, CSS et JavaScript</li><li>✔️ Développement front-end avec React</li><li>✔️ Création et personnalisation de sites avec WordPress</li><li>✔️ Programmation back-end avec Laravel et PHP</li><li>✔️ Gestion des bases de données et déploiement</li></ul><br/>🎯 Objectif : Acquérir les compétences nécessaires pour devenir un développeur web opérationnel et prêt à intégrer le marché du travail ou à lancer ses propres projets.</p><br/>💻 Apprenez à coder, créez, innovez !",
-    "image": "TUTO_php.webp"
+    "image": "parcours_web.jpg"
   },
   {
     "id": "2",
     "title": "Python et Data Science",
     "short_description": "Le langage de la data science",
     "description": "Le langage de la data science",
-    "image": "trinity-digital-python.png"
+    "image": "parcours_data.jpg"
   },
   {
     "id": "3",
     "title": "Outils du manager",
     "short_description": "Les outils de la performance managériale",
     "description": "Les outils de la performance managériale",
-    "image": "trinity-outils.png"
+    "image": "parcours_manager.jpg"
   }
 ]

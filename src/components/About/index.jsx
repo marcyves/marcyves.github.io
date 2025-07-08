@@ -6,7 +6,7 @@ function About() {
       <section className="home-deux">
         <article>
         <figure>
-            <img src="/assets/images/altitude.png" alt="Altitude" />
+            <img src="/assets/images/altitude_people.jpg" alt="Altitude" />
           </figure>
         </article>
         <article>
@@ -38,7 +38,7 @@ function About() {
 
         <article>
           <figure>
-            <img src="/assets/images/hello.png" alt="Marc Augier" />
+            <img src="/assets/images/altitude_marc.jpg" alt="Marc Augier" />
           </figure>
         </article>
       </section>

@@ -10,7 +10,7 @@ function HomeTroisCol() {
               data-aos-easing="ease-in-out">
         <h2>La cordée</h2>
         <h3>Ensemble, vers de nouveaux sommets.</h3>
-        <img className="logo" src="/assets/images/cordée.png" alt="cordée"/>
+        <img className="logo" src="/assets/images/cordee.jpg" alt="cordée"/>
         <p>
         Une cordée symbolise la collaboration, l’entraide et la progression collective. Dans le cadre de la transformation numérique, je suis à vos côtés pour :
         </p>
@@ -27,7 +27,7 @@ function HomeTroisCol() {
               data-aos-easing="ease-in-out">
         <h2>Le Refuge</h2>
         <h3>Un espace sûr pour se former et se ressourcer.</h3>
-        <img className="logo" src="/assets/images/refuge.png" alt="refuge"/>
+        <img className="logo" src="/assets/images/refuge.jpg" alt="refuge"/>
         <p>
            Comme un refuge, je vous offre un cadre fiable pour apprendre, expérimenter et bâtir des solutions solides.
            </p>
@@ -47,7 +47,7 @@ function HomeTroisCol() {
         <h3>
         Votre objectif : atteindre de nouveaux horizons.
         </h3>
-        <img className="logo" src="/assets/images/sommet.png" alt="sommet"/>
+        <img className="logo" src="/assets/images/sommet.jpg" alt="sommet"/>
         <p>
         Le sommet représente vos ambitions numériques. Grâce à un accompagnement personnalisé et une expertise approfondie, je vous aide à :
         </p>
