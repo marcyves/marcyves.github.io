@@ -1,0 +1,146 @@
+.skills-hero {
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+.skills-intro {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  max-width: 640px;
+  line-height: 1.7;
+}
+
+.subsection-title {
+  font-size: 1.5rem;
+  margin-bottom: 32px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.skill-category h3 {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: var(--accent-light);
+}
+
+.skill-category ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.skill-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+}
+
+.skill-percent {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.skill-bar {
+  height: 6px;
+  background: var(--bg-input);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.skill-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent-dark), var(--accent));
+  border-radius: 3px;
+  transition: width 1s ease;
+}
+
+.soft-skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.soft-skill-card {
+  text-align: center;
+}
+
+.soft-skill-icon {
+  color: var(--accent);
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+
+.soft-skill-card h3 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.soft-skill-card p {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.learning-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.methodology-flow {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.methodology-step {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.methodology-card {
+  text-align: center;
+  min-width: 160px;
+  max-width: 180px;
+}
+
+.methodology-icon {
+  color: var(--accent);
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.methodology-card h3 {
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+}
+
+.methodology-card p {
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+}
+
+.methodology-arrow {
+  color: var(--accent);
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+  .methodology-flow {
+    flex-direction: column;
+  }
+
+  .methodology-arrow {
+    transform: rotate(90deg);
+  }
+}

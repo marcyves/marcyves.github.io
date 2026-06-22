@@ -1,17 +1,120 @@
+.footer {
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border);
+  padding-top: 64px;
+}
 
-footer section{
-    font-weight: 800;
-    padding: 2rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.footer-inner {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 48px;
+  padding-bottom: 48px;
 }
-footer {
-    background-color: var(--start-background-color);
-    color: white;
-    padding-bottom: 1rem;
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 8px;
 }
-footer hr {
-    border-top: 1px solid white;
-    margin: 2rem;
+
+.footer-logo:hover {
+  color: var(--text-primary);
+}
+
+.footer-title {
+  color: var(--accent-light);
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+}
+
+.footer-bio {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  max-width: 320px;
+}
+
+.footer-copy {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.footer-col h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: var(--text-primary);
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.footer-col ul li a:hover {
+  color: var(--accent-light);
+}
+
+.footer-cta {
+  margin-top: 24px;
+}
+
+.footer-cta p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px;
+  border-top: 1px solid var(--border);
+}
+
+.footer-bottom p {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.back-to-top {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--accent);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.back-to-top:hover {
+  background: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
+
+@media screen and (max-width: 768px) {
+  .footer-inner {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
 }

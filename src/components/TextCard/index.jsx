@@ -4,8 +4,8 @@ import "./index.css";
 
 function TextCard({ title, items }) {
   useEffect(() => {
-    const items = document.querySelectorAll(".fade-in");
-    const observer = new IntersectionObserver(entries => {
+    const elements = document.querySelectorAll(".fade-in");
+    const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry, i) => {
         if (entry.isIntersecting) {
           entry.target.style.animationDelay = `${i * 0.4}s`;
@@ -15,15 +15,16 @@ function TextCard({ title, items }) {
       });
     });
 
-    items.forEach(item => observer.observe(item));
+    elements.forEach((item) => observer.observe(item));
   }, []);
 
   return (
-    <section>
-      <h2 className="mini-hero fade-in">{title}</h2>
+    <section className="text-card-section">
+      <span className="section-label">Formations</span>
+      <h2 className="fade-in">{title}</h2>
       {items.map((item, index) => (
         <p
-          className="mini-hero fade-in"
+          className="fade-in"
           key={index}
           dangerouslySetInnerHTML={{ __html: item }}
         />

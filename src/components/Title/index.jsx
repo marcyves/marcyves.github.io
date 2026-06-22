@@ -1,19 +1,22 @@
 import PropTypes from "prop-types";
 import "./index.css";
 
-function Title({ title,text }) {
+function Title({ title, text }) {
   return (
-  <section>
-    <h2 className="mini-hero"         data-aos="fade-down"
-        data-aos-delay="0"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out">{title}</h2>
-    <p className="mini-hero"         data-aos="fade-up"
-        data-aos-delay="10"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
-        dangerouslySetInnerHTML={{ __html: text }}></p>
-  </section>);
+    <section className="page-header container">
+      <span className="section-label">Altitude</span>
+      <h2>{title}</h2>
+      {text && (
+        <p
+          data-aos="fade-up"
+          data-aos-delay="10"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          dangerouslySetInnerHTML={{ __html: text }}
+        />
+      )}
+    </section>
+  );
 }
 
 Title.propTypes = {

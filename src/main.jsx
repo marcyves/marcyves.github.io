@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import Cours from "./pages/Cours";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Skills from "./pages/Skills";
 import Formations from "./pages/Formations";
 import Formation from "./pages/Formation";
 import Platform from "./pages/Platform";
@@ -18,21 +19,22 @@ import Header from "./components/Header";
 
 import "./index.css";
 
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 AOS.init();
 
 const navLink = [
   { name: "Formations", href: "/formations/" },
-  { name: "A Propos", href: "/a-propos" },
+  { name: "Compétences", href: "/competences" },
+  { name: "Parcours", href: "/a-propos" },
   { name: "Contact", href: "/contact" },
 ];
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <HashRouter>
-    <Header navLink={navLink}/>
+      <Header navLink={navLink} />
       <main>
         <Routes>
           <Route exact path="/" element={<Home />} />
@@ -40,6 +42,7 @@ createRoot(document.getElementById("root")).render(
           <Route path="/formation/:id" element={<Formation />} />
           <Route path="/plateforme/:id" element={<Platform />} />
           <Route path="/cours/:id" element={<Cours />} />
+          <Route path="/competences" element={<Skills />} />
           <Route path="/perdu" element={<Error type="default" />} />
           <Route path="/a-propos" element={<About />} />
           <Route path="/contact" element={<Contact />} />

@@ -1,35 +1,44 @@
-@font-face {
-  font-family: "Inter";
-  src: url("/fonts/Inter-VariableFont_opsz,wght.ttf");
-  font-weight: normal;
-}
-@font-face {
-  font-family: "Knewave";
-  src: url("/fonts/Knewave-Regular.ttf");
-  font-weight: bold;
-}
-.inter-100 {
-  font-family: "Inter", serif;
-  font-optical-sizing: auto;
-  font-weight: 100;
-  font-style: normal;
-}
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
 :root {
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --text-color: rgb(15, 65, 105);
-  --background-color: rgb(108, 161, 205);
-  --start-background-color: rgb(108, 161, 205);
-  --end-background-color: #edf7fa;
-  --card-color: rgb(180, 227, 240);
-  --card-border-color: #898b97;
+  --bg-primary: #0a0b14;
+  --bg-secondary: #12131f;
+  --bg-card: #161724;
+  --bg-card-hover: #1e2035;
+  --bg-input: #0f1019;
 
-  font-family: Poppin, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  --text-primary: #f0f0f5;
+  --text-secondary: #9496a8;
+  --text-muted: #6b6d7e;
+
+  --accent: #7c4dff;
+  --accent-light: #9d7aff;
+  --accent-dark: #5c2fd9;
+  --accent-glow: rgba(124, 77, 255, 0.2);
+
+  --border: #2a2b3d;
+  --border-light: #353648;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+
+  --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.3);
+  --shadow-glow: 0 0 40px var(--accent-glow);
+
+  --max-width: 1200px;
+  --header-height: 72px;
+
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
   font-weight: 400;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
 }
 
 * {
@@ -39,57 +48,165 @@
 }
 
 #root {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: left;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 body {
-  color: var(--text-color);
-  display: flex;
-  place-items: start;
-  justify-content: space-between;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
   min-height: 100vh;
 }
 
-.gradient {
-  background: var(--start-background-color);
-  background: linear-gradient(
-    180deg,
-    var(--start-background-color) 35%,
-    var(--end-background-color) 100%
-  );
+main {
+  flex: 1;
 }
 
 a {
   text-decoration: none;
+  color: inherit;
+  transition: color 0.2s ease;
 }
 
-a,
-a:visited {
-  color: var(--text-color);
+a:hover {
+  color: var(--accent-light);
+}
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--text-primary);
 }
 
 h2 {
   font-size: 2rem;
-  margin: 6px 0 12px 0;
 }
+
 section {
   margin: 0 auto;
 }
 
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section-label {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.section-title .accent-dot {
+  color: var(--accent);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: var(--radius-sm);
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+  font-family: inherit;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: var(--accent-light);
+  color: white;
+  box-shadow: var(--shadow-glow);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--text-primary);
+  border: 1.5px solid var(--border-light);
+}
+
+.btn-outline:hover {
+  border-color: var(--accent);
+  color: var(--accent-light);
+}
+
+.btn-outline-accent {
+  background: transparent;
+  color: var(--accent);
+  border: 1.5px solid var(--accent);
+}
+
+.btn-outline-accent:hover {
+  background: var(--accent);
+  color: white;
+}
+
+.card-dark {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  transition: all 0.25s ease;
+}
+
+.card-dark:hover {
+  border-color: var(--accent);
+  box-shadow: var(--shadow-glow);
+  transform: translateY(-2px);
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+}
+
+.tag-accent {
+  border-color: var(--accent);
+  color: var(--accent-light);
+}
+
+.page-section {
+  padding: 80px 0;
+}
+
+.page-section-alt {
+  background: var(--bg-secondary);
+}
+
 @media screen and (max-width: 768px) {
-  #root {
-    min-width: fit-content;
-    max-width: 300px;
+  .container {
+    padding: 0 16px;
   }
-  body {
-    font-size: 1.2rem;
-    background: var(--start-background-color);
-    background: linear-gradient(
-      180deg,
-      var(--start-background-color) 35%,
-      var(--end-background-color) 100%
-    );
+
+  .page-section {
+    padding: 48px 0;
   }
 }

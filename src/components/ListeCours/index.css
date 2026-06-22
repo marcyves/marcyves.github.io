@@ -1,45 +1,33 @@
 .cours {
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  padding: 0 24px 12px;
+}
+
+.cours-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 24px;
+  margin-top: 12px;
+}
+
+.card-link {
+  display: flex;
+  transition: all 0.25s ease;
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  color: inherit;
+}
+
+@media screen and (max-width: 768px) {
+  .cours {
+    padding: 0 16px;
+  }
+
+  .cours-gallery {
     flex-direction: column;
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-bottom: 12px;
-    transition: all 0.3s ease-in-out;
-}
-
-.cours-gallery{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
     align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 12px;
-}
-
-.card-link{
-    display: flex;
-    background-color: var(--card-color);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease-in-out;
-    border-radius: 12px;
-    width: min-content;
-    margin: 12px;
-}
-
-@media  screen and (max-width: 768px) {
-    .cours{
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        flex-direction: column;
-    }
-
-    
-    .cours-gallery{
-        width: 100%;
-        margin: auto;
-        padding: 0;
-        justify-content: center;
-    }
+  }
 }

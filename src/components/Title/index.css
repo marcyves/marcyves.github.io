@@ -1,49 +1,32 @@
-#mini-hero {
-  background-color: var(--start-background-color);
-  height: 10vh;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  gap: 3rem;
-  align-items: center;
-  margin-bottom: 2px;
+.page-header {
+  padding: 60px 0 40px;
 }
 
-h2.mini-hero {
-  margin-top: 2rem;
-  margin-left: 2rem;
-  margin-right: auto;
-  font-size: 48px;
-  text-align: left;
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
+.page-header h2 {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
   font-weight: 800;
-  font-style: normal;
-  text-shadow: 2px 2px 4px var(--text-color);
-  color: white;
+  margin-bottom: 16px;
 }
-p.mini-hero {
-  font-size: 1.4rem;
-  color: white;
-  text-shadow: 1px 1px 2px var(--text-color);
-  line-height: 1.5;
-  text-align: justify;
-  width: 80%;
-  margin: 6px auto;
+
+.page-header p {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  max-width: 800px;
 }
-.mini-hero ul {
-  list-style: circle;
-  padding-left: 2rem;
+
+.page-header ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin-top: 12px;
   text-align: left;
 }
-@media screen and (max-width: 768px) {
-  #hero {
-    height: auto;
-    padding: 1rem;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  #hero h2 {
-    margin-top: 1rem;
-  }
+
+.page-header li {
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+
+.page-header strong {
+  color: var(--text-primary);
 }

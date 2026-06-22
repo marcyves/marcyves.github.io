@@ -24,9 +24,6 @@ function Formation() {
     return <NotFound type="no_course" />;
   }
 
-  const root_id = document.getElementById("root");
-  root_id.classList.add("gradient");
-
   return (
     <div>
       <Title

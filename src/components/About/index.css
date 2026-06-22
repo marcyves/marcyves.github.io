@@ -1,7 +1,40 @@
-.home-deux img{
-    width: 400px;
-    height: 400px;
-    border-radius: 200px;
-    background-color: white;
-    margin: 6px;
+.home-deux {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+  max-width: var(--max-width);
+  margin: 0 auto 48px;
+  padding: 0 24px;
+}
+
+.home-deux article p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 16px;
+  font-size: 1rem;
+}
+
+.home-deux img {
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--border);
+  margin: 0 auto;
+  display: block;
+}
+
+.home-deux figure {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .home-deux {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
 }

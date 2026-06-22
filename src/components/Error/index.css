@@ -1,6 +1,14 @@
 .error {
-    background-color: rgb(255, 193, 193);
-    margin: 24px;
-    padding: 24px;
-    border-radius: 12px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  margin: 48px auto;
+  padding: 32px;
+  border-radius: var(--radius-md);
+  max-width: 600px;
+  color: var(--text-secondary);
+}
+
+.error h2 {
+  color: var(--accent-light);
+  margin-bottom: 12px;
 }

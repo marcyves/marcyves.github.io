@@ -3,19 +3,21 @@ import "./index.css";
 
 function Col2({ col1, col2 }) {
   return (
-    <section className="home-deux">
-      <article 
-              data-aos="zoom-in-right"
-              data-aos-delay="0"
-              data-aos-duration="1000"
-              data-aos-easing="ease-in-out"
-              dangerouslySetInnerHTML={{ __html: col1 }}></article>
+    <section className="col2">
       <article
-              data-aos="zoom-in-left"
-              data-aos-delay="0"
-              data-aos-duration="1000"
-              data-aos-easing="ease-in-out"
-               dangerouslySetInnerHTML={{ __html: col2 }}></article>
+        data-aos="zoom-in-right"
+        data-aos-delay="0"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        dangerouslySetInnerHTML={{ __html: col1 }}
+      />
+      <article
+        data-aos="zoom-in-left"
+        data-aos-delay="0"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        dangerouslySetInnerHTML={{ __html: col2 }}
+      />
     </section>
   );
 }

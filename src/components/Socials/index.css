@@ -2,31 +2,34 @@
   list-style: none;
   display: flex;
   flex-direction: row;
+  gap: 4px;
 }
 
 .icon {
-  color: white;
-  padding: 20px;
-  font-size: x-large;
+  color: var(--text-secondary);
+  padding: 8px;
+  font-size: 1.1rem;
   text-decoration: none;
-  position: relative;
-  -webkit-transition: box-shadow 600ms ease-in-out, color 600ms ease-in-out;
-  transition: box-shadow 600ms ease-in-out, color 600ms ease-in-out;
-}
-.icon:visited{
-  color: white;
+  transition: color 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
 }
 
-.icon:before {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  line-height: 1;
-  font-weight: 400;
+.icon:hover {
+  color: var(--accent);
 }
-.icon > .label {
-  display: none;
+
+.socials-footer ul {
+  flex-direction: column;
+  gap: 0;
+}
+
+.socials-footer .icon {
+  padding: 8px 0;
+  font-size: 0.9rem;
+}
+
+.socials-footer .icon span {
+  font-size: 0.9rem;
 }

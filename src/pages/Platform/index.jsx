@@ -23,12 +23,9 @@ function Platform() {
     )
   }
 
-  const root_id = document.getElementById("root");
-  root_id.classList.add("gradient");
-
   return (
     <div>
-      <Title text={`Les cours de la plateforme ${platform.title}`} />
+      <Title title={`Plateforme ${platform.title}`} text={`Les cours disponibles sur ${platform.title}.`} />
       <ListeCours liste_cours={liste_cours_filtrée} />
     </div>
   );

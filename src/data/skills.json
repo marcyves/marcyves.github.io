@@ -1,0 +1,39 @@
+[
+  {
+    "category": "Front-End & Web",
+    "skills": [
+      { "name": "HTML5 / CSS3", "level": 95 },
+      { "name": "JavaScript (ES6+)", "level": 90 },
+      { "name": "React", "level": 85 },
+      { "name": "WordPress", "level": 90 },
+      { "name": "PHP / Laravel", "level": 80 }
+    ]
+  },
+  {
+    "category": "Data & Python",
+    "skills": [
+      { "name": "Python", "level": 85 },
+      { "name": "Data Science", "level": 75 },
+      { "name": "SQL / MySQL", "level": 85 },
+      { "name": "API REST", "level": 80 }
+    ]
+  },
+  {
+    "category": "Outils & Workflow",
+    "skills": [
+      { "name": "Git / GitHub", "level": 95 },
+      { "name": "VS Code", "level": 95 },
+      { "name": "Figma", "level": 75 },
+      { "name": "Moodle / LMS", "level": 85 }
+    ]
+  },
+  {
+    "category": "Management & Conseil",
+    "skills": [
+      { "name": "Gestion de projet", "level": 90 },
+      { "name": "Transformation digitale", "level": 95 },
+      { "name": "Knowledge Management", "level": 85 },
+      { "name": "Marketing digital", "level": 80 }
+    ]
+  }
+]

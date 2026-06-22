@@ -1,0 +1,258 @@
+.contact-hero {
+  padding-top: 60px;
+}
+
+.contact-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.contact-intro {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 32px;
+  max-width: 480px;
+}
+
+.contact-details {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-details li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.contact-details li svg {
+  color: var(--accent);
+  width: 18px;
+}
+
+.contact-details a {
+  color: var(--text-secondary);
+}
+
+.contact-details a:hover {
+  color: var(--accent-light);
+}
+
+.contact-form-wrapper h2 {
+  font-size: 1.25rem;
+  margin-bottom: 24px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.form-group input,
+.form-group textarea {
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 12px 16px;
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: 0.95rem;
+  transition: border-color 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: var(--text-muted);
+}
+
+.form-submit {
+  width: 100%;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.form-privacy {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  justify-content: center;
+}
+
+.form-privacy svg {
+  font-size: 0.75rem;
+}
+
+.form-success {
+  text-align: center;
+  padding: 32px 16px;
+  color: var(--accent-light);
+}
+
+.subsection-title {
+  font-size: 1.5rem;
+  margin-bottom: 32px;
+}
+
+.social-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.social-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.social-card-icon {
+  color: var(--accent);
+  font-size: 1.5rem;
+}
+
+.social-card h3 {
+  font-size: 1.1rem;
+}
+
+.social-card p {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+}
+
+.social-card-arrow {
+  color: var(--accent);
+  font-weight: 700;
+  margin-top: auto;
+}
+
+.faq-section {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.faq-icon {
+  color: var(--accent);
+  margin-right: 8px;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.faq-item {
+  overflow: hidden;
+}
+
+.faq-question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  text-align: left;
+}
+
+.faq-chevron {
+  color: var(--accent);
+  transition: transform 0.2s ease;
+  font-size: 0.85rem;
+}
+
+.faq-open .faq-chevron {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+
+.faq-answer p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.faq-quote {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 200px;
+}
+
+.faq-quote blockquote {
+  font-style: italic;
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.faq-quote cite {
+  color: var(--accent);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 900px) {
+  .contact-hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .faq-section {
+    grid-template-columns: 1fr;
+  }
+}

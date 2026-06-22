@@ -11,22 +11,19 @@ import { Link } from "react-router-dom";
 import "./index.css";
 
 function Formations() {
-  const root_id = document.getElementById("root");
-  root_id.classList.add("gradient");
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
-    <div>
+    <div className="formations-page">
       <TextCard
         title="Les parcours de formation"
         items={[
           "Accédez à mes cours en ligne, comprenant des <strong>vidéos détaillées</strong>, des <strong>exercices pratiques</strong> et un suivi structuré, afin de <strong>progresser à votre rythme</strong>, où que vous soyez et quand vous le souhaitez.",
           "Mes formations sont conçues pour être <strong>accessibles à tous</strong>, que vous soyez débutant ou professionnel souhaitant se perfectionner. Chaque parcours est structuré pour <strong>vous guider étape par étape</strong>, avec des ressources variées et des <strong>exercices pratiques</strong>.",
           "Que vous souhaitiez apprendre à votre rythme ou suivre un cursus plus structuré, vous trouverez ici les outils nécessaires pour développer vos compétences et <strong>atteindre vos objectifs professionnels</strong>.",
-          "Que vous souhaitiez explorer un domaine spécifique ou suivre mes cours sur une plateforme de votre choix, selon vos besoins et vos préférences d’apprentissage, plusieurs options s’offrent à vous. Vous pouvez retrouver mes formations sur les plateformes UDEMY ou TUTO, qui offrent une expérience d’apprentissage flexible et adaptée à vos besoins.",
+          "Que vous souhaitiez explorer un domaine spécifique ou suivre mes cours sur une plateforme de votre choix, selon vos besoins et vos préférences d'apprentissage, plusieurs options s'offrent à vous. Vous pouvez retrouver mes formations sur les plateformes UDEMY ou TUTO, qui offrent une expérience d'apprentissage flexible et adaptée à vos besoins.",
         ]}
       />
 
@@ -47,15 +44,7 @@ function Formations() {
           "<h3>Communauté active</h3><p>Rejoignez une communauté d'apprenants pour échanger, poser des questions et partager vos progrès.</p><p>Consultez les avis détaillés et participez aux forums d'entraide pour maximiser votre apprentissage.</p>",
         ]}
       />
-      <Link
-        data-aos="zoom-in"
-        data-aos-delay="100"
-        data-aos-duration="300"
-        data-aos-easing="linear"
-        className="parcours-platform-link"
-        key="udemy"
-        to={`/plateforme/4`}
-      >
+      <Link className="parcours-platform-link" to="/plateforme/4">
         Les cours sur UDEMY
       </Link>
 
@@ -67,30 +56,22 @@ function Formations() {
         <li>Retrouvez mes cours en ligne et mes formations en ligne.</li>
         </ul>"
       />
-      <Link
-        data-aos="zoom-in"
-        data-aos-delay="100"
-        data-aos-duration="300"
-        data-aos-easing="linear"
-        className="parcours-platform-link"
-        key="tuto"
-        to={`/plateforme/5`}
-      >
+      <Link className="parcours-platform-link" to="/plateforme/5">
         Les cours sur TUTO
       </Link>
       <Title
         title="Explorez les Catégories Populaires"
         text="Vous cherchez à développer vos compétences dans un domaine précis ? Mes formations sont organisées en trois grandes thématiques :
         <ul>
-        <li>Développement Web : Apprenez à créer des sites et applications modernes avec WordPress, React, Laravel et bien d’autres technologies.</li>
-      	<li>Découvrez les technologies de data science, de machine learning et de deep learning.</li>
+        <li>Développement Web : Apprenez à créer des sites et applications modernes avec WordPress, React, Laravel et bien d'autres technologies.</li>
+        <li>Découvrez les technologies de data science, de machine learning et de deep learning.</li>
         <li>Apprenez à développer des applications mobiles avec Flutter et React Native.</li>
         </ul>
         Quel que soit votre objectif, vous trouverez un parcours structuré et progressif pour acquérir des compétences concrètes et applicables."
       />
       <ListeParcours liste_parcours={liste_parcours} type="formation" />
       <Title
-        title="👉 Choisissez votre parcours et démarrez votre formation dès aujourd’hui !"
+        title="Choisissez votre parcours et démarrez votre formation dès aujourd'hui !"
         text=""
       />
     </div>
