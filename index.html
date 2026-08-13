@@ -20,6 +20,34 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, viewport-fit=cover"
     />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="rgb(108, 161, 205)" />
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("altitude-theme");
+          var prefersDark = window.matchMedia(
+            "(prefers-color-scheme: dark)"
+          ).matches;
+          var theme =
+            stored === "dark" || stored === "light"
+              ? stored
+              : prefersDark
+                ? "dark"
+                : "light";
+          document.documentElement.setAttribute("data-theme", theme);
+          var meta = document.querySelector('meta[name="theme-color"]');
+          if (meta) {
+            meta.setAttribute(
+              "content",
+              theme === "dark" ? "rgb(15, 65, 105)" : "rgb(108, 161, 205)"
+            );
+          }
+        } catch (e) {
+          document.documentElement.setAttribute("data-theme", "light");
+        }
+      })();
+    </script>
     <title>Marc Augier — formations en ligne</title>
     <meta
       name="description"
@@ -70,8 +98,8 @@
         ]
       }
     </script>
-    <script type="module" crossorigin src="/assets/index-B4QZVymp.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-DjwgkdnJ.css">
+    <script type="module" crossorigin src="/assets/index-DC5-ihxv.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-XTKdzpd5.css">
   </head>
   <body>
     <div id="root"></div>
