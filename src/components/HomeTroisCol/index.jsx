@@ -119,18 +119,16 @@ function HomeTroisCol() {
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
         >
-          <h2>{column.title}</h2>
-          <img className="logo" src={column.image} alt={column.alt} />
           <button
             type="button"
-            className="button-link"
+            className="home-trois-hit"
             aria-haspopup="dialog"
             aria-expanded={openId === column.id}
-            aria-label={`Lire : ${column.title}`}
+            aria-labelledby={`home-trois-title-${column.id}`}
             onClick={() => setOpenId(column.id)}
-          >
-            Lire
-          </button>
+          />
+          <h2 id={`home-trois-title-${column.id}`}>{column.title}</h2>
+          <img className="logo" src={column.image} alt={column.alt} />
         </article>
       ))}
       {createPortal(

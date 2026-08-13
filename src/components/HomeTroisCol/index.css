@@ -16,29 +16,31 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 12px;
+  gap: 24px;
   flex: 1 1 16rem;
   width: auto;
   max-width: 22rem;
-  padding: 24px 12px;
+  padding: 24px;
   margin: 0;
   background-color: var(--card-color);
   background-image: var(--card-gradient);
+  background-clip: padding-box;
   border-radius: 12px;
+  box-shadow: none;
 }
 
 .home-trois h2 {
   margin: 0;
 }
 
-.home-trois article .button-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  font-family: inherit;
-  font-size: var(--text-label);
-  font-weight: 800;
+.home-trois-hit {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  padding: 0;
+  border: none;
+  border-radius: inherit;
+  background: transparent;
   cursor: pointer;
 }
 

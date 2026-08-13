@@ -12,6 +12,13 @@
   font-style: normal;
   font-display: swap;
 }
+
+@property --a {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
 :root {
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -82,9 +89,6 @@ html[data-theme="dark"] {
   --snow: var(--lesson-card);
 }
 
-html[data-theme="dark"] .parcours-card-link,
-html[data-theme="dark"] .card-link,
-html[data-theme="dark"] .home-trois article,
 html[data-theme="dark"] .home-trois-modal {
   border: 1px solid var(--lesson-card);
 }
@@ -169,6 +173,73 @@ h2 {
 }
 section {
   margin: 0 auto;
+}
+
+.card-link,
+.parcours-card-link,
+.home-trois article {
+  --d: 5s;
+  --s: 4;
+  border: 5px solid transparent;
+  padding: 12px;
+  background-clip: content-box;
+  filter: drop-shadow(
+    0 8px 16px color-mix(in srgb, var(--shadow-color) 25%, transparent)
+  );
+}
+
+@media (hover: hover) {
+  .card-link:hover,
+  .parcours-card-link:hover,
+  .home-trois article:hover {
+    border-color: var(--text-color);
+    mask:
+      conic-gradient(var(--ink-navy) 0 0) content-box,
+      linear-gradient(var(--a), transparent 30%, var(--ink-navy) 40% 60%, transparent 70%)
+        subtract,
+      conic-gradient(var(--ink-navy) 0 0) padding-box;
+    animation:
+      card-orbit-init linear infinite var(--d),
+      card-orbit-control linear infinite abs(var(--d) / (var(--s) - 1));
+    animation-composition: add;
+  }
+}
+
+.card-link:has(.course-card-hit:focus-visible),
+.parcours-card-link:focus-visible,
+.home-trois article:has(.home-trois-hit:focus-visible) {
+  border-color: var(--text-color);
+  mask:
+    conic-gradient(var(--ink-navy) 0 0) content-box,
+    linear-gradient(var(--a), transparent 30%, var(--ink-navy) 40% 60%, transparent 70%)
+      subtract,
+    conic-gradient(var(--ink-navy) 0 0) padding-box;
+  animation:
+    card-orbit-init linear infinite var(--d),
+    card-orbit-control linear infinite abs(var(--d) / (var(--s) - 1));
+  animation-composition: add;
+}
+
+@keyframes card-orbit-init {
+  to {
+    --a: 1turn;
+  }
+}
+
+@keyframes card-orbit-control {
+  to {
+    --a: calc(sign(var(--s) - 1) * 1turn);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card-link,
+  .parcours-card-link,
+  .home-trois article {
+    animation: none;
+    border-color: var(--text-color);
+    mask: none;
+  }
 }
 
 @media screen and (max-width: 768px) {

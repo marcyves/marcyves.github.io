@@ -1,17 +1,15 @@
-import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import "./index.css";
 
-function CourseCard({ id, title, description, image, links }) {
+function CourseCard({ id, title, image, links }) {
   return (
     <div className="course-card">
-      <img src={`/assets/images/${image}`} alt={title} />
+      <img src={`/assets/images/${image}`} alt="" />
       <div className="course-text">
-        <h2 className="caption">{title}</h2>
+        <h2 className="caption" id={`cours-title-${id}`}>
+          {title}
+        </h2>
         <div className="links-bar">
-          <Link className="button-link" to={`/cours/${id}`}>
-            Détails
-          </Link>
           {links.map((link) => (
             <a
               className="button-link"
@@ -32,7 +30,6 @@ function CourseCard({ id, title, description, image, links }) {
 CourseCard.propTypes = {
   id: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   links: PropTypes.array.isRequired,
 };

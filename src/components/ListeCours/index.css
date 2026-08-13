@@ -19,15 +19,22 @@
 
 .card-link{
     display: flex;
+    position: relative;
     background-color: var(--card-color);
     background-image: var(--card-gradient);
-    box-shadow: 0 4px 10px color-mix(in srgb, var(--shadow-color) 20%, transparent);
-    transition: all 0.3s ease-in-out;
+    box-shadow: none;
     border-radius: 12px;
     flex: 1 1 16rem;
     max-width: 22rem;
     width: auto;
     margin: 0;
+}
+
+.course-card-hit {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    border-radius: inherit;
 }
 
 @media  screen and (max-width: 768px) {

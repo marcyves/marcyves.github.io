@@ -272,7 +272,9 @@ section.home-trois article {
   flex: 1 1 16rem;
   max-width: 22rem;
   margin: 0;
-  box-shadow: 0 8px 16px color-mix(in srgb, var(--shadow-color) 25%, transparent);
+  padding: 24px;
+  background-clip: padding-box;
+  box-shadow: none;
 }
 
 section.home-trois .logo {

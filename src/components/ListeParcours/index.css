@@ -21,13 +21,13 @@
   display: flex;
   background-color: var(--card-color);
   background-image: var(--card-gradient);
-  transition: all 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
   border-radius: 12px;
   flex: 1 1 16rem;
   max-width: 22rem;
   width: auto;
   margin: 0;
-  box-shadow: 0 8px 16px color-mix(in srgb, var(--shadow-color) 40%, transparent);
+  box-shadow: none;
 }
 
 .parcours-card-link:hover {
