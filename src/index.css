@@ -17,13 +17,27 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color-scheme: light;
 
-  --text-color: rgb(15, 65, 105);
-  --background-color: rgb(108, 161, 205);
-  --start-background-color: rgb(108, 161, 205);
-  --end-background-color: #edf7fa;
-  --card-color: rgb(180, 227, 240);
+  --ink-navy: rgb(15, 65, 105);
+  --classroom-sky: rgb(108, 161, 205);
+  --paper-frost: #edf7fa;
+  --lesson-card: rgb(180, 227, 240);
+  --snow: #ffffff;
+  --error-blush: rgb(255, 193, 193);
+
+  --text-color: var(--ink-navy);
+  --background-color: var(--classroom-sky);
+  --start-background-color: var(--classroom-sky);
+  --end-background-color: var(--paper-frost);
+  --card-color: var(--lesson-card);
   --card-border-color: #898b97;
+  --shadow-color: var(--ink-navy);
+  --action-bg: var(--ink-navy);
+  --action-fg: var(--snow);
+  --link-bg: var(--snow);
+  --link-fg: var(--classroom-sky);
+  --error-color: var(--error-blush);
 
   --font-display: Inter, Helvetica, Arial, sans-serif;
   --font-wordmark: Knewave, cursive;
@@ -39,10 +53,42 @@
   font-weight: 400;
 }
 
+html[data-theme="dark"] {
+  color-scheme: dark;
+
+  --text-color: var(--lesson-card);
+  --background-color: var(--ink-navy);
+  --start-background-color: var(--ink-navy);
+  --end-background-color: var(--ink-navy);
+  --card-color: var(--ink-navy);
+  --card-border-color: var(--lesson-card);
+  --shadow-color: rgb(8, 32, 52);
+  --action-bg: var(--lesson-card);
+  --action-fg: var(--ink-navy);
+  --link-bg: var(--lesson-card);
+  --link-fg: var(--ink-navy);
+  --error-color: var(--error-blush);
+  --snow: var(--lesson-card);
+}
+
+html[data-theme="dark"] .parcours-card-link,
+html[data-theme="dark"] .card-link,
+html[data-theme="dark"] .home-trois article {
+  border: 1px solid var(--lesson-card);
+}
+
+html[data-theme="dark"] .error {
+  color: var(--ink-navy);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html {
+  background-color: var(--end-background-color);
 }
 
 #root {
@@ -52,10 +98,12 @@
   width: 100%;
   min-width: 0;
   max-width: none;
+  background-color: var(--end-background-color);
 }
 
 body {
   color: var(--text-color);
+  background-color: var(--end-background-color);
   display: block;
   min-width: 0;
   min-height: 100vh;

@@ -6,13 +6,13 @@ h2.mini-hero {
   font-optical-sizing: auto;
   font-weight: 800;
   font-style: normal;
-  text-shadow: 2px 2px 4px var(--text-color);
-  color: white;
+  text-shadow: 2px 2px 4px var(--ink-navy);
+  color: var(--snow);
 }
 p.mini-hero {
   font-size: 1.2rem;
-  color: white;
-  text-shadow: 1px 1px 2px var(--text-color);
+  color: var(--snow);
+  text-shadow: 1px 1px 2px var(--ink-navy);
   line-height: 1.5;
   text-align: center;
   width: min(40rem, calc(100% - 48px));

@@ -1,5 +1,5 @@
 .error {
-    background-color: rgb(255, 193, 193);
+    background-color: var(--error-color);
     margin: 24px;
     padding: 24px;
     border-radius: 12px;

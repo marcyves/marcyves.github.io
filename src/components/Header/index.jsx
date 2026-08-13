@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import PropTypes from "prop-types";
 
+import ThemeToggle from "../ThemeToggle";
 import "./index.css";
 
 function Header({ navLink }) {
@@ -28,6 +29,9 @@ function Header({ navLink }) {
               </NavLink>
             </li>
           ))}
+          <li>
+            <ThemeToggle />
+          </li>
         </ul>
       </nav>
     </header>

@@ -4,6 +4,6 @@
     aspect-ratio: 1;
     max-width: 100%;
     border-radius: 50%;
-    background-color: white;
+    background-color: var(--snow);
     margin: 0;
 }

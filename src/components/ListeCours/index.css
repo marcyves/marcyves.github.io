@@ -20,7 +20,7 @@
 .card-link{
     display: flex;
     background-color: var(--card-color);
-    box-shadow: 0 4px 10px color-mix(in srgb, var(--text-color) 20%, transparent);
+    box-shadow: 0 4px 10px color-mix(in srgb, var(--shadow-color) 20%, transparent);
     transition: all 0.3s ease-in-out;
     border-radius: 12px;
     flex: 1 1 16rem;

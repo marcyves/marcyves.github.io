@@ -23,7 +23,7 @@
   width: 100%;
   height: 8em;
   border-radius: 6px 6px 0px 0px;
-  box-shadow: 0 4px 4px color-mix(in srgb, var(--text-color) 25%, transparent);
+  box-shadow: 0 4px 4px color-mix(in srgb, var(--shadow-color) 25%, transparent);
 }
 .course-text {
   display: flex;
@@ -56,13 +56,13 @@
 .button-link {
   padding: 8px;
   border-radius: 6px;
-  color: var(--background-color);
-  background-color: white;
-  border: 1px solid var(--background-color);
+  color: var(--link-fg);
+  background-color: var(--link-bg);
+  border: 1px solid var(--link-fg);
   transition: all 0.25s ease;
 }
 
 .button-link:hover {
-  background-color: var(--background-color);
-  color: white;
+  background-color: var(--link-fg);
+  color: var(--link-bg);
 }

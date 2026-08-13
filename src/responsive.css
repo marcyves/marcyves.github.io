@@ -254,7 +254,7 @@ section.home-trois article {
   flex: 1 1 16rem;
   max-width: 22rem;
   margin: 0;
-  box-shadow: 0 8px 16px color-mix(in srgb, var(--text-color) 25%, transparent);
+  box-shadow: 0 8px 16px color-mix(in srgb, var(--shadow-color) 25%, transparent);
 }
 
 section.home-trois .logo {
@@ -353,7 +353,7 @@ section.error {
     background-color: var(--background-color);
     padding: 8px 12px;
     padding-bottom: max(8px, env(safe-area-inset-bottom));
-    border-top: 1px solid #ffffff;
+    border-top: 1px solid var(--snow);
   }
 
   .header nav ul {
@@ -375,13 +375,13 @@ section.error {
   }
 
   .header nav ul li a.nav-primary {
-    background-color: var(--text-color);
-    color: #ffffff;
+    background-color: var(--action-bg);
+    color: var(--action-fg);
     border-radius: 6px;
   }
 
   .header nav ul li a.nav-primary:focus-visible {
-    outline-color: #ffffff;
+    outline-color: var(--action-fg);
   }
 
   .active-link {

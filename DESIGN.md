@@ -96,7 +96,7 @@ Density is low on purpose. A visitor should feel they can pick a course the way 
 - Inter ExtraBold is the type system; Knewave exists only as the Altitude wordmark.
 - Generous padding, centered measure, short intros — personal, not editorial-magazine.
 - Catalog cards lift with real shadows and scale on hover; they must feel pickable.
-- Two chromatic roles only: Ink Navy for voice and action, Classroom Sky for fields.
+- Two chromatic roles only: Ink Navy for voice and action, Classroom Sky for fields. Dark mode: Ink Navy is the room, Lesson Card is the light bluish voice.
 
 ## Colors
 
@@ -118,6 +118,8 @@ A single blue family at two jobs: navy for reading and doing, sky for the room t
 **The Two Blues Rule.** Ink Navy speaks and acts. Classroom Sky is the room. Do not introduce a third chromatic accent (orange, teal, gold, “CTA red”).
 
 **The Atmosphere Not Alpine Rule.** These blues are daylight in a classroom, not glacier branding. Mountain photographs may appear as photography; they do not authorize ice palettes, rope motifs, or sherpa illustration.
+
+**The Night Classroom Rule.** Dark mode inverts the two jobs, not the palette: Ink Navy becomes the room, Lesson Card (light bluish) becomes the reading voice and the thing you press. No extra navies, no white-on-navy, no charcoal.
 
 ## Typography
 

@@ -23,7 +23,7 @@
 }
 
 #hero h2{
-    color: white;
+    color: var(--snow);
     margin: 0;
     font-size: 96px;
     line-height: 1.1;
@@ -33,13 +33,13 @@
     font-optical-sizing: auto;
     font-weight: 800;
     font-style: normal;
-    text-shadow: 1px 1px 4px var(--text-color);
+    text-shadow: 1px 1px 4px var(--ink-navy);
 }
 
 #hero .hero-cta {
     margin: 0;
     align-self: flex-start;
-    color: #ffffff;
+    color: var(--action-fg);
 }
 
 @media  screen and (max-width: 768px) {

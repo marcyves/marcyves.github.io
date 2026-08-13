@@ -10,10 +10,10 @@ footer section{
 }
 footer {
     background-color: var(--start-background-color);
-    color: white;
+    color: var(--snow);
     padding-bottom: 24px;
 }
 footer hr {
-    border-top: 1px solid white;
+    border-top: 1px solid var(--snow);
     margin: 24px;
 }

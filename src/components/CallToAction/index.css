@@ -16,9 +16,9 @@
   align-items: center;
   justify-content: center;
   padding: 12px 24px;
-  background-color: var(--text-color);
+  background-color: var(--action-bg);
   margin: 24px auto;
-  color: #ffffff;
+  color: var(--action-fg);
   font-weight: 800;
   font-size: 1.125rem;
   border: none;
@@ -28,6 +28,6 @@
 @media (hover: hover) {
   .button-action:hover {
     transform: translateY(-4px);
-    box-shadow: 0 8px 16px color-mix(in srgb, var(--text-color) 25%, transparent);
+    box-shadow: 0 8px 16px color-mix(in srgb, var(--shadow-color) 25%, transparent);
   }
 }
