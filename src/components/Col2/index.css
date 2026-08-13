@@ -1,10 +1,13 @@
 .home-deux{
-    margin:8rem auto;
-    height:fit-content;
+    margin: 0 auto;
+    height: fit-content;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding: 6rem 8rem;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    padding: 48px 24px;
+    max-width: 72rem;
     border-radius: 6px;
     background-image: url('/assets/images/hero1.png');
     background-repeat: no-repeat;
@@ -12,38 +15,40 @@
 }
 
 .home-deux article{
-    width: 80%;
-    padding: 12px;
-    margin: 12px auto 6px auto;
+    width: auto;
+    flex: 1 1 16rem;
+    max-width: 28rem;
+    padding: 0;
+    margin: 0;
     border-radius: 6px;    
 }
 
 .home-deux p {
-    font-size: 1.0rem;
-    line-height: 1.3;
-    text-align: justify;
-    width: 80%;
-    margin: 6px auto;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: left;
+    width: 100%;
+    margin: 0 auto 12px;
 }
 
 .home-deux ul {
     list-style: circle;
-    padding-left: 18px;
+    padding-left: 24px;
     text-align: left;
 }
 
 .home-deux li {
-    margin-bottom: 1rem;
+    margin-bottom: 12px;
 }
 
 .home-deux h3 {
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    margin-bottom: 12px;
 }
 .logo{
     width: 200px;
     height: 200px;
-    border-radius: 100px;
+    border-radius: 50%;
     background-color: white;
     margin: 6px;
 }
@@ -52,13 +57,14 @@
         flex-direction: column;
         width: 100%;
         margin: 0;
-        padding: 0;
+        padding: 24px 12px;
         background-image: none;
     }
     .home-deux article{
         width: 100%;
+        max-width: none;
         margin: 0;
         padding: 0;
     }
     
-}   
+}    

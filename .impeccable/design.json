@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-13T21:30:00+02:00",
+  "title": "Design System: Altitude",
+  "extensions": {
+    "colorMeta": {
+      "ink-navy": {
+        "role": "primary",
+        "displayName": "Ink Navy",
+        "canonical": "oklch(36.5% 0.086 247.6)",
+        "tonalRamp": ["#00122a", "#002a50", "#14456d", "#32618c", "#4f7fab", "#78aad8", "#9ed0ff", "#ccf0ff"]
+      },
+      "classroom-sky": {
+        "role": "secondary",
+        "displayName": "Classroom Sky",
+        "canonical": "oklch(68.9% 0.086 244.6)",
+        "tonalRamp": ["#00132a", "#002b50", "#0e466d", "#2e628b", "#4c80aa", "#75abd7", "#9bd1ff", "#caf0ff"]
+      },
+      "paper-frost": {
+        "role": "neutral",
+        "displayName": "Paper Frost",
+        "canonical": "oklch(97.0% 0.011 217.5)",
+        "tonalRamp": ["#0e1214", "#232a2d", "#3c4446", "#575f62", "#737c7f", "#9da6a9", "#c3cccf", "#e6edef"]
+      },
+      "lesson-card": {
+        "role": "neutral",
+        "displayName": "Lesson Card",
+        "canonical": "oklch(88.7% 0.052 216.5)",
+        "tonalRamp": ["#00151c", "#002f39", "#1d4954", "#396570", "#56828e", "#80adba", "#a5d4e0", "#d1f2fb"]
+      },
+      "neutral-rule": {
+        "role": "neutral",
+        "displayName": "Neutral Rule",
+        "canonical": "oklch(63.9% 0.018 278.3)",
+        "tonalRamp": ["#101117", "#272832", "#40424c", "#5b5d68", "#787985", "#a2a4b0", "#c7cad6", "#e9eaf4"]
+      },
+      "snow": {
+        "role": "neutral",
+        "displayName": "Snow",
+        "canonical": "oklch(100.0% 0.000 89.9)",
+        "tonalRamp": ["#121212", "#292929", "#424242", "#5d5d5d", "#7a7a7a", "#a4a4a4", "#cacaca", "#ebebeb"]
+      },
+      "error-blush": {
+        "role": "primary",
+        "displayName": "Error Blush",
+        "canonical": "oklch(86.7% 0.071 18.6)",
+        "tonalRamp": ["#230709", "#46171b", "#633133", "#814d4e", "#a0696a", "#ce9393", "#f6b8b8", "#ffdfde"]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Hero line over photography only (96px / 64px below 768px)." },
+      "headline": { "displayName": "Headline", "purpose": "Inner-page and side-media titles at 48px ExtraBold." },
+      "title": { "displayName": "Title", "purpose": "Course and parcours card titles at 24px / 600." },
+      "body": { "displayName": "Body", "purpose": "Reading copy at 1.2rem / 1.5, typically 80% measure, justified." },
+      "label": { "displayName": "Label", "purpose": "Header nav and strong UI labels, weight 800." }
+    },
+    "shadows": [
+      { "name": "tile-rest", "value": "0px 4px 4px rgba(0, 0, 0, 0.25)", "purpose": "Image top of a card at rest." },
+      { "name": "tile-hover", "value": "0px 8px 16px rgba(0, 0, 0, 0.25)", "purpose": "Card hover lift." },
+      { "name": "course-gallery", "value": "0px 0px 10px rgba(0, 0, 0, 0.2)", "purpose": "Soft wrap around a course tile." },
+      { "name": "parcours-tile", "value": "0px 0px 20px rgba(0, 0, 0, 0.4)", "purpose": "Stronger wrap; learning-path cards sit higher than courses." }
+    ],
+    "motion": [
+      { "name": "tile-enter", "value": "scaleUp 0.25s ease forwards", "purpose": "Cards enter from scale(0.5) to rest." },
+      { "name": "tile-hover-scale", "value": "scale(1.05)", "purpose": "Pickable hover on catalog tiles." },
+      { "name": "link-ease", "value": "all 0.25s ease", "purpose": "Outlined course-link invert." },
+      { "name": "nav-lift", "value": "translateY(-5px)", "purpose": "Header link hover." },
+      { "name": "aos-standard", "value": "ease-in-out 1000ms", "purpose": "AOS scroll reveals already in the site; not a new grammar." }
+    ],
+    "breakpoints": [
+      { "name": "mobile", "value": "768px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Filled Ink Navy CTA. Square. The only blunt rectangle in a rounded catalog.",
+      "html": "<button class=\"ds-btn-primary\" type=\"button\">Commencez maintenant</button>",
+      "css": ".ds-btn-primary { background: var(--text-color, rgb(15, 65, 105)); color: #ffffff; padding: 12px; margin: 1rem; font-weight: 600; font-size: large; font-family: Inter, Helvetica, Arial, sans-serif; border: none; border-radius: 0; cursor: pointer; } .ds-btn-primary:hover { transform: translateY(-2px); } .ds-btn-primary:focus-visible { outline: 2px solid var(--text-color, rgb(15, 65, 105)); outline-offset: 3px; }"
+    },
+    {
+      "name": "Course Link",
+      "kind": "button",
+      "refersTo": "button-link",
+      "description": "Outlined Snow/sky control on a course tile — Détails, Udemy, Tuto.",
+      "html": "<button class=\"ds-btn-link\" type=\"button\">Udemy</button>",
+      "css": ".ds-btn-link { padding: 8px; border-radius: 6px; color: var(--background-color, rgb(108, 161, 205)); background: #ffffff; border: 1px solid var(--background-color, rgb(108, 161, 205)); font-family: Inter, Helvetica, Arial, sans-serif; cursor: pointer; transition: all 0.25s ease; } .ds-btn-link:hover { background: var(--background-color, rgb(108, 161, 205)); color: #ffffff; } .ds-btn-link:focus-visible { outline: 2px solid var(--text-color, rgb(15, 65, 105)); outline-offset: 2px; }"
+    },
+    {
+      "name": "Platform Chip",
+      "kind": "chip",
+      "refersTo": "platform-chip",
+      "description": "Frosted Snow chip that routes to the Udemy or Tuto catalog.",
+      "html": "<a class=\"ds-platform-chip\" href=\"#\">Les cours sur UDEMY</a>",
+      "css": ".ds-platform-chip { display: inline-block; width: fit-content; font-size: 1.6rem; padding: 1rem 2rem; border-radius: 8px; background: rgba(255, 255, 255, 0.45); color: #ffffff; text-shadow: 1px 1px 2px var(--text-color, rgb(15, 65, 105)); text-align: center; text-decoration: none; font-family: Inter, Helvetica, Arial, sans-serif; } .ds-platform-chip:hover { background: rgba(255, 255, 255, 0); color: #ffffff; border: 1px solid #ffffff; font-size: 1.4rem; } .ds-platform-chip:focus-visible { outline: 2px solid #ffffff; outline-offset: 3px; }"
+    },
+    {
+      "name": "Course Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Pickable course tile: Lesson Card fill, gallery shadow, invert links, grayscale photo on hover.",
+      "html": "<article class=\"ds-course-card\"><div class=\"ds-course-card-photo\" role=\"img\" aria-label=\"Course cover\"></div><h2 class=\"ds-course-card-title\">HTML et CSS par la pratique</h2><div class=\"ds-course-card-links\"><button class=\"ds-btn-link\" type=\"button\">Détails</button><button class=\"ds-btn-link\" type=\"button\">Udemy</button></div></article>",
+      "css": ".ds-course-card { display: flex; flex-direction: column; align-items: center; min-width: 18em; max-width: 20em; background: var(--card-color, rgb(180, 227, 240)); border-radius: 12px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); color: var(--text-color, rgb(15, 65, 105)); font-family: Inter, Helvetica, Arial, sans-serif; overflow: hidden; transition: transform 0.25s ease, box-shadow 0.25s ease; } .ds-course-card-photo { width: 100%; height: 8em; background: linear-gradient(145deg, rgb(108, 161, 205), rgb(15, 65, 105)); border-radius: 10px 10px 0 0; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); } .ds-course-card-title { font-size: 24px; font-weight: 600; margin: 8px 12px; text-align: center; } .ds-course-card-links { display: flex; justify-content: space-evenly; gap: 6px; width: 100%; padding: 0 8px 12px; } .ds-course-card .ds-btn-link { padding: 8px; border-radius: 6px; color: var(--background-color, rgb(108, 161, 205)); background: #ffffff; border: 1px solid var(--background-color, rgb(108, 161, 205)); cursor: pointer; transition: all 0.25s ease; } .ds-course-card .ds-btn-link:hover { background: var(--background-color, rgb(108, 161, 205)); color: #ffffff; } .ds-course-card:hover { transform: scale(1.05); box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25); } .ds-course-card:hover .ds-course-card-photo { filter: grayscale(80%); }"
+    },
+    {
+      "name": "Parcours Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Learning-path tile. Same Lesson Card fill, stronger 20px wrap, scale3d hover.",
+      "html": "<a class=\"ds-parcours-card\" href=\"#\"><div class=\"ds-parcours-card-photo\" role=\"img\" aria-label=\"Parcours cover\"></div><h2 class=\"ds-parcours-card-title\">Parcours Développeur Web</h2><p class=\"ds-parcours-card-body\">Devenez un expert en création de sites et applications web</p></a>",
+      "css": ".ds-parcours-card { display: flex; flex-direction: column; align-items: center; min-width: 24em; max-width: 26em; background: var(--card-color, rgb(180, 227, 240)); border-radius: 12px; box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4); color: var(--text-color, rgb(15, 65, 105)); text-decoration: none; font-family: Inter, Helvetica, Arial, sans-serif; overflow: hidden; padding-bottom: 24px; transition: transform 0.3s ease-in-out; } .ds-parcours-card-photo { width: 100%; height: 9em; background: linear-gradient(145deg, rgb(180, 227, 240), rgb(108, 161, 205)); border-radius: 6px 6px 0 0; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); } .ds-parcours-card-title { font-size: 24px; font-weight: 600; margin: 12px; text-align: center; } .ds-parcours-card-body { font-size: 18px; font-weight: 400; margin: 0 16px; text-align: center; } .ds-parcours-card:hover { transform: scale3d(1.05, 1.05, 1.05); } .ds-parcours-card:hover .ds-parcours-card-photo { filter: grayscale(80%); } .ds-parcours-card:focus-visible { outline: 2px solid var(--text-color, rgb(15, 65, 105)); outline-offset: 4px; }"
+    },
+    {
+      "name": "Header Nav",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Classroom Sky bar: Knewave wordmark left, ExtraBold Snow links right.",
+      "html": "<header class=\"ds-header\"><a class=\"ds-wordmark\" href=\"#\">Altitude</a><nav><ul class=\"ds-nav\"><li><a class=\"ds-nav-link ds-nav-link-active\" href=\"#\">Formations</a></li><li><a class=\"ds-nav-link\" href=\"#\">A Propos</a></li><li><a class=\"ds-nav-link\" href=\"#\">Contact</a></li></ul></nav></header>",
+      "css": ".ds-header { display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 0 0 0 24px; background: var(--background-color, rgb(108, 161, 205)); font-family: Inter, Helvetica, Arial, sans-serif; } .ds-wordmark { font-family: Knewave, cursive; font-size: xx-large; color: #ffffff; text-decoration: none; } .ds-wordmark:hover { transform: translateY(-5px); display: inline-block; } .ds-nav { list-style: none; display: flex; gap: 1rem; margin: 0; padding: 12px; } .ds-nav-link { display: inline-block; padding: 12px; font-size: larger; font-weight: 800; color: #ffffff; text-decoration: none; } .ds-nav-link:hover { font-weight: 600; transform: translateY(-5px); } .ds-nav-link-active { font-weight: 100; } .ds-nav-link:focus-visible { outline: 2px solid #ffffff; outline-offset: 2px; }"
+    },
+    {
+      "name": "Circular Portrait",
+      "kind": "custom",
+      "refersTo": "card",
+      "description": "Snow-backed circle for Marc and motif photographs. The human face of the catalog.",
+      "html": "<div class=\"ds-portrait\" role=\"img\" aria-label=\"Portrait\"></div>",
+      "css": ".ds-portrait { width: 200px; height: 200px; border-radius: 50%; background: radial-gradient(circle at 40% 35%, #ffffff, rgb(180, 227, 240) 45%, rgb(108, 161, 205)); box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }"
+    },
+    {
+      "name": "Error Panel",
+      "kind": "custom",
+      "refersTo": "card",
+      "description": "The only alert surface: blush fill, 12px corners, 24px inset.",
+      "html": "<div class=\"ds-error\">Cette page n’existe pas.</div>",
+      "css": ".ds-error { background: rgb(255, 193, 193); color: var(--text-color, rgb(15, 65, 105)); margin: 24px; padding: 24px; border-radius: 12px; font-family: Inter, Helvetica, Arial, sans-serif; text-align: center; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Trainer’s Clear Sky",
+    "overview": "This is a personal teaching catalog seen in daylight. Marc is the face; the sky is atmosphere, not a mountaineering story. Pages feel generous and handmade: large Inter, lots of air, photography in the first viewport, centered columns that breathe rather than pack. The blue field is a classroom window — calm, open, a little weathered — not a brand illustration of peaks and rope.\n\nDensity is low on purpose. A visitor should feel they can pick a course the way they pick a book off a sunlit table: tiles sit up off the wash, scale when hovered, and send them out to Udemy or Tuto. The wordmark is a Knewave lockup in white on Classroom Sky; everything else is Inter. Do not drift toward SaaS dashboards, dense admin grids, or corporate navy/orange kits.",
+    "keyCharacteristics": [
+      "Photography leads; Classroom Sky is atmosphere behind it, not a motif to decorate.",
+      "Inter ExtraBold is the type system; Knewave exists only as the Altitude wordmark.",
+      "Generous padding, centered measure, justified body — personal, not editorial-magazine.",
+      "Catalog cards lift with real shadows and scale on hover; they must feel pickable.",
+      "Two chromatic roles only: Ink Navy for voice and action, Classroom Sky for fields."
+    ],
+    "rules": [
+      { "name": "The Two Blues Rule", "body": "Ink Navy speaks and acts. Classroom Sky is the room. Do not introduce a third chromatic accent (orange, teal, gold, “CTA red”).", "section": "colors" },
+      { "name": "The Atmosphere Not Alpine Rule", "body": "These blues are daylight in a classroom, not glacier branding. Mountain photographs may appear as photography; they do not authorize ice palettes, rope motifs, or sherpa illustration.", "section": "colors" },
+      { "name": "The Knewave Lockup Rule", "body": "Knewave appears only on the Altitude wordmark in the header. Do not set headings, buttons, or body in Knewave.", "section": "typography" },
+      { "name": "The Inter Is the System Rule", "body": "The root stack currently declares Poppin, which is not loaded, so Helvetica renders. That is a miss, not a face. New type uses Inter.", "section": "typography" },
+      { "name": "The Lifted Catalog Rule", "body": "Surfaces that can be chosen (parcours, course, CTA-adjacent tiles) use the shadow vocabulary above. Do not add neumorphic inner highlights. Do not go fully flat.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do lead a surface with photography and a short Inter ExtraBold line, then the catalog.",
+      "Do keep pickable tiles on Lesson Card with the lifted-catalog shadows and a scale hover.",
+      "Do use Ink Navy for text and the filled CTA, Classroom Sky for header/footer/wash.",
+      "Do reserve Knewave for the Altitude wordmark.",
+      "Do leave air: 12/24px rhythm, large section insets, ~80% measure."
+    ],
+    "donts": [
+      "Don't design SaaS dashboards, dense data grids, or navy/orange corporate kits.",
+      "Don't add a third accent color or reuse the home three-column neumorphic glow.",
+      "Don't set headings or UI in Knewave, or treat Poppin/Helvetica as a body face.",
+      "Don't turn mountain photographs into sherpa illustration, clipart, or alpine ornament.",
+      "Don't invent input, chip, or modal chrome — the catalog does not have forms."
+    ]
+  }
+}

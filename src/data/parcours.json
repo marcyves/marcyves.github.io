@@ -1,8 +1,8 @@
 [
   {
     "id": "1",
-    "title": "Parcours Développeur Web 🚀",
-    "short_description": "Devenez un expert en création de sites et applications web<br/>💻 Apprenez à coder, créez, innovez !",
+    "title": "Parcours Développeur Web",
+    "short_description": "Devenez un expert en création de sites et applications web",
     "description": "Devenez un expert en création de sites et applications web<br/>Que vous débutiez ou que vous souhaitiez perfectionner vos compétences, ce parcours vous guide à travers les technologies essentielles du développement web. De la conception d’interfaces utilisateur avec React et WordPress à la maîtrise des frameworks backend comme Laravel, vous apprendrez à créer des projets modernes, performants et optimisés.<ul><li>📌 Au programme :</li><li>✔️ Les bases du HTML, CSS et JavaScript</li><li>✔️ Développement front-end avec React</li><li>✔️ Création et personnalisation de sites avec WordPress</li><li>✔️ Programmation back-end avec Laravel et PHP</li><li>✔️ Gestion des bases de données et déploiement</li></ul><br/>🎯 Objectif : Acquérir les compétences nécessaires pour devenir un développeur web opérationnel et prêt à intégrer le marché du travail ou à lancer ses propres projets.</p><br/>💻 Apprenez à coder, créez, innovez !",
     "image": "parcours_web.jpg"
   },

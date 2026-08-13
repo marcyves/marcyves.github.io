@@ -11,15 +11,17 @@ function Header({ navLink }) {
           Altitude
         </NavLink>
       </h1>
-      <nav>
+      <nav aria-label="Principal">
         <ul>
           {navLink.map((item) => (
             <li key={item.name}>
               <NavLink
                 to={item.href}
-                key={item.name}
                 className={({ isActive }) => {
-                  return isActive ? "active-link" : "";
+                  const primary = item.name === "Formations" ? "nav-primary" : "";
+                  return [isActive ? "active-link" : "", primary]
+                    .filter(Boolean)
+                    .join(" ");
                 }}
               >
                 {item.name}

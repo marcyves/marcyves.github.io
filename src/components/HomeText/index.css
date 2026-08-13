@@ -1,23 +1,22 @@
 .home-text{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     padding-left: 24px;
     padding-right: 24px;
-    padding-bottom: 12px;
+    padding-bottom: 0;
 }
 .home-text article{
-    width: 80%;
-    margin: 12px auto 6px auto;
-    padding: 1rem;
+    width: min(40rem, 100%);
+    margin: 0 auto;
+    padding: 0;
     border-radius: 6px;    
 }
 .home-text p {
     font-size: 1.2rem;
     line-height: 1.5;
-    text-align: justify;
-    width: 80%;
-    margin: 6px auto;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .home-text ul {
@@ -30,9 +29,13 @@
     margin-bottom: 1rem;
 }
 
+.home-text h2 {
+    margin: 0 0 12px;
+}
+
 .home-text h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    margin-bottom: 12px;
 }
 
 @media  screen and (max-width: 768px) {

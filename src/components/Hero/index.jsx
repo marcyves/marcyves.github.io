@@ -1,16 +1,27 @@
-import PropTypes from 'prop-types'
-import './index.css'
+import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
-function Hero({text}) {
+import "./index.css";
+
+function Hero({ text, ctaLabel, ctaLink }) {
   return (
     <section id="hero">
-    <h2>{text}</h2>
+      <div className="hero-copy">
+        <h2>{text}</h2>
+        {ctaLabel && ctaLink ? (
+          <Link className="button-action hero-cta" to={ctaLink}>
+            {ctaLabel}
+          </Link>
+        ) : null}
+      </div>
     </section>
-  )
+  );
 }
 
 Hero.propTypes = {
   text: PropTypes.string.isRequired,
-}
+  ctaLabel: PropTypes.string,
+  ctaLink: PropTypes.string,
+};
 
-export default Hero
+export default Hero;

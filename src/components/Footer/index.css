@@ -1,17 +1,19 @@
 
 footer section{
     font-weight: 800;
-    padding: 2rem;
+    padding: 24px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    gap: 12px;
 }
 footer {
     background-color: var(--start-background-color);
     color: white;
-    padding-bottom: 1rem;
+    padding-bottom: 24px;
 }
 footer hr {
     border-top: 1px solid white;
-    margin: 2rem;
+    margin: 24px;
 }

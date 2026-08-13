@@ -1,18 +1,16 @@
 @font-face {
   font-family: "Inter";
-  src: url("/fonts/Inter-VariableFont_opsz,wght.ttf");
-  font-weight: normal;
+  src: url("/fonts/Inter-VariableFont_opsz,wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "Knewave";
-  src: url("/fonts/Knewave-Regular.ttf");
-  font-weight: bold;
-}
-.inter-100 {
-  font-family: "Inter", serif;
-  font-optical-sizing: auto;
-  font-weight: 100;
+  src: url("/fonts/Knewave-Regular.ttf") format("truetype");
+  font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 :root {
   font-synthesis: none;
@@ -27,7 +25,16 @@
   --card-color: rgb(180, 227, 240);
   --card-border-color: #898b97;
 
-  font-family: Poppin, Helvetica, Arial, sans-serif;
+  --font-display: Inter, Helvetica, Arial, sans-serif;
+  --font-wordmark: Knewave, cursive;
+  --text-display: 96px;
+  --text-headline: 48px;
+  --text-title: 24px;
+  --text-body: 1.2rem;
+  --text-label: 1.125rem;
+
+  font-family: Inter, Helvetica, Arial, sans-serif;
+  font-optical-sizing: auto;
   line-height: 1.5;
   font-weight: 400;
 }
@@ -42,13 +49,15 @@
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
+  min-width: 0;
+  max-width: none;
 }
 
 body {
   color: var(--text-color);
-  display: flex;
-  place-items: start;
-  justify-content: space-between;
+  display: block;
+  min-width: 0;
   min-height: 100vh;
 }
 
@@ -80,8 +89,8 @@ section {
 
 @media screen and (max-width: 768px) {
   #root {
-    min-width: fit-content;
-    max-width: 300px;
+    min-width: 0;
+    max-width: none;
   }
   body {
     font-size: 1.2rem;

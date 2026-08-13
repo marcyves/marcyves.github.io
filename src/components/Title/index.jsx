@@ -1,24 +1,23 @@
 import PropTypes from "prop-types";
 import "./index.css";
 
-function Title({ title,text }) {
+function Title({ title, text }) {
   return (
-  <section>
-    <h2 className="mini-hero"         data-aos="fade-down"
-        data-aos-delay="0"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out">{title}</h2>
-    <p className="mini-hero"         data-aos="fade-up"
-        data-aos-delay="10"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
-        dangerouslySetInnerHTML={{ __html: text }}></p>
-  </section>);
+    <section className="page-lead">
+      {title ? <h2 className="mini-hero">{title}</h2> : null}
+      {text ? (
+        <p
+          className="mini-hero"
+          dangerouslySetInnerHTML={{ __html: text }}
+        />
+      ) : null}
+    </section>
+  );
 }
 
 Title.propTypes = {
-  text: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
+  text: PropTypes.string,
+  title: PropTypes.string,
 };
 
 export default Title;

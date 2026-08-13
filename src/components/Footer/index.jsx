@@ -6,7 +6,7 @@ function Footer() {
   return (
     <footer>
       <section>
-      <p>© Marc Augier | 2025</p>
+      <p>© Marc Augier | 2026</p>
       <Socials />
       </section>
       <hr />

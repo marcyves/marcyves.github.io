@@ -1,10 +1,10 @@
-.header  {
+.header {
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  padding-left: 24px;
-  width:  100vw;
+  padding: 0 24px;
+  width: 100%;
   background-color: var(--background-color);
 }
 .header nav {
@@ -28,25 +28,30 @@
   padding: 12px;
 }
 .header nav ul li a {
-  font-size: larger;
+  font-size: 1.125rem;
   font-weight: 800;
   color: white;
 }
-.header nav ul li a:hover, a.header-logo:hover {
+.header nav ul li a:hover,
+a.header-logo:hover {
   font-weight: 600;
   transform: translateY(-5px);
 }
 
-a.header-logo, a.header-logo:visited{
-  font-size: xx-large;
+a.header-logo,
+a.header-logo:visited {
+  font-size: 2rem;
   color: white;
-  font-family: Knewave;
+  font-family: Knewave, cursive;
+  font-weight: 400;
 }
-.active-link{
-  font-weight: 100;
+.active-link {
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 @media screen and (max-width: 768px) {
-  .header{
+  .header {
     flex-direction: column;
   }
   .header h1 {

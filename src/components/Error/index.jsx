@@ -1,38 +1,40 @@
 import "./index.css";
-
-import PropTypes from 'prop-types'
+import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
 function Error({ type }) {
-  if (type === "") {
-    type = "default";
-  }
-
-  const messages = [
-    {
-      type: "default",
-      title: "Oops, quelque chose s'est mal passé",
-      message:
-        "Ne vous inquiétez pas, nous finirons tout de même par trouver ce que vous cherchiez.",
+  const messages = {
+    default: {
+      title: "Cette page n’existe pas",
+      message: "Le lien est incorrect, ou la page a été déplacée.",
+      actionLabel: "Voir les formations",
+      actionHref: "/formations/",
     },
-    {
-      type: "no_course",
-      title: "Il n'y a pas encore de cours dans ce parcours",
-      message: "Nous sommes en travaux, revenez bientôt pour voir apparaitre des nouveautés.",
+    no_course: {
+      title: "Aucun cours dans ce parcours pour le moment",
+      message: "Choisissez un autre parcours, ou parcourez tout le catalogue.",
+      actionLabel: "Voir les formations",
+      actionHref: "/formations/",
     },
-  ];
+  };
 
-  const message = messages.find((data) => data.type === type);
+  const message = messages[type] || messages.default;
 
   return (
     <section className="error">
       <h1>{message.title}</h1>
       <p>{message.message}</p>
+      <p>
+        <Link className="button-action" to={message.actionHref}>
+          {message.actionLabel}
+        </Link>
+      </p>
     </section>
   );
 }
 
 Error.propTypes = {
-  type: PropTypes.string.isRequired,
-}
+  type: PropTypes.string,
+};
 
 export default Error;

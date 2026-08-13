@@ -1,16 +1,33 @@
 .call-to-action {
-  margin: 6rem auto;
+  margin: 48px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
 }
 .cta-no-title {
-    margin-bottom: 24px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .button-action {
-  padding: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
   background-color: var(--text-color);
-  margin: 1rem;
-  margin-bottom: 12rem;
-  color: white;
-  font-weight: 600;
-  font-size: large;
+  margin: 24px auto;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 1.125rem;
+  border: none;
+  cursor: pointer;
+}
+
+@media (hover: hover) {
+  .button-action:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px color-mix(in srgb, var(--text-color) 25%, transparent);
+  }
 }

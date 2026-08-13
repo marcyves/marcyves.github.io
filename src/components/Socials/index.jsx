@@ -1,24 +1,52 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons"
-import { faGithub } from "@fortawesome/free-brands-svg-icons"
-import { faFacebook } from "@fortawesome/free-brands-svg-icons"
-import { faTwitter } from "@fortawesome/free-brands-svg-icons"
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
-import './index.css'
+import "./index.css";
+
+const links = [
+  { href: "https://x.com/marcyves", icon: faTwitter, label: "X" },
+  {
+    href: "https://facebook.com/marc.augier",
+    icon: faFacebook,
+    label: "Facebook",
+  },
+  {
+    href: "https://linkedin.com/in/marcaugier",
+    icon: faLinkedin,
+    label: "LinkedIn",
+  },
+  { href: "https://github.com/marcyves", icon: faGithub, label: "GitHub" },
+  {
+    href: "mailto:marc.augier@xdm-consulting.fr",
+    icon: faEnvelope,
+    label: "Courriel",
+  },
+];
 
 function Socials() {
   return (
-    <nav className="socials">
-    <ul>
-      <li><a target="_blank" rel="noopener noreferrer" href="https://x.com/marcyves" className="icon"><FontAwesomeIcon icon={faTwitter} alt="X.com" /></a></li>
-      <li><a target="_blank" rel="noopener noreferrer" href="https://facebook.com/marc.augier" className="icon"><FontAwesomeIcon icon={faFacebook} alt="Facebook" /></a></li>
-      <li><a target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/marcaugier" className="icon"><FontAwesomeIcon icon={faLinkedin} alt="LinkedIn" /></a></li>
-      <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/marcyves" className="icon"><FontAwesomeIcon icon={faGithub} alt="GitHub" /></a></li>
-      <li><a target="_blank" rel="noopener noreferrer" href="mailto:marc.augier@xdm-consulting.fr" className="icon"><FontAwesomeIcon icon={faEnvelope} alt="Mail" /></a></li>
-    </ul>
-  </nav>
-)
+    <nav className="socials" aria-label="Réseaux et contact">
+      <ul>
+        {links.map((item) => (
+          <li key={item.label}>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href={item.href}
+              className="icon"
+              aria-label={item.label}
+            >
+              <FontAwesomeIcon icon={item.icon} />
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  );
 }
 
-export default Socials
+export default Socials;

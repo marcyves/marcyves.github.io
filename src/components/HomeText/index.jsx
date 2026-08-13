@@ -4,14 +4,9 @@ import PropTypes from "prop-types";
 function HomeText({ title, subtitle, text }) {
   return (
     <section className="home-text">
-      <article
-        data-aos="zoom-in-up"
-        data-aos-delay="50"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
-      >
+      <article>
         <h2>{title}</h2>
-        <h3>{subtitle}</h3>
+        {subtitle ? <h3>{subtitle}</h3> : null}
         <p>{text}</p>
       </article>
     </section>
@@ -20,7 +15,7 @@ function HomeText({ title, subtitle, text }) {
 
 HomeText.propTypes = {
   title: PropTypes.string.isRequired,
-  subtitle: PropTypes.string.isRequired,
+  subtitle: PropTypes.string,
   text: PropTypes.string.isRequired,
 };
 

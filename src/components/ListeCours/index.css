@@ -11,20 +11,22 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: stretch;
     flex-direction: row;
-    justify-content: space-between;
-    margin-top: 12px;
+    gap: 24px;
+    margin-top: 0;
 }
 
 .card-link{
     display: flex;
     background-color: var(--card-color);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px color-mix(in srgb, var(--text-color) 20%, transparent);
     transition: all 0.3s ease-in-out;
     border-radius: 12px;
-    width: min-content;
-    margin: 12px;
+    flex: 1 1 16rem;
+    max-width: 22rem;
+    width: auto;
+    margin: 0;
 }
 
 @media  screen and (max-width: 768px) {

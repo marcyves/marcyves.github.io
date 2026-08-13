@@ -3,8 +3,8 @@ import Title from "../../components/Title";
 
 function NotFound({ type }) {
   return (
-    <div>
-      <Title text={`Vous êtes perdu... et moi aussi`} />
+    <div className="page-catalog">
+      <Title title="Page introuvable" text="" />
       <Error type={type} />
     </div>
   );

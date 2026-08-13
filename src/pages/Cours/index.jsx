@@ -1,52 +1,46 @@
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
+import { useEffect } from "react";
 
 import NotFound from "../NotFound";
-
 import liste_cours from "../../data/cours.json";
 import Title from "../../components/Title";
-import { useEffect } from "react";
 import Col2 from "../../components/Col2";
 
 function Cours() {
-
   const { id } = useParams();
   const le_cours = liste_cours.find((data) => data.id === id);
 
-  useEffect(()=>{
+  useEffect(() => {
     window.scrollTo(0, 0);
-  },[])
+  }, []);
 
-  if (le_cours.length === 0) {
-    return (
-      <NotFound type="no_course" />
-    )
+  if (!le_cours) {
+    return <NotFound type="no_course" />;
   }
 
   const root_id = document.getElementById("root");
   root_id.classList.add("gradient");
 
-  let col2  = `<img src="/assets/images/${le_cours.image}" alt=${le_cours.title} />` +
-              le_cours.links.map((link) => {
-    return `<Link to=${link.href} target="_blank" key=${link.name}>
-              <button className="button-link">${link.name}</button>
-            </Link>`
-    });    
+  const links = le_cours.links
+    .map(
+      (link) =>
+        `<a class="button-link" href="${link.href}" target="_blank" rel="noopener noreferrer">${link.name}</a>`
+    )
+    .join("");
 
+  const col2 = `<img src="/assets/images/${le_cours.image}" alt="${le_cours.title}" /><div class="links-bar">${links}</div>`;
 
   return (
-    <>
-      <Title text="Détails du cours" />
-      <h2>{le_cours.title}</h2>
+    <div className="page-catalog">
+      <Title title={le_cours.title} text="Détail du cours" />
       <Col2 col1={le_cours.description} col2={col2} />
       <section className="home-text">
         <p>
-          Les détails de chaque formation sont quelquefois uniquement
-          disponibles sur les plateformes qui les hébergent. N'hésitez pas à
-          aller directement les visiter ou vous pouvez aussi me contacter si
-          vous souhaitez en savoir plus sur un formation en particulier.
+          Le programme détaillé est sur Udemy ou Tuto. Ouvrez le lien du cours
+          pour acheter, ou écrivez-moi si vous hésitez entre deux formations.
         </p>
       </section>
-    </>
+    </div>
   );
 }
 

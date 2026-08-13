@@ -7,39 +7,62 @@
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    gap: 3rem;
-    align-items: center;
+    align-items: flex-start;
+    padding: 48px 24px;
+    gap: 0;
     margin-bottom: 2px;
+}
+
+#hero .hero-copy {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    max-width: min(40rem, calc(100% - 48px));
+    margin: 48px 0 48px 48px;
 }
 
 #hero h2{
     color: white;
-    margin-top: 2rem;
-    margin-left: 12rem;
-    margin-right: auto;
+    margin: 0;
     font-size: 96px;
-    max-width: 40%;
+    line-height: 1.1;
+    max-width: none;
     text-align: left;
-    font-family: "Inter", sans-serif;
+    font-family: Inter, Helvetica, Arial, sans-serif;
     font-optical-sizing: auto;
     font-weight: 800;
     font-style: normal;
     text-shadow: 1px 1px 4px var(--text-color);
 }
+
+#hero .hero-cta {
+    margin: 0;
+    align-self: flex-start;
+    color: #ffffff;
+}
+
 @media  screen and (max-width: 768px) {
     #hero {
         height: auto;
-        padding: 1rem;
+        min-height: 50vh;
+        align-items: center;
+        padding: 24px 12px;
         background-image: url(/assets/images/montblanc-sp.webp);
         background-position: center;
         background-repeat: no-repeat;
     }
-    #hero h2{
-        margin-top: 1rem;
-        font-size: 64px;
-        max-width: 90%;
-        text-align: center;
-        margin: auto;
+    #hero .hero-copy {
+        margin: 24px auto;
+        align-items: center;
+        max-width: calc(100% - 24px);
     }
-    
+    #hero h2{
+        font-size: 64px;
+        text-align: center;
+        margin: 0;
+    }
+    #hero .hero-cta {
+        align-self: center;
+    }
 }

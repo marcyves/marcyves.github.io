@@ -9,13 +9,19 @@ function CourseCard({ id, title, description, image, links }) {
       <div className="course-text">
         <h2 className="caption">{title}</h2>
         <div className="links-bar">
-          <Link to={`/cours/${id}`}>
-            <button className="button-link">Détails</button>
+          <Link className="button-link" to={`/cours/${id}`}>
+            Détails
           </Link>
           {links.map((link) => (
-            <Link to={link.href} target="_blank" key={link.name}>
-              <button className="button-link">{link.name}</button>
-            </Link>
+            <a
+              className="button-link"
+              href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              key={link.name}
+            >
+              {link.name}
+            </a>
           ))}
         </div>
       </div>

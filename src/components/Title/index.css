@@ -1,21 +1,8 @@
-#mini-hero {
-  background-color: var(--start-background-color);
-  height: 10vh;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  gap: 3rem;
-  align-items: center;
-  margin-bottom: 2px;
-}
-
 h2.mini-hero {
-  margin-top: 2rem;
-  margin-left: 2rem;
-  margin-right: auto;
+  margin: 0;
   font-size: 48px;
-  text-align: left;
-  font-family: "Inter", sans-serif;
+  text-align: center;
+  font-family: Inter, Helvetica, Arial, sans-serif;
   font-optical-sizing: auto;
   font-weight: 800;
   font-style: normal;
@@ -23,27 +10,16 @@ h2.mini-hero {
   color: white;
 }
 p.mini-hero {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: white;
   text-shadow: 1px 1px 2px var(--text-color);
   line-height: 1.5;
-  text-align: justify;
-  width: 80%;
-  margin: 6px auto;
+  text-align: center;
+  width: min(40rem, calc(100% - 48px));
+  margin: 0 auto;
 }
 .mini-hero ul {
   list-style: circle;
-  padding-left: 2rem;
+  padding-left: 24px;
   text-align: left;
-}
-@media screen and (max-width: 768px) {
-  #hero {
-    height: auto;
-    padding: 1rem;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  #hero h2 {
-    margin-top: 1rem;
-  }
 }

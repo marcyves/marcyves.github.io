@@ -17,15 +17,18 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 
 import "./index.css";
+import "./responsive.css";
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-AOS.init();
+AOS.init({
+  disable: window.matchMedia("(prefers-reduced-motion: reduce)").matches,
+});
 
 const navLink = [
   { name: "Formations", href: "/formations/" },
-  { name: "A Propos", href: "/a-propos" },
+  { name: "À propos", href: "/a-propos" },
   { name: "Contact", href: "/contact" },
 ];
 

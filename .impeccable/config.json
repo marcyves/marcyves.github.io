@@ -1,0 +1,32 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "overused-font",
+        "value": "inter",
+        "createdAt": "2026-08-13T21:51:22.412Z",
+        "reason": "User confirmed Inter is the type system during /impeccable document"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "knewave",
+        "createdAt": "2026-08-13T21:51:22.502Z",
+        "reason": "User confirmed Knewave is the Altitude wordmark lockup during /impeccable document"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "2rem",
+        "createdAt": "2026-08-13T21:51:22.668Z",
+        "reason": "DESIGN.md records global h2 at 2rem"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "64px",
+        "createdAt": "2026-08-13T22:02:23.985Z",
+        "reason": "DESIGN.md records display at 64px below 768px"
+      }
+    ]
+  }
+}
