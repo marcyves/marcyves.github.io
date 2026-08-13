@@ -71,7 +71,8 @@ section#hero h2 {
 section#hero .hero-cta {
   margin: 0;
   align-self: flex-start;
-  color: #ffffff;
+  color: var(--action-fg);
+  background-color: var(--action-bg);
 }
 
 .page-catalog {

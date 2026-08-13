@@ -40,6 +40,7 @@
     margin: 0;
     align-self: flex-start;
     color: var(--action-fg);
+    background-color: var(--action-bg);
 }
 
 @media  screen and (max-width: 768px) {

@@ -35,8 +35,8 @@
   --shadow-color: var(--ink-navy);
   --action-bg: var(--ink-navy);
   --action-fg: var(--snow);
-  --link-bg: var(--snow);
-  --link-fg: var(--classroom-sky);
+  --link-bg: var(--ink-navy);
+  --link-fg: var(--snow);
   --error-color: var(--error-blush);
 
   --font-display: Inter, Helvetica, Arial, sans-serif;
@@ -125,6 +125,24 @@ a {
 a,
 a:visited {
   color: var(--text-color);
+}
+
+a.button-action,
+a.button-action:visited {
+  color: var(--action-fg);
+  background-color: var(--action-bg);
+}
+
+a.button-link,
+a.button-link:visited {
+  color: var(--link-fg);
+  background-color: var(--link-bg);
+}
+
+a.parcours-platform-link,
+a.parcours-platform-link:visited {
+  color: var(--action-fg);
+  background-color: var(--action-bg);
 }
 
 h2 {
