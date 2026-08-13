@@ -20,6 +20,7 @@
 .card-link{
     display: flex;
     background-color: var(--card-color);
+    background-image: var(--card-gradient);
     box-shadow: 0 4px 10px color-mix(in srgb, var(--shadow-color) 20%, transparent);
     transition: all 0.3s ease-in-out;
     border-radius: 12px;

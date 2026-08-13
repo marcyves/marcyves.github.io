@@ -23,6 +23,12 @@
     border-radius: 6px;    
 }
 
+.home-deux:has(> article:only-child) article {
+    max-width: none;
+    width: 100%;
+    flex: 1 1 auto;
+}
+
 .home-deux p {
     font-size: 1.2rem;
     line-height: 1.5;

@@ -197,6 +197,23 @@ section.home-deux article {
   padding: 0;
 }
 
+section.home-deux:has(> article:only-child) article {
+  max-width: none;
+  width: 100%;
+  flex: 1 1 auto;
+}
+
+section.home-deux.home-expertise {
+  align-items: stretch;
+}
+
+section.home-deux.home-expertise article {
+  max-width: 40rem;
+  width: 100%;
+  margin: 0 auto;
+  flex: 1 1 auto;
+}
+
 section.home-deux p {
   width: 100%;
   margin: 0 0 12px;

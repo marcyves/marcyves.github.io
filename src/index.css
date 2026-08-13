@@ -31,6 +31,12 @@
   --start-background-color: var(--classroom-sky);
   --end-background-color: var(--paper-frost);
   --card-color: var(--lesson-card);
+  --card-gradient: linear-gradient(
+    165deg,
+    var(--paper-frost) 0%,
+    var(--lesson-card) 58%,
+    color-mix(in srgb, var(--classroom-sky) 32%, var(--paper-frost)) 100%
+  );
   --card-border-color: #898b97;
   --shadow-color: var(--ink-navy);
   --action-bg: var(--ink-navy);
@@ -61,6 +67,11 @@ html[data-theme="dark"] {
   --start-background-color: var(--ink-navy);
   --end-background-color: var(--ink-navy);
   --card-color: var(--ink-navy);
+  --card-gradient: linear-gradient(
+    165deg,
+    color-mix(in srgb, var(--classroom-sky) 28%, var(--ink-navy)) 0%,
+    var(--ink-navy) 100%
+  );
   --card-border-color: var(--lesson-card);
   --shadow-color: rgb(8, 32, 52);
   --action-bg: var(--lesson-card);
@@ -73,7 +84,8 @@ html[data-theme="dark"] {
 
 html[data-theme="dark"] .parcours-card-link,
 html[data-theme="dark"] .card-link,
-html[data-theme="dark"] .home-trois article {
+html[data-theme="dark"] .home-trois article,
+html[data-theme="dark"] .home-trois-modal {
   border: 1px solid var(--lesson-card);
 }
 
@@ -134,9 +146,15 @@ a.button-action:visited {
 }
 
 a.button-link,
-a.button-link:visited {
+a.button-link:visited,
+button.button-link {
   color: var(--link-fg);
   background-color: var(--link-bg);
+}
+
+button.button-action {
+  color: var(--action-fg);
+  background-color: var(--action-bg);
 }
 
 a.parcours-platform-link,

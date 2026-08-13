@@ -20,6 +20,7 @@
 .parcours-card-link {
   display: flex;
   background-color: var(--card-color);
+  background-image: var(--card-gradient);
   transition: all 0.3s ease-in-out;
   border-radius: 12px;
   flex: 1 1 16rem;

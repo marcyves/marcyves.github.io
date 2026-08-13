@@ -1,0 +1,30 @@
+.home-expertise {
+  align-items: stretch;
+}
+
+.home-expertise article {
+  max-width: 40rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.home-expertise h2 {
+  margin: 0 0 24px;
+  font-weight: 800;
+}
+
+.home-expertise h3 {
+  margin: 24px 0 12px;
+  font-size: var(--text-title);
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.home-expertise p {
+  margin: 0 0 12px;
+}
+
+.home-expertise a {
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}

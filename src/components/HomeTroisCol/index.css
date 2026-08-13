@@ -16,41 +16,30 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 12px;
   flex: 1 1 16rem;
   width: auto;
   max-width: 22rem;
   padding: 24px 12px;
   margin: 0;
   background-color: var(--card-color);
+  background-image: var(--card-gradient);
   border-radius: 12px;
 }
 
-.home-trois p {
-  font-size: 1.2rem;
-  line-height: 1.5;
-  text-align: left;
-  width: 100%;
-  margin: 0 0 12px;
-}
-
-.home-trois ul {
-  list-style: circle;
-  padding-left: 24px;
-  text-align: left;
-  width: 100%;
-}
-
-.home-trois li {
-  margin-bottom: 12px;
-}
-
 .home-trois h2 {
-  margin: 0 0 6px;
+  margin: 0;
 }
 
-.home-trois h3 {
-  font-size: 1.2rem;
-  margin: 0 0 12px;
+.home-trois article .button-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  font-family: inherit;
+  font-size: var(--text-label);
+  font-weight: 800;
+  cursor: pointer;
 }
 
 .home-trois .logo {
@@ -59,7 +48,60 @@
   object-fit: cover;
   border-radius: 50%;
   background-color: var(--end-background-color);
+  margin: 0;
+}
+
+.home-trois-modal {
+  width: min(40rem, calc(100% - 48px));
+  max-height: min(80vh, calc(100% - 48px));
+  overflow: auto;
+  margin: auto;
+  padding: 24px;
+  border: none;
+  border-radius: 12px;
+  background-color: var(--card-color);
+  background-image: var(--card-gradient);
+  color: var(--text-color);
+  text-align: center;
+  box-shadow: 0 8px 16px color-mix(in srgb, var(--shadow-color) 40%, transparent);
+}
+
+.home-trois-modal::backdrop {
+  background: color-mix(in srgb, var(--shadow-color) 70%, transparent);
+}
+
+.home-trois-modal h2 {
   margin: 0 0 12px;
+}
+
+.home-trois-modal h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0 0 24px;
+}
+
+.home-trois-modal p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-align: left;
+  margin: 0 0 12px;
+}
+
+.home-trois-modal ul {
+  list-style: circle;
+  padding-left: 24px;
+  text-align: left;
+  margin: 0 0 12px;
+}
+
+.home-trois-modal li {
+  margin-bottom: 12px;
+}
+
+.home-trois-modal .button-action {
+  display: inline-flex;
+  font-family: inherit;
+  margin: 24px auto 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -76,5 +118,11 @@
     width: 100%;
     max-width: none;
     margin: 0;
+  }
+
+  .home-trois-modal {
+    width: calc(100% - 24px);
+    max-height: calc(100% - 48px);
+    padding: 24px 12px;
   }
 }
