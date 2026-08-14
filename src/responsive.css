@@ -156,7 +156,13 @@ nav.platform-pair a.parcours-platform-link:hover {
   font-size: 24px;
 }
 
-section.parcours-gallery,
+section.parcours-gallery {
+  justify-content: center;
+  align-items: stretch;
+  gap: 48px;
+  margin-top: 0;
+}
+
 section.cours-gallery {
   justify-content: center;
   align-items: stretch;
@@ -273,8 +279,6 @@ section.home-trois article {
   max-width: 22rem;
   margin: 0;
   padding: 24px;
-  background-clip: padding-box;
-  box-shadow: none;
 }
 
 section.home-trois .logo {

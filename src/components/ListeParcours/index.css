@@ -13,21 +13,21 @@
   flex-wrap: wrap;
   align-items: stretch;
   flex-direction: row;
-  gap: 24px;
+  gap: 48px;
   margin-top: 0;
+  overflow: visible;
 }
 
 .parcours-card-link {
   display: flex;
+  position: relative;
   background-color: var(--card-color);
-  background-image: var(--card-gradient);
   transition: transform 0.3s ease-in-out;
   border-radius: 12px;
   flex: 1 1 16rem;
   max-width: 22rem;
   width: auto;
   margin: 0;
-  box-shadow: none;
 }
 
 .parcours-card-link:hover {

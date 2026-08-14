@@ -178,46 +178,54 @@ section {
 .card-link,
 .parcours-card-link,
 .home-trois article {
-  --d: 5s;
-  --s: 4;
-  border: 5px solid transparent;
-  padding: 12px;
-  background-clip: content-box;
-  filter: drop-shadow(
-    0 8px 16px color-mix(in srgb, var(--shadow-color) 25%, transparent)
+  position: relative;
+  overflow: visible;
+  background-image: var(--card-gradient);
+  box-shadow: 0 8px 16px color-mix(in srgb, var(--shadow-color) 25%, transparent);
+}
+
+.card-link::after,
+.parcours-card-link::after,
+.home-trois article::after {
+  content: "";
+  position: absolute;
+  inset: -16px;
+  z-index: 2;
+  padding: 4px;
+  border-radius: inherit;
+  pointer-events: none;
+  opacity: 0;
+  background: conic-gradient(
+    from var(--a),
+    transparent 0 55%,
+    var(--classroom-sky) 72%,
+    var(--lesson-card) 88%,
+    transparent 100%
   );
+  -webkit-mask:
+    linear-gradient(var(--ink-navy) 0 0) content-box,
+    linear-gradient(var(--ink-navy) 0 0);
+  -webkit-mask-composite: xor;
+  mask:
+    linear-gradient(var(--ink-navy) 0 0) content-box,
+    linear-gradient(var(--ink-navy) 0 0);
+  mask-composite: exclude;
 }
 
 @media (hover: hover) {
-  .card-link:hover,
-  .parcours-card-link:hover,
-  .home-trois article:hover {
-    border-color: var(--text-color);
-    mask:
-      conic-gradient(var(--ink-navy) 0 0) content-box,
-      linear-gradient(var(--a), transparent 30%, var(--ink-navy) 40% 60%, transparent 70%)
-        subtract,
-      conic-gradient(var(--ink-navy) 0 0) padding-box;
-    animation:
-      card-orbit-init linear infinite var(--d),
-      card-orbit-control linear infinite abs(var(--d) / (var(--s) - 1));
-    animation-composition: add;
+  .card-link:hover::after,
+  .parcours-card-link:hover::after,
+  .home-trois article:hover::after {
+    opacity: 1;
+    animation: card-orbit-init 3s linear infinite;
   }
 }
 
-.card-link:has(.course-card-hit:focus-visible),
-.parcours-card-link:focus-visible,
-.home-trois article:has(.home-trois-hit:focus-visible) {
-  border-color: var(--text-color);
-  mask:
-    conic-gradient(var(--ink-navy) 0 0) content-box,
-    linear-gradient(var(--a), transparent 30%, var(--ink-navy) 40% 60%, transparent 70%)
-      subtract,
-    conic-gradient(var(--ink-navy) 0 0) padding-box;
-  animation:
-    card-orbit-init linear infinite var(--d),
-    card-orbit-control linear infinite abs(var(--d) / (var(--s) - 1));
-  animation-composition: add;
+.card-link:has(.course-card-hit:focus-visible)::after,
+.parcours-card-link:focus-visible::after,
+.home-trois article:has(.home-trois-hit:focus-visible)::after {
+  opacity: 1;
+  animation: card-orbit-init 3s linear infinite;
 }
 
 @keyframes card-orbit-init {
@@ -226,19 +234,15 @@ section {
   }
 }
 
-@keyframes card-orbit-control {
-  to {
-    --a: calc(sign(var(--s) - 1) * 1turn);
-  }
-}
-
 @media (prefers-reduced-motion: reduce) {
-  .card-link,
-  .parcours-card-link,
-  .home-trois article {
+  .card-link:hover::after,
+  .parcours-card-link:hover::after,
+  .home-trois article:hover::after,
+  .card-link:has(.course-card-hit:focus-visible)::after,
+  .parcours-card-link:focus-visible::after,
+  .home-trois article:has(.home-trois-hit:focus-visible)::after {
     animation: none;
-    border-color: var(--text-color);
-    mask: none;
+    opacity: 0;
   }
 }
 
