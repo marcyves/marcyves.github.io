@@ -48,8 +48,8 @@
   --shadow-color: var(--ink-navy);
   --action-bg: var(--ink-navy);
   --action-fg: var(--snow);
-  --link-bg: var(--ink-navy);
-  --link-fg: var(--snow);
+  --link-bg: var(--action-bg);
+  --link-fg: var(--action-fg);
   --error-color: var(--error-blush);
 
   --font-display: Inter, Helvetica, Arial, sans-serif;
@@ -151,19 +151,55 @@ a.button-link:visited,
 button.button-link,
 a.parcours-platform-link,
 a.parcours-platform-link:visited {
-  color: var(--action-fg);
-  background-color: var(--action-bg);
+  color: var(--ink-navy);
+  background: linear-gradient(
+    -75deg,
+    color-mix(in srgb, var(--paper-frost) 18%, transparent),
+    color-mix(in srgb, var(--paper-frost) 58%, transparent),
+    color-mix(in srgb, var(--paper-frost) 18%, transparent)
+  );
 }
 
 .button-action,
 .button-link,
 .parcours-platform-link {
-  border: 0;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--snow) 55%, var(--classroom-sky));
   border-radius: 12px;
-  color: var(--action-fg);
-  background-color: var(--action-bg);
-  box-shadow: 0 8px 16px color-mix(in srgb, var(--shadow-color) 25%, transparent);
-  transition: transform 0.3s ease;
+  color: var(--ink-navy);
+  background: linear-gradient(
+    -75deg,
+    color-mix(in srgb, var(--paper-frost) 18%, transparent),
+    color-mix(in srgb, var(--paper-frost) 58%, transparent),
+    color-mix(in srgb, var(--paper-frost) 18%, transparent)
+  );
+  box-shadow:
+    inset 0 1px 1px color-mix(in srgb, var(--ink-navy) 8%, transparent),
+    inset 0 -1px 1px color-mix(in srgb, var(--snow) 50%, transparent),
+    0 4px 8px color-mix(in srgb, var(--ink-navy) 16%, transparent);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.button-action::before,
+.button-link::before,
+.parcours-platform-link::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  pointer-events: none;
+  background: linear-gradient(
+    -45deg,
+    transparent 0%,
+    color-mix(in srgb, var(--snow) 45%, transparent) 46%,
+    transparent 58%
+  );
+  mix-blend-mode: screen;
 }
 
 @media (hover: hover) {
@@ -173,7 +209,11 @@ a.parcours-platform-link:visited {
   .button-link:visited:hover,
   .parcours-platform-link:hover,
   .parcours-platform-link:visited:hover {
-    transform: translateY(-4px);
+    transform: translateY(-2px);
+    box-shadow:
+      inset 0 1px 1px color-mix(in srgb, var(--ink-navy) 8%, transparent),
+      inset 0 -1px 1px color-mix(in srgb, var(--snow) 60%, transparent),
+      0 6px 12px color-mix(in srgb, var(--ink-navy) 18%, transparent);
   }
 }
 
@@ -181,6 +221,14 @@ a.parcours-platform-link:visited {
 .button-link:active,
 .parcours-platform-link:active {
   transform: translateY(0);
+}
+
+@supports not ((backdrop-filter: blur(8px)) or (-webkit-backdrop-filter: blur(8px))) {
+  .button-action,
+  .button-link,
+  .parcours-platform-link {
+    background: color-mix(in srgb, var(--paper-frost) 88%, var(--classroom-sky));
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

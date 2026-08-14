@@ -36,11 +36,33 @@
     text-shadow: 1px 1px 4px var(--ink-navy);
 }
 
-#hero .hero-cta {
+#hero a.hero-cta,
+#hero a.hero-cta:visited {
     margin: 0;
     align-self: flex-start;
-    color: var(--action-fg);
-    background-color: var(--action-bg);
+    color: var(--snow);
+    text-shadow: 0 1px 2px color-mix(in srgb, var(--ink-navy) 45%, transparent);
+    background: linear-gradient(
+        -75deg,
+        color-mix(in srgb, var(--card-border-color) 22%, transparent),
+        color-mix(in srgb, var(--card-border-color) 34%, transparent),
+        color-mix(in srgb, var(--card-border-color) 18%, transparent)
+    );
+    border-color: color-mix(in srgb, var(--card-border-color) 70%, transparent);
+    box-shadow:
+        inset 0 1px 1px color-mix(in srgb, var(--ink-navy) 22%, transparent),
+        inset 0 -1px 1px color-mix(in srgb, var(--snow) 18%, transparent),
+        0 4px 8px color-mix(in srgb, var(--ink-navy) 28%, transparent);
+}
+
+#hero .hero-cta::before {
+    background: linear-gradient(
+        -45deg,
+        transparent 0%,
+        color-mix(in srgb, var(--snow) 16%, transparent) 46%,
+        transparent 58%
+    );
+    mix-blend-mode: normal;
 }
 
 @media  screen and (max-width: 768px) {
