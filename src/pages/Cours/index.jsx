@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { useEffect } from "react";
 
 import NotFound from "../NotFound";
@@ -11,6 +11,13 @@ function buyLabel(name) {
   if (name === "Udemy") return "Acheter sur Udemy";
   if (name === "Tuto") return "Acheter sur Tuto";
   return name;
+}
+
+function platformPhrase(links) {
+  const names = links.map((link) => link.name);
+  if (names.length === 0) return "Udemy ou Tuto";
+  if (names.length === 1) return names[0];
+  return names.join(" ou ");
 }
 
 function Cours() {
@@ -32,16 +39,13 @@ function Cours() {
     <div className="page-catalog">
       <Title title={le_cours.title} />
       <section className="course-detail">
-        <article
-          className="course-detail-copy"
-          dangerouslySetInnerHTML={{ __html: le_cours.description }}
-        />
         <aside className="course-detail-media">
           <img
             src={`/assets/images/${le_cours.image}`}
             alt=""
             width="352"
             height="198"
+            decoding="async"
           />
           <div className="course-detail-actions">
             {le_cours.links.map((link) => (
@@ -57,10 +61,16 @@ function Cours() {
             ))}
           </div>
           <p>
-            Le programme détaillé est sur Udemy ou Tuto. Ouvrez le lien du cours
-            pour acheter, ou écrivez-moi si vous hésitez entre deux formations.
+            Le programme détaillé est sur {platformPhrase(le_cours.links)}.
+            Ouvrez le lien du cours pour acheter, ou{" "}
+            <Link to="/contact">écrivez-moi</Link> si vous hésitez entre deux
+            formations.
           </p>
         </aside>
+        <article
+          className="course-detail-copy"
+          dangerouslySetInnerHTML={{ __html: le_cours.description }}
+        />
       </section>
     </div>
   );

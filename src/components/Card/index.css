@@ -2,7 +2,7 @@
     display: flex;
     min-width: 0;
     width: 100%;
-    align-items: center;
+    align-items: stretch;
     flex-direction: column;
     justify-content: flex-start;
     animation: scaleUp 0.25s ease forwards;
@@ -12,11 +12,18 @@
 .card h2{
     font-size: 24px;
     font-weight: 600;
-}   
+    margin: 0;
+    padding: 24px 24px 0;
+    text-align: center;
+    text-wrap: balance;
+}
 .card p{
     font-size: 1.2rem;
     font-weight: 400;
     height: fit-content;
+    margin: 0;
+    padding: 12px 24px 0;
+    text-align: center;
 }
 .card br{
     margin-bottom: 12px;
@@ -28,19 +35,11 @@
     border-radius: 6px 6px 0px 0px;
     box-shadow: 0 4px 4px color-mix(in srgb, var(--shadow-color) 25%, transparent);
 }
-.card:hover{
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px color-mix(in srgb, var(--shadow-color) 25%, transparent);
-}
 .card:hover > img{
     filter: grayscale(80%);
 }
 
-.card:active {
-    display: block;
-  }
-  
-  @keyframes scaleUp {
+@keyframes scaleUp {
     0% { transform: scale(0.5); }
     100% { transform: scale(1); }
-  }
+}

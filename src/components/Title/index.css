@@ -1,22 +1,35 @@
 h2.mini-hero {
   margin: 0;
-  font-size: 48px;
+  font-size: var(--text-headline);
   text-align: center;
-  font-family: Inter, Helvetica, Arial, sans-serif;
+  font-family: var(--font-display);
   font-optical-sizing: auto;
   font-weight: 800;
   font-style: normal;
   text-shadow: 2px 2px 4px var(--ink-navy);
   color: var(--snow);
+  text-wrap: balance;
+  overflow-wrap: break-word;
 }
 p.mini-hero {
-  font-size: 1.2rem;
+  font-size: var(--text-body);
   color: var(--snow);
   text-shadow: 1px 1px 2px var(--ink-navy);
-  line-height: 1.5;
+  line-height: 1.6;
   text-align: center;
   width: min(40rem, calc(100% - 48px));
   margin: 0 auto;
+  text-wrap: pretty;
+}
+
+html[data-theme="dark"] h2.mini-hero {
+  letter-spacing: 0.01em;
+}
+
+html[data-theme="dark"] p.mini-hero {
+  font-weight: 450;
+  line-height: 1.7;
+  letter-spacing: 0.012em;
 }
 .mini-hero ul {
   list-style: circle;

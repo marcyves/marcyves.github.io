@@ -30,8 +30,22 @@
   margin: 0;
 }
 
-.parcours-card-link:hover {
-  transform: scale3d(1.05, 1.05, 1.05);
+@media (hover: hover) {
+  .parcours-card-link:hover,
+  .parcours-card-link:focus-visible {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .parcours-card-link {
+    transition: none;
+  }
+
+  .parcours-card-link:hover,
+  .parcours-card-link:focus-visible {
+    transform: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
