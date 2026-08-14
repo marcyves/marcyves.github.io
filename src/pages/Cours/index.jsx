@@ -4,7 +4,14 @@ import { useEffect } from "react";
 import NotFound from "../NotFound";
 import liste_cours from "../../data/cours.json";
 import Title from "../../components/Title";
-import Col2 from "../../components/Col2";
+
+import "./index.css";
+
+function buyLabel(name) {
+  if (name === "Udemy") return "Acheter sur Udemy";
+  if (name === "Tuto") return "Acheter sur Tuto";
+  return name;
+}
 
 function Cours() {
   const { id } = useParams();
@@ -21,24 +28,39 @@ function Cours() {
   const root_id = document.getElementById("root");
   root_id.classList.add("gradient");
 
-  const links = le_cours.links
-    .map(
-      (link) =>
-        `<a class="button-link" href="${link.href}" target="_blank" rel="noopener noreferrer">${link.name}</a>`
-    )
-    .join("");
-
-  const col2 = `<img src="/assets/images/${le_cours.image}" alt="${le_cours.title}" /><div class="links-bar">${links}</div>`;
-
   return (
     <div className="page-catalog">
-      <Title title={le_cours.title} text="Détail du cours" />
-      <Col2 col1={le_cours.description} col2={col2} />
-      <section className="home-text">
-        <p>
-          Le programme détaillé est sur Udemy ou Tuto. Ouvrez le lien du cours
-          pour acheter, ou écrivez-moi si vous hésitez entre deux formations.
-        </p>
+      <Title title={le_cours.title} />
+      <section className="course-detail">
+        <article
+          className="course-detail-copy"
+          dangerouslySetInnerHTML={{ __html: le_cours.description }}
+        />
+        <aside className="course-detail-media">
+          <img
+            src={`/assets/images/${le_cours.image}`}
+            alt=""
+            width="352"
+            height="198"
+          />
+          <div className="course-detail-actions">
+            {le_cours.links.map((link) => (
+              <a
+                key={link.href}
+                className="button-action"
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {buyLabel(link.name)}
+              </a>
+            ))}
+          </div>
+          <p>
+            Le programme détaillé est sur Udemy ou Tuto. Ouvrez le lien du cours
+            pour acheter, ou écrivez-moi si vous hésitez entre deux formations.
+          </p>
+        </aside>
       </section>
     </div>
   );

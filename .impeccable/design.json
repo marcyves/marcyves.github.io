@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-08-13T21:30:00+02:00",
+  "generatedAt": "2026-08-14T09:50:00+02:00",
   "title": "Design System: Altitude",
   "extensions": {
     "colorMeta": {
@@ -41,7 +41,7 @@
         "tonalRamp": ["#121212", "#292929", "#424242", "#5d5d5d", "#7a7a7a", "#a4a4a4", "#cacaca", "#ebebeb"]
       },
       "error-blush": {
-        "role": "primary",
+        "role": "neutral",
         "displayName": "Error Blush",
         "canonical": "oklch(86.7% 0.071 18.6)",
         "tonalRamp": ["#230709", "#46171b", "#633133", "#814d4e", "#a0696a", "#ce9393", "#f6b8b8", "#ffdfde"]
@@ -49,23 +49,25 @@
     },
     "typographyMeta": {
       "display": { "displayName": "Display", "purpose": "Hero line over photography only (96px / 64px below 768px)." },
-      "headline": { "displayName": "Headline", "purpose": "Inner-page and side-media titles at 48px ExtraBold." },
-      "title": { "displayName": "Title", "purpose": "Course and parcours card titles at 24px / 600." },
-      "body": { "displayName": "Body", "purpose": "Reading copy at 1.2rem / 1.5, typically 80% measure, justified." },
-      "label": { "displayName": "Label", "purpose": "Header nav and strong UI labels, weight 800." }
+      "headline": { "displayName": "Headline", "purpose": "Inner-page titles (.mini-hero) at 48px ExtraBold." },
+      "title": { "displayName": "Title", "purpose": "Course and parcours card titles, course-detail h3, and platform chips at 24px / 600." },
+      "body": { "displayName": "Body", "purpose": "Reading copy at 1.2rem / 1.5, 40rem measure; left on course detail, centered on home leads." },
+      "label": { "displayName": "Label", "purpose": "Header nav and primary CTA, weight 800, 1.125rem." }
     },
     "shadows": [
-      { "name": "tile-rest", "value": "0px 4px 4px rgba(0, 0, 0, 0.25)", "purpose": "Image top of a card at rest." },
-      { "name": "tile-hover", "value": "0px 8px 16px rgba(0, 0, 0, 0.25)", "purpose": "Card hover lift." },
-      { "name": "course-gallery", "value": "0px 0px 10px rgba(0, 0, 0, 0.2)", "purpose": "Soft wrap around a course tile." },
-      { "name": "parcours-tile", "value": "0px 0px 20px rgba(0, 0, 0, 0.4)", "purpose": "Stronger wrap; learning-path cards sit higher than courses." }
+      { "name": "tile-wrap", "value": "0 8px 16px color-mix(in srgb, var(--shadow-color) 25%, transparent)", "purpose": "Course, parcours, and home-trois tiles at rest; course-detail photos." },
+      { "name": "image-rest", "value": "0 4px 4px color-mix(in srgb, var(--shadow-color) 25%, transparent)", "purpose": "Photo top of a catalog card." },
+      { "name": "cta-hover", "value": "0 8px 16px color-mix(in srgb, var(--shadow-color) 25%, transparent)", "purpose": "Primary button hover, with translateY(-4px)." },
+      { "name": "dialog", "value": "0 8px 16px color-mix(in srgb, var(--shadow-color) 40%, transparent)", "purpose": "Home-trois modal only." }
     ],
     "motion": [
       { "name": "tile-enter", "value": "scaleUp 0.25s ease forwards", "purpose": "Cards enter from scale(0.5) to rest." },
-      { "name": "tile-hover-scale", "value": "scale(1.05)", "purpose": "Pickable hover on catalog tiles." },
-      { "name": "link-ease", "value": "all 0.25s ease", "purpose": "Outlined course-link invert." },
+      { "name": "tile-hover-scale", "value": "scale3d(1.05, 1.05, 1.05)", "purpose": "Pickable hover on parcours wraps and home-trois articles." },
+      { "name": "orbit-ring", "value": "card-orbit-init 3s linear infinite", "purpose": "Conic Classroom Sky → Lesson Card ring on catalog tile hover/focus." },
+      { "name": "cta-lift", "value": "translateY(-4px)", "purpose": "Primary button hover lift." },
+      { "name": "link-ease", "value": "all 0.25s ease", "purpose": "Course-link invert." },
       { "name": "nav-lift", "value": "translateY(-5px)", "purpose": "Header link hover." },
-      { "name": "aos-standard", "value": "ease-in-out 1000ms", "purpose": "AOS scroll reveals already in the site; not a new grammar." }
+      { "name": "aos-home-trois", "value": "flip-up 1000ms ease-in-out, delay index * 150", "purpose": "Staggered home-trois article entrance." }
     ],
     "breakpoints": [
       { "name": "mobile", "value": "768px" }
@@ -76,49 +78,49 @@
       "name": "Primary Button",
       "kind": "button",
       "refersTo": "button-primary",
-      "description": "Filled Ink Navy CTA. Square. The only blunt rectangle in a rounded catalog.",
-      "html": "<button class=\"ds-btn-primary\" type=\"button\">Commencez maintenant</button>",
-      "css": ".ds-btn-primary { background: var(--text-color, rgb(15, 65, 105)); color: #ffffff; padding: 12px; margin: 1rem; font-weight: 600; font-size: large; font-family: Inter, Helvetica, Arial, sans-serif; border: none; border-radius: 0; cursor: pointer; } .ds-btn-primary:hover { transform: translateY(-2px); } .ds-btn-primary:focus-visible { outline: 2px solid var(--text-color, rgb(15, 65, 105)); outline-offset: 3px; }"
+      "description": "Filled Ink Navy CTA. Square. The only blunt rectangle in a rounded catalog. Course-detail buy links use this at full width.",
+      "html": "<button class=\"ds-btn-primary\" type=\"button\">Acheter sur Udemy</button>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; background: var(--action-bg, rgb(15, 65, 105)); color: var(--action-fg, #ffffff); padding: 12px 24px; font-weight: 800; font-size: 1.125rem; font-family: Inter, Helvetica, Arial, sans-serif; border: none; border-radius: 0; cursor: pointer; transition: transform 0.25s ease, box-shadow 0.25s ease; } .ds-btn-primary:hover { transform: translateY(-4px); box-shadow: 0 8px 16px color-mix(in srgb, var(--shadow-color, rgb(15, 65, 105)) 25%, transparent); } .ds-btn-primary:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }"
     },
     {
       "name": "Course Link",
       "kind": "button",
       "refersTo": "button-link",
-      "description": "Outlined Snow/sky control on a course tile — Détails, Udemy, Tuto.",
+      "description": "Rounded filled control on a course tile — Détails, Udemy, Tuto. Inverts on hover.",
       "html": "<button class=\"ds-btn-link\" type=\"button\">Udemy</button>",
-      "css": ".ds-btn-link { padding: 8px; border-radius: 6px; color: var(--background-color, rgb(108, 161, 205)); background: #ffffff; border: 1px solid var(--background-color, rgb(108, 161, 205)); font-family: Inter, Helvetica, Arial, sans-serif; cursor: pointer; transition: all 0.25s ease; } .ds-btn-link:hover { background: var(--background-color, rgb(108, 161, 205)); color: #ffffff; } .ds-btn-link:focus-visible { outline: 2px solid var(--text-color, rgb(15, 65, 105)); outline-offset: 2px; }"
+      "css": ".ds-btn-link { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; min-width: 44px; padding: 8px; border-radius: 6px; color: var(--link-fg, #ffffff); background: var(--link-bg, rgb(15, 65, 105)); border: 1px solid var(--link-bg, rgb(15, 65, 105)); font-family: Inter, Helvetica, Arial, sans-serif; cursor: pointer; transition: all 0.25s ease; } .ds-btn-link:hover { background: var(--link-fg, #ffffff); color: var(--link-bg, rgb(15, 65, 105)); border-color: var(--link-fg, #ffffff); } .ds-btn-link:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }"
     },
     {
       "name": "Platform Chip",
       "kind": "chip",
       "refersTo": "platform-chip",
-      "description": "Frosted Snow chip that routes to the Udemy or Tuto catalog.",
-      "html": "<a class=\"ds-platform-chip\" href=\"#\">Les cours sur UDEMY</a>",
-      "css": ".ds-platform-chip { display: inline-block; width: fit-content; font-size: 1.6rem; padding: 1rem 2rem; border-radius: 8px; background: rgba(255, 255, 255, 0.45); color: #ffffff; text-shadow: 1px 1px 2px var(--text-color, rgb(15, 65, 105)); text-align: center; text-decoration: none; font-family: Inter, Helvetica, Arial, sans-serif; } .ds-platform-chip:hover { background: rgba(255, 255, 255, 0); color: #ffffff; border: 1px solid #ffffff; font-size: 1.4rem; } .ds-platform-chip:focus-visible { outline: 2px solid #ffffff; outline-offset: 3px; }"
+      "description": "Filled Ink Navy chip that routes to the Udemy or Tuto catalog. Type stays 24px on hover.",
+      "html": "<a class=\"ds-platform-chip\" href=\"#\">Cours sur Udemy</a>",
+      "css": ".ds-platform-chip { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; width: fit-content; font-size: 24px; font-weight: 600; line-height: 1.3; padding: 12px 24px; border-radius: 8px; background: var(--action-bg, rgb(15, 65, 105)); color: var(--action-fg, #ffffff); border: 1px solid transparent; text-align: center; text-decoration: none; font-family: Inter, Helvetica, Arial, sans-serif; } .ds-platform-chip:hover { background: var(--action-fg, #ffffff); color: var(--action-bg, rgb(15, 65, 105)); border-color: var(--action-fg, #ffffff); font-size: 24px; } .ds-platform-chip:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }"
     },
     {
-      "name": "Course Card",
+      "name": "Catalog Card",
       "kind": "card",
       "refersTo": "card",
-      "description": "Pickable course tile: Lesson Card fill, gallery shadow, invert links, grayscale photo on hover.",
-      "html": "<article class=\"ds-course-card\"><div class=\"ds-course-card-photo\" role=\"img\" aria-label=\"Course cover\"></div><h2 class=\"ds-course-card-title\">HTML et CSS par la pratique</h2><div class=\"ds-course-card-links\"><button class=\"ds-btn-link\" type=\"button\">Détails</button><button class=\"ds-btn-link\" type=\"button\">Udemy</button></div></article>",
-      "css": ".ds-course-card { display: flex; flex-direction: column; align-items: center; min-width: 18em; max-width: 20em; background: var(--card-color, rgb(180, 227, 240)); border-radius: 12px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); color: var(--text-color, rgb(15, 65, 105)); font-family: Inter, Helvetica, Arial, sans-serif; overflow: hidden; transition: transform 0.25s ease, box-shadow 0.25s ease; } .ds-course-card-photo { width: 100%; height: 8em; background: linear-gradient(145deg, rgb(108, 161, 205), rgb(15, 65, 105)); border-radius: 10px 10px 0 0; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); } .ds-course-card-title { font-size: 24px; font-weight: 600; margin: 8px 12px; text-align: center; } .ds-course-card-links { display: flex; justify-content: space-evenly; gap: 6px; width: 100%; padding: 0 8px 12px; } .ds-course-card .ds-btn-link { padding: 8px; border-radius: 6px; color: var(--background-color, rgb(108, 161, 205)); background: #ffffff; border: 1px solid var(--background-color, rgb(108, 161, 205)); cursor: pointer; transition: all 0.25s ease; } .ds-course-card .ds-btn-link:hover { background: var(--background-color, rgb(108, 161, 205)); color: #ffffff; } .ds-course-card:hover { transform: scale(1.05); box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25); } .ds-course-card:hover .ds-course-card-photo { filter: grayscale(80%); }"
+      "description": "Pickable course tile: Lesson Card gradient, wrap shadow, orbit ring on hover. Course tiles orbit without scaling.",
+      "html": "<article class=\"ds-course-card\"><div class=\"ds-course-card-photo\" role=\"img\" aria-label=\"Course cover\"></div><h2 class=\"ds-course-card-title\">HTML et CSS par la pratique</h2><div class=\"ds-course-card-links\"><button class=\"ds-btn-link\" type=\"button\">Udemy</button><button class=\"ds-btn-link\" type=\"button\">Tuto</button></div></article>",
+      "css": "@property --a { syntax: \"<angle>\"; inherits: false; initial-value: 0deg; } @keyframes ds-card-orbit { to { --a: 1turn; } } .ds-course-card { position: relative; display: flex; flex-direction: column; align-items: center; min-width: 16rem; max-width: 22rem; background-color: var(--card-color, rgb(180, 227, 240)); background-image: var(--card-gradient, linear-gradient(165deg, #edf7fa 0%, rgb(180, 227, 240) 58%, rgb(108, 161, 205) 100%)); border-radius: 12px; box-shadow: 0 8px 16px color-mix(in srgb, var(--shadow-color, rgb(15, 65, 105)) 25%, transparent); color: var(--text-color, rgb(15, 65, 105)); font-family: Inter, Helvetica, Arial, sans-serif; overflow: visible; } .ds-course-card::after { content: \"\"; position: absolute; inset: -16px; z-index: 2; padding: 4px; border-radius: inherit; pointer-events: none; opacity: 0; background: conic-gradient(from var(--a), transparent 0 55%, var(--classroom-sky, rgb(108, 161, 205)) 72%, var(--lesson-card, rgb(180, 227, 240)) 88%, transparent 100%); -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); mask-composite: exclude; } .ds-course-card-photo { width: 100%; height: 8em; background: linear-gradient(145deg, rgb(108, 161, 205), rgb(15, 65, 105)); border-radius: 6px 6px 0 0; box-shadow: 0 4px 4px color-mix(in srgb, var(--shadow-color, rgb(15, 65, 105)) 25%, transparent); } .ds-course-card-title { font-size: 24px; font-weight: 600; line-height: 1.3; margin: 0; padding: 12px 6px 0; text-align: center; } .ds-course-card-links { display: flex; justify-content: center; gap: 6px; width: 100%; padding: 12px 6px 6px; } .ds-course-card .ds-btn-link { position: relative; z-index: 3; padding: 8px; border-radius: 6px; color: var(--link-fg, #ffffff); background: var(--link-bg, rgb(15, 65, 105)); border: 1px solid var(--link-bg, rgb(15, 65, 105)); cursor: pointer; font-family: inherit; transition: all 0.25s ease; } .ds-course-card .ds-btn-link:hover { background: var(--link-fg, #ffffff); color: var(--link-bg, rgb(15, 65, 105)); border-color: var(--link-fg, #ffffff); } .ds-course-card:hover::after, .ds-course-card:focus-visible::after { opacity: 1; animation: ds-card-orbit 3s linear infinite; } .ds-course-card:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }"
     },
     {
-      "name": "Parcours Card",
-      "kind": "card",
-      "refersTo": "card",
-      "description": "Learning-path tile. Same Lesson Card fill, stronger 20px wrap, scale3d hover.",
-      "html": "<a class=\"ds-parcours-card\" href=\"#\"><div class=\"ds-parcours-card-photo\" role=\"img\" aria-label=\"Parcours cover\"></div><h2 class=\"ds-parcours-card-title\">Parcours Développeur Web</h2><p class=\"ds-parcours-card-body\">Devenez un expert en création de sites et applications web</p></a>",
-      "css": ".ds-parcours-card { display: flex; flex-direction: column; align-items: center; min-width: 24em; max-width: 26em; background: var(--card-color, rgb(180, 227, 240)); border-radius: 12px; box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4); color: var(--text-color, rgb(15, 65, 105)); text-decoration: none; font-family: Inter, Helvetica, Arial, sans-serif; overflow: hidden; padding-bottom: 24px; transition: transform 0.3s ease-in-out; } .ds-parcours-card-photo { width: 100%; height: 9em; background: linear-gradient(145deg, rgb(180, 227, 240), rgb(108, 161, 205)); border-radius: 6px 6px 0 0; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); } .ds-parcours-card-title { font-size: 24px; font-weight: 600; margin: 12px; text-align: center; } .ds-parcours-card-body { font-size: 18px; font-weight: 400; margin: 0 16px; text-align: center; } .ds-parcours-card:hover { transform: scale3d(1.05, 1.05, 1.05); } .ds-parcours-card:hover .ds-parcours-card-photo { filter: grayscale(80%); } .ds-parcours-card:focus-visible { outline: 2px solid var(--text-color, rgb(15, 65, 105)); outline-offset: 4px; }"
+      "name": "Course Detail Media",
+      "kind": "custom",
+      "refersTo": "course-detail-media",
+      "description": "Sticky 22rem buy rail: 16/9 photo at 12px, stacked Acheter sur Udemy/Tuto primary buttons. Not a Col2 column.",
+      "html": "<aside class=\"ds-course-media\"><div class=\"ds-course-media-photo\" role=\"img\" aria-label=\"Course cover\"></div><div class=\"ds-course-media-actions\"><a class=\"ds-btn-buy\" href=\"#\">Acheter sur Udemy</a><a class=\"ds-btn-buy\" href=\"#\">Acheter sur Tuto</a></div><p class=\"ds-course-media-note\">Le programme détaillé est sur Udemy ou Tuto.</p></aside>",
+      "css": ".ds-course-media { display: flex; flex-direction: column; gap: 24px; width: 100%; max-width: 22rem; font-family: Inter, Helvetica, Arial, sans-serif; color: var(--text-color, rgb(15, 65, 105)); } .ds-course-media-photo { width: 100%; aspect-ratio: 16 / 9; border-radius: 12px; background: linear-gradient(145deg, rgb(108, 161, 205), rgb(15, 65, 105)); box-shadow: 0 8px 16px color-mix(in srgb, var(--shadow-color, rgb(15, 65, 105)) 25%, transparent); } .ds-course-media-actions { display: flex; flex-direction: column; gap: 12px; } .ds-btn-buy { display: inline-flex; align-items: center; justify-content: center; width: 100%; min-height: 44px; padding: 12px 24px; background: var(--action-bg, rgb(15, 65, 105)); color: var(--action-fg, #ffffff); font-weight: 800; font-size: 1.125rem; text-decoration: none; border: none; border-radius: 0; cursor: pointer; transition: transform 0.25s ease, box-shadow 0.25s ease; } .ds-btn-buy:hover { transform: translateY(-4px); box-shadow: 0 8px 16px color-mix(in srgb, var(--shadow-color, rgb(15, 65, 105)) 25%, transparent); } .ds-btn-buy:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; } .ds-course-media-note { font-size: 1.2rem; line-height: 1.5; margin: 0; text-align: left; }"
     },
     {
       "name": "Header Nav",
       "kind": "nav",
       "refersTo": "nav-link",
-      "description": "Classroom Sky bar: Knewave wordmark left, ExtraBold Snow links right.",
+      "description": "Classroom Sky bar: Knewave wordmark left, ExtraBold Snow links right. Active stays ExtraBold and underlined.",
       "html": "<header class=\"ds-header\"><a class=\"ds-wordmark\" href=\"#\">Altitude</a><nav><ul class=\"ds-nav\"><li><a class=\"ds-nav-link ds-nav-link-active\" href=\"#\">Formations</a></li><li><a class=\"ds-nav-link\" href=\"#\">A Propos</a></li><li><a class=\"ds-nav-link\" href=\"#\">Contact</a></li></ul></nav></header>",
-      "css": ".ds-header { display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 0 0 0 24px; background: var(--background-color, rgb(108, 161, 205)); font-family: Inter, Helvetica, Arial, sans-serif; } .ds-wordmark { font-family: Knewave, cursive; font-size: xx-large; color: #ffffff; text-decoration: none; } .ds-wordmark:hover { transform: translateY(-5px); display: inline-block; } .ds-nav { list-style: none; display: flex; gap: 1rem; margin: 0; padding: 12px; } .ds-nav-link { display: inline-block; padding: 12px; font-size: larger; font-weight: 800; color: #ffffff; text-decoration: none; } .ds-nav-link:hover { font-weight: 600; transform: translateY(-5px); } .ds-nav-link-active { font-weight: 100; } .ds-nav-link:focus-visible { outline: 2px solid #ffffff; outline-offset: 2px; }"
+      "css": ".ds-header { display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 0 24px; background: var(--background-color, rgb(108, 161, 205)); font-family: Inter, Helvetica, Arial, sans-serif; } .ds-wordmark { display: inline-flex; align-items: center; min-height: 44px; font-family: Knewave, cursive; font-size: 2rem; font-weight: 400; color: var(--snow, #ffffff); text-decoration: none; } .ds-wordmark:hover { transform: translateY(-5px); } .ds-wordmark:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; } .ds-nav { list-style: none; display: flex; gap: 1rem; margin: 0; padding: 12px; } .ds-nav-link { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 12px; font-size: 1.125rem; font-weight: 800; color: var(--snow, #ffffff); text-decoration: none; } .ds-nav-link:hover { font-weight: 600; transform: translateY(-5px); } .ds-nav-link-active { font-weight: 800; text-decoration: underline; text-underline-offset: 4px; } .ds-nav-link:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }"
     },
     {
       "name": "Circular Portrait",
@@ -126,47 +128,52 @@
       "refersTo": "card",
       "description": "Snow-backed circle for Marc and motif photographs. The human face of the catalog.",
       "html": "<div class=\"ds-portrait\" role=\"img\" aria-label=\"Portrait\"></div>",
-      "css": ".ds-portrait { width: 200px; height: 200px; border-radius: 50%; background: radial-gradient(circle at 40% 35%, #ffffff, rgb(180, 227, 240) 45%, rgb(108, 161, 205)); box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }"
+      "css": ".ds-portrait { width: 200px; height: 200px; border-radius: 50%; background-color: var(--snow, #ffffff); background-image: radial-gradient(circle at 40% 35%, var(--snow, #ffffff), var(--lesson-card, rgb(180, 227, 240)) 45%, var(--classroom-sky, rgb(108, 161, 205))); box-shadow: 0 4px 4px color-mix(in srgb, var(--shadow-color, rgb(15, 65, 105)) 25%, transparent); } .ds-portrait:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }"
     },
     {
       "name": "Error Panel",
       "kind": "custom",
       "refersTo": "card",
       "description": "The only alert surface: blush fill, 12px corners, 24px inset.",
-      "html": "<div class=\"ds-error\">Cette page n’existe pas.</div>",
-      "css": ".ds-error { background: rgb(255, 193, 193); color: var(--text-color, rgb(15, 65, 105)); margin: 24px; padding: 24px; border-radius: 12px; font-family: Inter, Helvetica, Arial, sans-serif; text-align: center; }"
+      "html": "<div class=\"ds-error\" tabindex=\"0\">Cette page n’existe pas.</div>",
+      "css": ".ds-error { background: var(--error-color, rgb(255, 193, 193)); color: var(--text-color, rgb(15, 65, 105)); margin: 24px; padding: 24px; border-radius: 12px; font-family: Inter, Helvetica, Arial, sans-serif; text-align: center; } .ds-error:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }"
     }
   ],
   "narrative": {
     "northStar": "The Trainer’s Clear Sky",
-    "overview": "This is a personal teaching catalog seen in daylight. Marc is the face; the sky is atmosphere, not a mountaineering story. Pages feel generous and handmade: large Inter, lots of air, photography in the first viewport, centered columns that breathe rather than pack. The blue field is a classroom window — calm, open, a little weathered — not a brand illustration of peaks and rope.\n\nDensity is low on purpose. A visitor should feel they can pick a course the way they pick a book off a sunlit table: tiles sit up off the wash, scale when hovered, and send them out to Udemy or Tuto. The wordmark is a Knewave lockup in white on Classroom Sky; everything else is Inter. Do not drift toward SaaS dashboards, dense admin grids, or corporate navy/orange kits.",
+    "overview": "This is a personal teaching catalog seen in daylight. Marc is the face; the sky is atmosphere, not a mountaineering story. Pages feel generous and handmade: large Inter, lots of air, photography in the first viewport, centered columns that breathe rather than pack. The blue field is a classroom window — calm, open, a little weathered — not a brand illustration of peaks and rope.\n\nDensity is low on purpose. A visitor should feel they can pick a course the way they pick a book off a sunlit table: tiles sit up off the wash, catch a slow orbit ring, scale when hovered, and send them out to Udemy or Tuto. Course detail is the quiet desk after that pick: a 40rem reading column beside a sticky photo and filled buy buttons. The wordmark is a Knewave lockup in white on Classroom Sky; everything else is Inter. Do not drift toward SaaS dashboards, dense admin grids, or corporate navy/orange kits.",
     "keyCharacteristics": [
       "Photography leads; Classroom Sky is atmosphere behind it, not a motif to decorate.",
       "Inter ExtraBold is the type system; Knewave exists only as the Altitude wordmark.",
-      "Generous padding, centered measure, justified body — personal, not editorial-magazine.",
-      "Catalog cards lift with real shadows and scale on hover; they must feel pickable.",
-      "Two chromatic roles only: Ink Navy for voice and action, Classroom Sky for fields."
+      "Generous padding, centered measure, short intros — personal, not editorial-magazine. Course detail is the exception: a left-aligned 40rem reading column.",
+      "Catalog cards lift with real shadows, a Classroom Sky orbit ring, and a 1.05 hover scale (parcours and home-trois).",
+      "Two chromatic roles only: Ink Navy for voice and action, Classroom Sky for fields. Dark mode: Ink Navy is the room, Lesson Card is the light bluish voice."
     ],
     "rules": [
       { "name": "The Two Blues Rule", "body": "Ink Navy speaks and acts. Classroom Sky is the room. Do not introduce a third chromatic accent (orange, teal, gold, “CTA red”).", "section": "colors" },
       { "name": "The Atmosphere Not Alpine Rule", "body": "These blues are daylight in a classroom, not glacier branding. Mountain photographs may appear as photography; they do not authorize ice palettes, rope motifs, or sherpa illustration.", "section": "colors" },
+      { "name": "The Night Classroom Rule", "body": "Dark mode inverts the two jobs, not the palette: Ink Navy becomes the room, Lesson Card (light bluish) becomes the reading voice and the thing you press. No extra navies, no white-on-navy, no charcoal.", "section": "colors" },
       { "name": "The Knewave Lockup Rule", "body": "Knewave appears only on the Altitude wordmark in the header. Do not set headings, buttons, or body in Knewave.", "section": "typography" },
-      { "name": "The Inter Is the System Rule", "body": "The root stack currently declares Poppin, which is not loaded, so Helvetica renders. That is a miss, not a face. New type uses Inter.", "section": "typography" },
-      { "name": "The Lifted Catalog Rule", "body": "Surfaces that can be chosen (parcours, course, CTA-adjacent tiles) use the shadow vocabulary above. Do not add neumorphic inner highlights. Do not go fully flat.", "section": "elevation" }
+      { "name": "The Inter Is the System Rule", "body": ":root is Inter (variable, weights 100–900). Knewave is the wordmark only. Do not introduce a third family.", "section": "typography" },
+      { "name": "The Course Detail Split Rule", "body": "Course pages are a 40rem reading column and a sticky 22rem photo/buy rail. Do not use Col2 / .home-deux on that surface.", "section": "layout" },
+      { "name": "The Lifted Catalog Rule", "body": "Surfaces that can be chosen (parcours, course, CTA-adjacent tiles) use the shadow vocabulary above. Do not add neumorphic inner highlights. Do not go fully flat.", "section": "elevation" },
+      { "name": "The Orbit Ring Rule", "body": "Course tiles, parcours tiles, and home-trois articles show a conic Classroom Sky → Lesson Card ring (::after, 3s linear) on hover and focus-visible. Honor prefers-reduced-motion: no ring, no scale.", "section": "elevation" }
     ],
     "dos": [
       "Do lead a surface with photography and a short Inter ExtraBold line, then the catalog.",
-      "Do keep pickable tiles on Lesson Card with the lifted-catalog shadows and a scale hover.",
-      "Do use Ink Navy for text and the filled CTA, Classroom Sky for header/footer/wash.",
+      "Do keep pickable tiles on Lesson Card with the lifted-catalog shadows, the orbit ring, and a 1.05 hover scale on parcours and home-trois.",
+      "Do use Ink Navy for text and every filled control (CTA, course link, platform chip); Classroom Sky for header/footer/wash.",
       "Do reserve Knewave for the Altitude wordmark.",
-      "Do leave air: 12/24px rhythm, large section insets, ~80% measure."
+      "Do leave air: 6/12/24/48px rhythm, 48px between groups and in the parcours gallery, a 40rem reading measure.",
+      "Do set course detail as a 40rem copy column plus a sticky 22rem photo/buy rail, with Acheter sur Udemy/Tuto as .button-action."
     ],
     "donts": [
       "Don't design SaaS dashboards, dense data grids, or navy/orange corporate kits.",
-      "Don't add a third accent color or reuse the home three-column neumorphic glow.",
-      "Don't set headings or UI in Knewave, or treat Poppin/Helvetica as a body face.",
+      "Don't add a third accent color (including Dribbble-derived dental/golf hues) or revive neumorphic inner glows.",
+      "Don't set headings or UI in Knewave, or treat Helvetica as the body face.",
       "Don't turn mountain photographs into sherpa illustration, clipart, or alpine ornament.",
-      "Don't invent input, chip, or modal chrome — the catalog does not have forms."
+      "Don't invent form fields or extra modal chrome — the catalog has no forms; home-trois is the only dialog.",
+      "Don't reuse Col2 / .home-deux on course detail."
     ]
   }
 }

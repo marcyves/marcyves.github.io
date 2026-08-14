@@ -451,6 +451,27 @@ section.error {
     padding: 24px 12px 12px;
   }
 
+  .course-detail {
+    flex-direction: column-reverse;
+    align-items: stretch;
+    gap: 24px;
+    padding: 24px 12px;
+  }
+
+  .course-detail-copy,
+  .course-detail-media {
+    max-width: none;
+    width: 100%;
+  }
+
+  .course-detail-media {
+    position: static;
+  }
+
+  .course-detail-actions .button-action {
+    margin: 0;
+  }
+
   section.home-text article,
   section.home-text p {
     width: 100%;
