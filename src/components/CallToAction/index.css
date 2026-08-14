@@ -16,32 +16,9 @@
   align-items: center;
   justify-content: center;
   padding: 12px 24px;
-  background-color: var(--action-bg);
   margin: 24px auto;
   color: var(--action-fg);
   font-weight: 800;
   font-size: 1.125rem;
-  border: none;
   cursor: pointer;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-@media (hover: hover) {
-.button-action:hover,
-.button-action:visited:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 16px color-mix(in srgb, var(--shadow-color) 25%, transparent);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .button-action {
-    transition: none;
-  }
-
-  .button-action:hover,
-  .button-action:visited:hover {
-    transform: none;
-    box-shadow: none;
-  }
 }

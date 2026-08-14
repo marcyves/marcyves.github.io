@@ -6,16 +6,5 @@
   margin: 0;
   font-size: 24px;
   padding: 12px 24px;
-  border: 1px solid transparent;
-  border-radius: 8px;
-  background-color: var(--action-bg);
-  color: var(--action-fg);
   text-align: center;
-}
-
-.parcours-platform-link:hover,
-.parcours-platform-link:visited:hover {
-  background-color: var(--action-fg);
-  color: var(--action-bg);
-  border-color: var(--action-fg);
 }

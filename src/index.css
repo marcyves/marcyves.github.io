@@ -144,27 +144,60 @@ a:visited {
 }
 
 a.button-action,
-a.button-action:visited {
-  color: var(--action-fg);
-  background-color: var(--action-bg);
-}
-
+a.button-action:visited,
+button.button-action,
 a.button-link,
 a.button-link:visited,
-button.button-link {
-  color: var(--link-fg);
-  background-color: var(--link-bg);
-}
-
-button.button-action {
-  color: var(--action-fg);
-  background-color: var(--action-bg);
-}
-
+button.button-link,
 a.parcours-platform-link,
 a.parcours-platform-link:visited {
   color: var(--action-fg);
   background-color: var(--action-bg);
+}
+
+.button-action,
+.button-link,
+.parcours-platform-link {
+  border: 0;
+  border-radius: 12px;
+  color: var(--action-fg);
+  background-color: var(--action-bg);
+  box-shadow: 0 8px 16px color-mix(in srgb, var(--shadow-color) 25%, transparent);
+  transition: transform 0.3s ease;
+}
+
+@media (hover: hover) {
+  .button-action:hover,
+  .button-action:visited:hover,
+  .button-link:hover,
+  .button-link:visited:hover,
+  .parcours-platform-link:hover,
+  .parcours-platform-link:visited:hover {
+    transform: translateY(-4px);
+  }
+}
+
+.button-action:active,
+.button-link:active,
+.parcours-platform-link:active {
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .button-action,
+  .button-link,
+  .parcours-platform-link {
+    transition: none;
+  }
+
+  .button-action:hover,
+  .button-action:visited:hover,
+  .button-link:hover,
+  .button-link:visited:hover,
+  .parcours-platform-link:hover,
+  .parcours-platform-link:visited:hover {
+    transform: none;
+  }
 }
 
 h2 {

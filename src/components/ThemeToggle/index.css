@@ -5,7 +5,7 @@
   min-height: 44px;
   min-width: 44px;
   padding: 12px;
-  border: 1px solid var(--snow);
+  border: 0;
   border-radius: 6px;
   background: transparent;
   color: var(--snow);
@@ -19,6 +19,5 @@
   .theme-toggle:hover {
     background-color: var(--action-bg);
     color: var(--action-fg);
-    border-color: var(--action-bg);
   }
 }

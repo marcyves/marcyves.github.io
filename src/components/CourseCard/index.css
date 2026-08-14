@@ -80,16 +80,4 @@
 
 .button-link {
   padding: 8px;
-  border-radius: 6px;
-  color: var(--link-fg);
-  background-color: var(--link-bg);
-  border: 1px solid var(--link-bg);
-  transition: all 0.25s ease;
-}
-
-.button-link:hover,
-.button-link:visited:hover {
-  background-color: var(--link-fg);
-  color: var(--link-bg);
-  border-color: var(--link-fg);
 }
