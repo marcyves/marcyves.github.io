@@ -111,11 +111,11 @@ function HomeTroisCol() {
 
   return (
     <section className="home-trois">
-      {COLUMNS.map((column) => (
+      {COLUMNS.map((column, index) => (
         <article
           key={column.id}
           data-aos="flip-up"
-          data-aos-delay="50"
+          data-aos-delay={index * 150}
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
         >
