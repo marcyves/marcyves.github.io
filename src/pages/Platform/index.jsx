@@ -4,8 +4,8 @@ import { useEffect } from "react";
 import NotFound from "../NotFound";
 import liste_cours from "../../data/cours.json";
 import platform_data from "../../data/plateformes.json";
-import Title from "../../components/Title";
-import ListeCours from "../../components/ListeCours";
+import CatalogHero from "../../components/CatalogHero";
+import CatalogDesk from "../../components/CatalogDesk";
 
 function Platform() {
   const { id } = useParams();
@@ -27,8 +27,17 @@ function Platform() {
 
   return (
     <div className="page-catalog">
-      <Title title={`Cours sur ${platform.title}`} text="" />
-      <ListeCours liste_cours={liste_cours_filtrée} />
+      <CatalogHero
+        title={`Cours sur ${platform.title}`}
+        text={platform.description}
+        image="montblanc.webp"
+        imageAlt="Le massif du Mont-Blanc"
+      />
+      <CatalogDesk
+        key={id}
+        courses={liste_cours}
+        initialPlatform={id}
+      />
     </div>
   );
 }

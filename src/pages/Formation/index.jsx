@@ -4,8 +4,8 @@ import { useEffect } from "react";
 import NotFound from "../NotFound";
 import liste_cours from "../../data/cours.json";
 import parcours_data from "../../data/parcours.json";
-import Title from "../../components/Title";
-import ListeCours from "../../components/ListeCours";
+import CatalogHero from "../../components/CatalogHero";
+import CatalogDesk from "../../components/CatalogDesk";
 
 function Formation() {
   const { id } = useParams();
@@ -27,8 +27,17 @@ function Formation() {
 
   return (
     <div className="page-catalog">
-      <Title title={parcours.title} text={parcours.description} />
-      <ListeCours liste_cours={liste_cours_filtrée} />
+      <CatalogHero
+        title={parcours.title}
+        text={parcours.short_description}
+        image={parcours.image}
+        imageAlt=""
+      />
+      <CatalogDesk
+        key={id}
+        courses={liste_cours}
+        initialParcours={id}
+      />
     </div>
   );
 }

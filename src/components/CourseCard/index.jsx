@@ -1,10 +1,13 @@
 import PropTypes from "prop-types";
 import "./index.css";
 
-function CourseCard({ id, title, image, links }) {
+function CourseCard({ id, title, image, links, parcours }) {
   return (
     <div className="course-card">
-      <img src={`/assets/images/${image}`} alt="" />
+      <div className="course-card-media">
+        <img src={`/assets/images/${image}`} alt="" />
+        {parcours ? <span className="course-parcours">{parcours}</span> : null}
+      </div>
       <div className="course-text">
         <h2 className="caption" id={`cours-title-${id}`}>
           {title}
@@ -32,6 +35,7 @@ CourseCard.propTypes = {
   title: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   links: PropTypes.array.isRequired,
+  parcours: PropTypes.string,
 };
 
 export default CourseCard;

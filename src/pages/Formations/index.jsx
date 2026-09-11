@@ -1,11 +1,8 @@
 import { useEffect } from "react";
-import { Link } from "react-router-dom";
 
-import Title from "../../components/Title";
-import ListeParcours from "../../components/ListeParcours";
-import liste_parcours from "../../data/parcours.json";
-
-import "./index.css";
+import CatalogHero from "../../components/CatalogHero";
+import CatalogDesk from "../../components/CatalogDesk";
+import liste_cours from "../../data/cours.json";
 
 function Formations() {
   const root_id = document.getElementById("root");
@@ -17,23 +14,13 @@ function Formations() {
 
   return (
     <div className="page-catalog">
-      <Title
+      <CatalogHero
         title="Les formations"
         text="Choisissez un parcours, puis achetez le cours sur Udemy ou Tuto. Les certificats sont délivrés par la plateforme, pas par ce site."
+        image="montblanc.webp"
+        imageAlt="Le massif du Mont-Blanc"
       />
-      <nav className="platform-pair" aria-label="Plateformes">
-        <Link className="parcours-platform-link" to="/plateforme/4">
-          Cours sur Udemy
-        </Link>
-        <Link className="parcours-platform-link" to="/plateforme/5">
-          Cours sur Tuto
-        </Link>
-      </nav>
-      <Title
-        title="Les trois parcours"
-        text="Développeur web, Python et data science, outils du manager."
-      />
-      <ListeParcours liste_parcours={liste_parcours} type="formation" />
+      <CatalogDesk courses={liste_cours} />
     </div>
   );
 }
